@@ -1,9 +1,38 @@
-import * as React from 'react';
+import {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+
+import ArrowDown from '../../assets/OXALIS_site_web_boutons_fleche_blanc.svg';
+
+// Hook
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
 
 const HomePageLayoutRoot = styled('section')(({ theme }) => ({
   color: theme.palette.common.white,
@@ -31,8 +60,10 @@ const Background = styled(Box)(() => ({
 function HomePageLayout(props) {
   const { sxBackground, children } = props;
 
+  const {height} = useWindowSize();
+
   return (
-    <HomePageLayoutRoot>
+    <HomePageLayoutRoot style={{height}}>
       <Container
         sx={{
           mt: 3,
@@ -58,9 +89,9 @@ function HomePageLayout(props) {
         <Background sx={sxBackground} />
         <Box
           component="img"
-          src="/static/themes/onepirate/productHeroArrowDown.png"
-          height="16"
-          width="12"
+          src={ArrowDown}
+          height="32px"
+          width="24px"
           alt="arrow down"
           sx={{ position: 'absolute', bottom: 32 }}
         />

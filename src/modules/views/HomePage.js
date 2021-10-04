@@ -4,8 +4,7 @@ import Typography from '../components/Typography';
 import HomePageLayout from './HomePageLayout';
 import BackgroundImage from '../../assets/OXALIS_site_web_bg.jpg';
 
-const backgroundImage =
-BackgroundImage;
+const backgroundImage = BackgroundImage;
 
 export default function HomePage() {
   return (
@@ -28,11 +27,7 @@ export default function HomePage() {
         <br/>
         respiration libre
       </Typography>
-      <div>
-      <h1>
-        Informations pratiques
-      </h1>
-      
+      <div>      
       </div>
 
     </HomePageLayout>
