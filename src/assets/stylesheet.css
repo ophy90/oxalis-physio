@@ -1,0 +1,39 @@
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2021 Colophon Foundry
+ *
+ * Licenced to Fabia R&uuml;egg
+ */
+
+@font-face {
+    font-family: 'apercu-light';
+    src: url('fonts/apercu-light.eot');
+    src: url('fonts/apercu-light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/apercu-light.woff2') format('woff2'),
+         url('fonts/apercu-light.woff') format('woff'),
+         url('fonts/apercu-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dahlia-bold';
+    src: url('fonts/Dahlia-bold.eot');
+    src: url('fonts/Dahlia-bold.woff2') format('woff2'),
+         url('fonts/Dahlia-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dahlia-medium';
+    src: url('fonts/Dahlia-MediumCondensed.eot');
+    src: url('fonts/Dahlia-MediumCondensed.woff2') format('woff2'),
+         url('fonts/Dahlia-MediumCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
