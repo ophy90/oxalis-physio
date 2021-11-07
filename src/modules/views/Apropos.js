@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
-import Typography from '../components/Typography';
+import Typography from '@mui/material/Typography';
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
   left: 0,
@@ -55,7 +55,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 export default function APropos() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
-      <Typography color="inherit" align="center" variant="h1" marked="center">
+      <Typography color="#bd95aa" align="center" variant="h1" marked="center">
           A propos
       </Typography>
       <p>

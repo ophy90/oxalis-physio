@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Button from '../components/Button';
-import Typography from '../components/Typography';
+import Typography from '@mui/material/Typography';
 import HomePageLayout from './HomePageLayout';
 import BackgroundImage from '../../assets/OXALIS_site_web_bg.jpg';
 
@@ -22,14 +21,11 @@ export default function HomePage() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h1" marked="center">
+      <Typography color="inherit" align="center" variant="h1White" marked="center">
         posture et
         <br/>
         respiration libre
       </Typography>
-      <div>      
-      </div>
-
     </HomePageLayout>
   );
 }
