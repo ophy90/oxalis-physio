@@ -6,7 +6,7 @@ function Pneumacorps() {
     const classes = useStyles();
     return (
         <div>
-            <Container sx={{textAlign: 'center'}} className={classes.purpleBox}>
+            <Container sx={{textAlign: 'center'}} className={classes.purpleLightBox}>
                 <HeaderTitlePurple>
                     PneumaCorps
                 </HeaderTitlePurple>

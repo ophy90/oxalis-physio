@@ -17,6 +17,13 @@ export const HeaderTitleWhite = styled(Typography)({
     alignText: 'center',
 });
 
+export const QuoteWhite = styled(Typography)({
+    color: '#ffffff',
+    fontSize: '40px',
+    fontFamily: 'dahlia-bold',
+    alignText: 'center',
+});
+
 export const SubtitlePurple = styled(Typography)({
     color: '#914e72',
     padding: '25px',
@@ -46,7 +53,11 @@ export const TextPurple = styled(Typography)({
 });
 
 export const useStyles = makeStyles({
-    purpleBox: {
+    purpleLightBox: {
         backgroundColor: '#F4EDF0'
     },
+    purpleDarkBox: {
+        backgroundColor: '#BD94AA'
+    }
+
 });
