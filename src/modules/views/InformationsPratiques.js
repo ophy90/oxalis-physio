@@ -5,7 +5,7 @@ import {HeaderTitlePurple, SubtitlePurple, TextPurple, useStyles} from "../compo
 function InformationsPratiques() {
     const classes = useStyles();
   return (
-      <Container className={classes.whiteBox}>
+      <Container sx={{textAlign: 'center'}} className={classes.whiteBox}>
           <HeaderTitlePurple>
               Informations Pratiques
           </HeaderTitlePurple>
@@ -37,7 +37,7 @@ function InformationsPratiques() {
           <SubtitlePurple>
           Informations Covid
           </SubtitlePurple>
-          <TextPurple>ˆ
+          <TextPurple>
           Les mesures usuelles sont en vigueur.
           </TextPurple>
       </Container>

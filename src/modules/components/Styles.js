@@ -34,7 +34,7 @@ export const SubtitlePurple = styled(Typography)({
 export const SubtitleWhite = styled(Typography)({
     color: '#ffffff',
     padding: '25px',
-    fontSize: '75px',
+    fontSize: '27px',
     fontFamily: 'dahlia-bold',
 });
 

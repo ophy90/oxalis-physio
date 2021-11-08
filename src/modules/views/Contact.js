@@ -5,7 +5,7 @@ import {HeaderTitlePurple, TextPurple, useStyles} from "../components/Styles";
 function Contact() {
     const classes = useStyles();
   return (
-      <Container className={classes.purpleLightBox}>
+      <Container sx={{textAlign: 'center'}} className={classes.purpleLightBox}>
         <HeaderTitlePurple>
           Contact        
         </HeaderTitlePurple>
