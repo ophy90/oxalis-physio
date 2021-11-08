@@ -1,64 +1,6 @@
 import * as React from 'react';
-
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import {styled} from "@mui/styles";
-import {makeStyles} from "@mui/styles";
-
-const color = {
-    color: ''
-};
-
-const HeaderTitlePurple = styled(Typography)({
-    color: '#914e72',
-    padding: '25px',
-    fontSize: '75px',
-    fontFamily: 'dahlia-bold',
-    alignText: 'center',
-});
-
-const HeaderTitleWhite = styled(Typography)({
-    color: '#ffffff',
-    padding: '25px',
-    fontSize: '50px',
-    fontFamily: 'dahlia-bold',
-    alignText: 'center',
-});
-
-const SubtitlePurple = styled(Typography)({
-    color: '#914e72',
-    padding: '25px',
-    fontSize: '27px',
-    fontFamily: 'dahlia-bold',
-});
-
-const SubtitleWhite = styled(Typography)({
-    color: '#ffffff',
-    padding: '25px',
-    fontSize: '75px',
-    fontFamily: 'dahlia-bold',
-});
-
-const TextWhite = styled(Typography)({
-    color: '#ffffff',
-    padding: '25px',
-    fontSize: '16px',
-    fontFamily: 'apercu-light',
-});
-
-const TextPurple = styled(Typography)({
-    color: '#914e72',
-    paddingBottom: '25px',
-    fontSize: '16px',
-    fontFamily: 'apercu-light',
-});
-
-const useStyles = makeStyles({
-    purpleBox: {
-        backgroundColor: '#F4EDF0'
-    },
-});
-
+import {HeaderTitlePurple, SubtitlePurple, TextPurple, useStyles} from "../components/Styles";
 
 function Pneumacorps() {
     const classes = useStyles();
