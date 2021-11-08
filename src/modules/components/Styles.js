@@ -58,6 +58,9 @@ export const useStyles = makeStyles({
     },
     purpleDarkBox: {
         backgroundColor: '#BD94AA'
+    },
+    whiteBox: {
+        backgroundColor: '#ffffff'
     }
 
 });

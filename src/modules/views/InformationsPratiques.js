@@ -5,7 +5,7 @@ import {HeaderTitlePurple, SubtitlePurple, TextPurple, useStyles} from "../compo
 function InformationsPratiques() {
     const classes = useStyles();
   return (
-      <Container className={classes.purpleLightBox}>
+      <Container className={classes.whiteBox}>
           <HeaderTitlePurple>
               Informations Pratiques
           </HeaderTitlePurple>
@@ -41,69 +41,6 @@ function InformationsPratiques() {
           Les mesures usuelles sont en vigueur.
           </TextPurple>
       </Container>
-        
-
-
-        // <div>
-        //   <Grid container spacing={5}>
-        //     <Grid item xs={12} md={4}>
-        //       <Box sx={item}>
-        //         <Box sx={number}>1.</Box>
-        //         <Box
-        //           component="img"
-        //           src="/static/themes/onepirate/productHowItWorks1.svg"
-        //           alt="suitcase"
-        //           sx={image}
-        //         />
-                /* <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Box sx={number}>2.</Box>
-                <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
-                  alt="graph"
-                  sx={image}
-                />
-                <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so
-                  be quick.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Box sx={number}>3.</Box>
-                <Box
-                  component="img" */
-    //               src="/static/themes/onepirate/productHowItWorks3.svg"
-    //               alt="clock"
-    //               sx={image}
-    //             />
-    //             <Typography variant="h5" align="center">
-    //               {'New offers every week. New experiences, new surprises. '}
-    //               {'Your Sundays will no longer be alike.'}
-    //             </Typography>
-    //           </Box>
-    //         </Grid>
-    //       </Grid>
-    //     </div>
-    //     <Button
-    //       color="secondary"
-    //       size="large"
-    //       variant="contained"
-    //       component="a"
-    //       href="/premium-themes/onepirate/sign-up/"
-    //       sx={{ mt: 8 }}
-    //     >
-    //       Get started
-    //     </Button>
-    //   </Container>
-    // </Box>
   );
 }
 
