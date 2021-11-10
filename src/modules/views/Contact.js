@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
 import {HeaderTitlePurple, TextPurple, useStyles} from "../components/Styles";
+import Container from "@mui/material/Container";
 
 function Contact() {
     const classes = useStyles();
   return (
-      <Container sx={{textAlign: 'center'}} className={classes.purpleLightBox}>
+      <div className={classes.purpleLightBox}>
         <HeaderTitlePurple>
           Contact        
         </HeaderTitlePurple>
@@ -16,7 +16,7 @@ function Contact() {
         <br/>
         info@oxalis-respiration.ch
         </TextPurple>
-      </Container>
+      </div>
   );
 }
 

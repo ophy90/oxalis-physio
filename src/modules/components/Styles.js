@@ -54,13 +54,34 @@ export const TextPurple = styled(Typography)({
 
 export const useStyles = makeStyles({
     purpleLightBox: {
-        backgroundColor: '#F4EDF0'
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        backgroundColor: '#F4EDF0',
+        width: '100%',
     },
     purpleDarkBox: {
-        backgroundColor: '#BD94AA'
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        backgroundColor: '#BD94AA',
+        width: '100%',
     },
     whiteBox: {
-        backgroundColor: '#ffffff'
-    }
-
+        backgroundColor: '#ffffff',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+    },
+    purpleDarkBoxCentered: {
+        backgroundColor: '#BD94AA',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+    },
+    textAlignment: {
+        width: '50%'
+    },
 });

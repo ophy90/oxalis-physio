@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
 import {SubtitleWhite, TextWhite, useStyles} from "../components/Styles";
 
 export default function AppFooter() {
     const classes = useStyles();
+
   return (
-      <Container sx={{textAlign: 'center'}}  className={classes.purpleDarkBox} >
+      <div className={classes.purpleDarkBoxCentered}>
           <SubtitleWhite>
           Contact
           <br/>
@@ -19,6 +19,6 @@ export default function AppFooter() {
           <br/>
           © OXALIS 2021. TOUS DROITS RÉSERVÉS.
           </TextWhite>
-      </Container>
+      </div>
   );
 }

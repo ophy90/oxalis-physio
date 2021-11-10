@@ -5,18 +5,17 @@ import {HeaderTitlePurple, SubtitlePurple, TextPurple, useStyles} from "../compo
 function Pneumacorps() {
     const classes = useStyles();
     return (
-        <div>
-            <Container sx={{textAlign: 'center'}} className={classes.purpleLightBox}>
+            <div className={classes.purpleLightBox}>
                 <HeaderTitlePurple>
                     PneumaCorps
                 </HeaderTitlePurple>
-                <TextPurple>
+                <TextPurple className={classes.textAlignment}>
                     La pratique que je propose se base sur une approche qui se nomme PneumaCorps.
                 </TextPurple>
                  <SubtitlePurple>
                     Origine de la pratique
                  </SubtitlePurple>
-                <TextPurple>
+                <TextPurple className={classes.textAlignment}>
                     Cette approche a été développée il y a une quarantaine d’années par Benoît Tremblay,
                     inhalothérapeute québécois. Elle intègre diverses techniques de relaxa- tion, dont le but premier et
                     fondamental est de diminuer les effets du stress chro- nique et d’éviter la limitation de la
@@ -28,7 +27,7 @@ function Pneumacorps() {
                 <SubtitlePurple>
                     Déroulé d’une séance
                 </SubtitlePurple>
-                <TextPurple>
+                <TextPurple className={classes.textAlignment}>
                     Il s’agit d’un travail en profondeur sur des tensions chroniques pour libérer le souffle. La
                     pratique s’adresse à toute personne intéressée par ce propos. Au cours d’une séance, je propose dans
                     un premier temps de prendre conscience des tensions auxquelles nous sommes habitués et que nous
@@ -41,14 +40,13 @@ function Pneumacorps() {
                 <SubtitlePurple>
                     A qui s’adresse cette pratique
                 </SubtitlePurple>
-                <TextPurple>
+                <TextPurple className={classes.textAlignment}>
                     A toute personne désireuse de respirer plus librement. La respiration étant au cœur de la Vie, cela
                     concerne tout un chacun. Autant une personne qui se consi- dère en bonne que des personnes qui
                     souffres de troubles au quotidien liés au stress (anxiété, troubles du sommeil, fatigue chronique,
                     nervosité, irritabilité, dou- leurs chroniques, problèmes de concentration).
                 </TextPurple>
-            </Container>
-        </div>
+            </div>
     )
 }
 

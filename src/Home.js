@@ -11,7 +11,8 @@ import './assets/stylesheet.css';
 
 function Index() {
   return (
-    <React.Fragment>
+    //<React.Fragment>
+    <>
       <AppAppBar />
       <HomePage />
       <Pneumacorps />
@@ -19,7 +20,8 @@ function Index() {
       <InformationsPratiques />
       <Contact />
       <AppFooter />
-    </React.Fragment>
+    </>
+    //</React.Fragment>
   );
 }
 

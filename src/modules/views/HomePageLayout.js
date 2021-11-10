@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import ArrowDown from '../../assets/OXALIS_site_web_boutons_fleche_blanc.svg';
 
 // Hook
-function useWindowSize() {
+export function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
   const [windowSize, setWindowSize] = useState({
