@@ -58,7 +58,7 @@ export const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'center',
         backgroundColor: '#F4EDF0',
-        width: '100%',
+        width: '100%'
     },
     purpleDarkBox: {
         display: 'flex',
@@ -83,5 +83,5 @@ export const useStyles = makeStyles({
     },
     textAlignment: {
         width: '50%'
-    },
+    }
 });

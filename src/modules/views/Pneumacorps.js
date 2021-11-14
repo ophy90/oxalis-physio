@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
 import {HeaderTitlePurple, SubtitlePurple, TextPurple, useStyles} from "../components/Styles";
 
 function Pneumacorps() {

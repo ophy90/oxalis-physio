@@ -4,7 +4,8 @@ import Link from '@mui/material/Link';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
-import Logo from '../../assets/OXALIS_logo_blanc.png'
+import Logo from '../../assets/OXALIS_logo_blanc.png';
+
 
 const rightLink = {
   fontSize: 16,
@@ -22,6 +23,8 @@ function ElevationScroll(props) {
     threshold: 0,
     target: window ? window() : undefined,
   });
+
+
 
   return React.cloneElement(children, {
     elevation: trigger ? 4 : 0,
