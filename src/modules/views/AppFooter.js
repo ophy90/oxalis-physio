@@ -8,15 +8,17 @@ export default function AppFooter() {
       <div className={classes.purpleDarkBoxCentered}>
           <SubtitleWhite>
           Contact
-          <br/>
           </SubtitleWhite>
           <TextWhite>
           Fabia Rüegg
-          <br/>
+          </TextWhite>
+          <TextWhite>
           +41 78 207 70 85
-          <br/>
+          </TextWhite>
+          <TextWhite>
           info@oxalis-respiration.ch
-          <br/>
+          </TextWhite>
+          <TextWhite className={classes.formatCopyRight}>
           © OXALIS 2021. TOUS DROITS RÉSERVÉS.
           </TextWhite>
       </div>

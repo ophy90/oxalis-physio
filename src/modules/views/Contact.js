@@ -6,16 +6,20 @@ function Contact() {
     const classes = useStyles();
   return (
       <div className={classes.purpleLightBox}>
-        <HeaderTitlePurple>
-          Contact        
-        </HeaderTitlePurple>
-        <TextPurple>
-        Les rdv peuvent se prendre par téléphone ou par e-mail. 
-        <br/>
-        +41 78 207 70 85 
-        <br/>
-        info@oxalis-respiration.ch
-        </TextPurple>
+          <div className={classes.blocks}>
+              <HeaderTitlePurple>
+                  Contact
+              </HeaderTitlePurple>
+              <TextPurple>
+                  Les rdv peuvent se prendre par téléphone ou par e-mail.
+              </TextPurple>
+              <TextPurple>
+                  +41 78 207 70 85
+              </TextPurple>
+              <TextPurple>
+                  info@oxalis-respiration.ch
+              </TextPurple>
+          </div>
       </div>
   );
 }

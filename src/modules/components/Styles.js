@@ -3,8 +3,24 @@ import Typography from "@mui/material/Typography";
 
 export const HeaderTitlePurple = styled(Typography)({
     color: '#914e72',
-    padding: '25px',
-    fontSize: '75px',
+    padding: '70px',
+    fontSize: '70px',
+    fontFamily: 'dahlia-bold',
+    alignText: 'center',
+});
+
+export const HeaderTitlePurpleFirstLine = styled(Typography)({
+    color: '#914e72',
+    paddingTop: '70px',
+    fontSize: '70px',
+    fontFamily: 'dahlia-bold',
+    alignText: 'center',
+});
+
+export const HeaderTitlePurpleSecondLine = styled(Typography)({
+    color: '#914e72',
+    paddingBottom: '70px',
+    fontSize: '70px',
     fontFamily: 'dahlia-bold',
     alignText: 'center',
 });
@@ -40,14 +56,12 @@ export const SubtitleWhite = styled(Typography)({
 
 export const TextWhite = styled(Typography)({
     color: '#ffffff',
-    padding: '25px',
     fontSize: '16px',
     fontFamily: 'apercu-light',
 });
 
 export const TextPurple = styled(Typography)({
     color: '#914e72',
-    paddingBottom: '25px',
     fontSize: '16px',
     fontFamily: 'apercu-light',
 });
@@ -69,10 +83,10 @@ export const useStyles = makeStyles({
     },
     whiteBox: {
         backgroundColor: '#ffffff',
+        width: '100%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        width: '100%',
     },
     purpleDarkBoxCentered: {
         backgroundColor: '#BD94AA',
@@ -81,7 +95,14 @@ export const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'center'
     },
-    textAlignment: {
-        width: '50%'
+    blocks: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '50%',
+        paddingBottom: '40px'
+    },
+    formatCopyRight: {
+        padding: '50px',
     }
 });
