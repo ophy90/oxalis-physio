@@ -45,14 +45,14 @@ function AppAppBar() {
               underline="none"
               color="primary"
               height='12px'
-              style={{fontSize: '12px'}}  
+              style={{fontSize: '12px', textShadow: '0 0 1px white'}}
             >{'PNEUMACORPS'}</Link>
             <Link 
               href='/'
               variant="h6"
               underline="none"
               color="primary"
-              style={{fontSize: '12px'}}  
+              style={{fontSize: '12px', textShadow: '0 0 1px white'}}
             >{'À PROPOS'}</Link>
           </Box>
           <Box sx={{display: 'flex', flex:2, justifyContent:'center'}}>
@@ -64,14 +64,14 @@ function AppAppBar() {
               variant="h6"
               underline="none"
               color="primary"
-              style={{fontSize: '12px'}}  
+              style={{fontSize: '12px', textShadow: '0 0 1px white'}}
             >{'INFORMATIONS PRATIQUES'}</Link>
             <Link 
               href='/'
               variant="h6"
               underline="none"
               color="primary"
-              style={{fontSize: '12px'}}  
+              style={{fontSize: '12px', textShadow: '0 0 1px white'}}
             >{'CONTACT'}</Link>
           </Box>
         </Toolbar>

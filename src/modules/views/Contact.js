@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {HeaderTitlePurple, TextPurple, useStyles} from "../components/Styles";
-import Container from "@mui/material/Container";
 
 function Contact() {
     const classes = useStyles();
