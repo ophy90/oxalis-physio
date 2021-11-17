@@ -43,25 +43,25 @@ function InformationsPratiques() {
                       </SubtitlePurple>
                       <TextPurple>
                           Lundi - vendredi
-                          <br/>
+                      </TextPurple>
+                     <TextPurple>
                           Fribourg, Rue Pierre-Abey 33
                       </TextPurple>
               </div>
           <div className={classes.blocks}>
                   <SubtitlePurple>
-                          Liens externes
+                          Liens externes et sources
                   </SubtitlePurple>
-                  <TextPurple>
+                  <TextPurple className={classes.sources}>
                       Site de Benoît Tremblay :
-                      <br/>
                       <a href={'https://www.pneumacorps.com/'}>https://www.pneumacorps.com/</a>
                       <br/>
                       Site de Union PneumaCorps France :
-                      <br/>
                       <a href={'https://pneumacorps2021.wixsite.com/my-site-1'}>https://pneumacorps2021.wixsite.com/my-site-1</a>
+                      <br/>
+                      Site de l'inhalotherapie :
+                      <a href={'https://www.inhalotherapie.com'}>https://www.inhalotherapie.com</a>
                   </TextPurple>
-          </div>
-          <div className={classes.blocks}>
                   <SubtitlePurple>
                           Informations Covid
                   </SubtitlePurple>

@@ -16,17 +16,9 @@ export default function APropos() {
         <div className={classes.blocks}>
             <QuoteWhite>
                 « Je crois que c’est ce sentiment,
-            </QuoteWhite>
-            <QuoteWhite>
                 un mélange de réconfort et de
-            </QuoteWhite>
-            <QuoteWhite>
                 plénitude, qui me pousse à faire
-            </QuoteWhite>
-            <QuoteWhite>
                 ce travail et me rappelle que la
-            </QuoteWhite>
-            <QuoteWhite>
                 vie à quelque chose de magique. »
             </QuoteWhite>
         </div>

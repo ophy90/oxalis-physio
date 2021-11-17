@@ -1,12 +1,12 @@
 import * as React from 'react';
-import Typography from '@mui/material/Typography';
 import HomePageLayout from './HomePageLayout';
 import BackgroundImage from '../../assets/OXALIS_site_web_bg.jpg';
-import {HeaderTitleWhite, HeaderTitleWhiteHomePage, useStyles} from "../components/Styles";
+import {HeaderTitleWhiteHomePage, useStyles} from "../components/Styles";
 
 const backgroundImage = BackgroundImage;
 
 export default function HomePage() {
+  const classes = useStyles();
   return (
     <HomePageLayout
       sxBackground={{
@@ -23,11 +23,11 @@ export default function HomePage() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <HeaderTitleWhiteHomePage className={'homepageTitle'}>
-        Posture et
-        <br/>
-        respiration libre
-      </HeaderTitleWhiteHomePage>
+        <HeaderTitleWhiteHomePage>
+          posture et
+          <br/>
+          respiration libre
+        </HeaderTitleWhiteHomePage>
     </HomePageLayout>
   );
 }

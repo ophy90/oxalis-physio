@@ -7,7 +7,7 @@ export const HeaderTitleWhiteHomePage = styled(Typography)({
     padding: '25px',
     fontSize: '75px',
     fontFamily: 'dahlia-bold',
-    alignText: 'center',
+    textAlign: 'center',
     "@media (max-width: 800px)": {
         fontSize: '50px',
         padding: '60px',
@@ -16,10 +16,10 @@ export const HeaderTitleWhiteHomePage = styled(Typography)({
 
 export const HeaderTitlePurple = styled(Typography)({
     color: '#914e72',
-    padding: '70px',
+    padding: '50px',
     fontSize: '75px',
     fontFamily: 'dahlia-bold',
-    alignText: 'center',
+    textAlign: 'center',
     "@media (max-width: 800px)": {
         fontSize: '30px',
         padding: '30px'
@@ -31,6 +31,7 @@ export const QuotePurple = styled(Typography)({
     paddingBottom: '25px',
     fontSize: '20px',
     fontFamily: 'dahlia-bold',
+    textAlign: 'center',
     fontWeight: 'bold',
     "@media (max-width: 800px)": {
         fontSize: '20px',
@@ -40,10 +41,10 @@ export const QuotePurple = styled(Typography)({
 
 export const HeaderTitlePurpleFirstLine = styled(Typography)({
     color: '#914e72',
-    paddingTop: '70px',
+    paddingTop: '50px',
     fontSize: '75px',
     fontFamily: 'dahlia-bold',
-    alignText: 'center',
+    textAlign: 'center',
     "@media (max-width: 800px)": {
         fontSize: '30px',
         paddingTop: '30px',
@@ -52,10 +53,10 @@ export const HeaderTitlePurpleFirstLine = styled(Typography)({
 
 export const HeaderTitlePurpleSecondLine = styled(Typography)({
     color: '#914e72',
-    paddingBottom: '70px',
+    paddingBottom: '50px',
     fontSize: '75px',
     fontFamily: 'dahlia-bold',
-    alignText: 'center',
+    textAlign: 'center',
     "@media (max-width: 800px)": {
         fontSize: '30px',
         paddingBottom: '30px',
@@ -67,7 +68,7 @@ export const HeaderTitleWhite = styled(Typography)({
     padding: '25px',
     fontSize: '75px',
     fontFamily: 'dahlia-bold',
-    alignText: 'center',
+    textAlign: 'center',
     "@media (max-width: 800px)": {
         fontSize: '30px',
         padding: '30px',
@@ -78,7 +79,7 @@ export const QuoteWhite = styled(Typography)({
     color: '#ffffff',
     fontSize: '40px',
     fontFamily: 'dahlia-bold',
-    alignText: 'center',
+    textAlign: 'center',
     "@media (max-width: 800px)": {
         fontSize: '25px',
     }
@@ -118,6 +119,16 @@ export const TextWhite = styled(Typography)({
 export const TextPurple = styled(Typography)({
     color: '#914e72',
     fontSize: '16px',
+    fontFamily: 'apercu-light',
+    "@media (max-width: 800px)": {
+        fontSize: '14px',
+    }
+});
+
+export const ShortTextPurple = styled(Typography)({
+    color: '#914e72',
+    fontSize: '16px',
+    textAlign: 'left',
     fontFamily: 'apercu-light',
     "@media (max-width: 800px)": {
         fontSize: '14px',
@@ -189,5 +200,19 @@ export const useStyles = makeStyles({
         fontSize: '25px',
         fontFamily: 'dahlia-bold',
         textDecoration: 'underline'
+    },
+    sources: {
+        '& a':{
+            color: '#914e72'
+        },
+        "& a:link": {
+            color: '#914e72'
+        },
+        "& a:hover": {
+            color: '#914e72'
+        },
+        "& a:visited": {
+            color: '#914e72'
+        }
     }
 });
