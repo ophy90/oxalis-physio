@@ -10,7 +10,23 @@ function Pneumacorps() {
                         PneumaCorps
                     </HeaderTitlePurple>
                     <TextPurple>
-                        La pratique que je propose se base sur une approche qui se nomme PneumaCorps.
+                        « Un outil pour libérer la respiration et retrouver un équilibre moins forcé au quotidien »
+                        <br/>
+                        Avez-vous déjà eu ce sentiment que vous aviez besoin de prendre des grandes respirations de
+                        temps en temps ? Des personnes vous ont-elles fait remarquer que vous respiriez de façon
+                        superficielle ? Ou peut-être avez-vous simplement constaté que vous étiez raide dans le haut
+                        du corps, les épaules, la nuque ?
+                        <br/>
+                        Ces situations, à priori banales, mettent en avant que nous avons de nombreuses occasions
+                        de nous crisper au quotidien et qu’en regardant de plus près, force est de constater que
+                        le corps, et spécifiquement la respiration, sont directement impactés. Chacun·e manifeste
+                        les tensions différemment et y est sensible à sa façon. C’est souvent lorsque le trop-plein
+                        déborde que nous sommes forcés de changer quelque chose et de ralentir.
+                        <br/>
+                        En effectuant une séance PneumaCorps, c’est l’occasion de prévenir des conséquences liées au
+                        stress chronique. Cela passe par la prise de conscience de certaines habitudes. La personne
+                        peut retrouver un alignement entre le corps, le mental et la vie quotidienne à partir des
+                        observations et exercices faits durant la séance.
                     </TextPurple>
                 </div>
                 <div className={classes.blocks}>
