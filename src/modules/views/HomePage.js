@@ -2,17 +2,18 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import HomePageLayout from './HomePageLayout';
 import BackgroundImage from '../../assets/OXALIS_site_web_bg.jpg';
+import {HeaderTitleWhite, HeaderTitleWhiteHomePage, useStyles} from "../components/Styles";
 
 const backgroundImage = BackgroundImage;
 
 export default function HomePage() {
   return (
     <HomePageLayout
-        id={'accueil'}
       sxBackground={{
         backgroundImage: `url(${BackgroundImage})`,
-        backgroundColor: '#7fc7d9', // Average color of the background image.
-        backgroundPosition: 'center',
+        backgroundColor: '#7fc7d9', // Average color of the background image.//
+          backgroundPosition: 'center',
+          width: '100%'
       }}
     >
       {/* Increase the network loading priority of the background image. */}
@@ -22,11 +23,11 @@ export default function HomePage() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h1White" marked="center">
-        posture et
+      <HeaderTitleWhiteHomePage className={'homepageTitle'}>
+        Posture et
         <br/>
         respiration libre
-      </Typography>
+      </HeaderTitleWhiteHomePage>
     </HomePageLayout>
   );
 }

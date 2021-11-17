@@ -41,7 +41,7 @@ const HomePageLayoutRoot = styled('section')(({ theme }) => ({
   alignItems: 'center',
   [theme.breakpoints.up('sm')]: {
     height: '80vh',
-    minHeight: 500,
+    minHeight: 375,
     maxHeight: 1300,
   },
 }));
