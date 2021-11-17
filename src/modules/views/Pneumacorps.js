@@ -37,13 +37,22 @@ function Pneumacorps() {
                         Origine de la pratique
                     </SubtitlePurple>
                     <TextPurple>
-                        Cette approche a été développée il y a une quarantaine d’années par Benoît Tremblay,
-                        inhalothérapeute québécois. Elle intègre diverses techniques de relaxa- tion, dont le but premier et
-                        fondamental est de diminuer les effets du stress chro- nique et d’éviter la limitation de la
-                        capacité respiratoire. Elle se définit comme de la relaxation et réorientation respiratoire intégrée
-                        (RRRI). La vision holistique de l’humain est au cœur de ce travail et tend vers un alignement
-                        corps-âme-esprit. Les outils utilisés sont régulièrement actualisés et modifiés par Benoît afin de
-                        cor- respondre au mieux aux besoins de chacun.
+                        Benoît Tremblay, qui est à l’origine de Pneumacorps, la définit comme de la « Relaxation et
+                        Réorientation Respiratoire Intégrée » (RRRI). Cette pratique trouve ses prémices dans les
+                        années huitante au Québec. Benoît Tremblay y pratique alors l’inhalothérapie, un métier de la
+                        santé spécialisé en soins cardiorespiratoires et en assistance anesthésique (respiratory
+                        therapist en anglais) . Il constatera rapidement que les techniques respiratoires et les
+                        soins médicaux voient leur efficacité augmenter lorsque l’on tient compte en premier lieu
+                        de l’état de tension de base, propres à chaque personne. Progressivement, il développera
+                        une façon d’optimiser les traitements usuels et soulager rapidement les personnes atteintes
+                        de maladies pulmonaires au gré de ses observations, sa sensibilité et ses recherches empiriques.
+                        Sa façon de pratiquer, axée sur le besoin de l’individu, le poussera sans cesse et actuellement
+                        encore, à faire évoluer ses techniques.
+                        <br/>
+                        <br/>
+                        Il en résulte à ce jour une approche adaptée aussi bien à des personnes atteintes de problèmes
+                        respiratoires que sans trouble pulmonaire. L’objectif principal est que chacun·e retrouve et ait les outils pour retrouver une respiration libre de tension superflue. Elle n’est pas basée sur des techniques respiratoires à proprement parler mais intègre diverses techniques de relaxation ainsi que des mobilisations manuelles.
+
                     </TextPurple>
                 </div>
                  <div className={classes.blocks}>
