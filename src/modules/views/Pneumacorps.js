@@ -82,7 +82,6 @@ function Pneumacorps() {
                         musculo-squelettiques) mais elle ne vise pas à les traiter spécifiquement. En revanche, les
                         séances PneumaCorps sont complémentaires aux autres techniques ou thérapies (telles que yoga,
                         ostéopathie, physiothérapie, chant, etc).
-
                     </TextPurple>
                 </div>
             </div>

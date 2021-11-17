@@ -13,25 +13,35 @@ export default function APropos() {
             </HeaderTitleWhite>
             <img src={OXALIS_photo_fabia} alt={"portrait"} height={'300px'} width={'390px'}/>
         </div>
-      <div className={classes.blocks}>
-          <TextWhite className={classes.textAlignment}>
-              Une quarantaine d’années par Benoît Tremblay, inhalothérapeute québécois. Elle intègre diverses techniques de relaxation, dont le but premier et fondamental est de diminuer les effets du stress chronique et d’éviter la limitation de la capacité respiratoire. Elle se définit comme de la relaxation et réorientation respiratoire intégrée (RRRI). La vision holistique de l’humain est au cœur de ce travail et tend vers un alignement corps-âme-esprit. Les outils utilisés sont régulièrement actuali- sés et modifiés par Benoît afin de correspondre au mieux aux besoins de chacun.
-          </TextWhite>
-      </div>
         <div className={classes.blocks}>
             <QuoteWhite>
-                « On est bien peu de chose,
+                « Je crois que c’est ce sentiment,
             </QuoteWhite>
             <QuoteWhite>
-                Et mon amie la rose
+                un mélange de réconfort et de
             </QuoteWhite>
             <QuoteWhite>
-                Me l’a dit ce matin. »
+                plénitude, qui me pousse à faire
+            </QuoteWhite>
+            <QuoteWhite>
+                ce travail et me rappelle que la
+            </QuoteWhite>
+            <QuoteWhite>
+                vie à quelque chose de magique. »
             </QuoteWhite>
         </div>
       <div className={classes.blocks}>
           <TextWhite className={classes.textAlignment}>
-              Commencer avec ce qui est là dans l’instant, l’évaluation se fait à la marche, en position assise et couchée. Ensuite, avec les éléments mis en lumière par l’obser- vation, commence le travail de rééquilibration, qui consiste en des mobilisations, des postures, des étirements doux. Et finalement, la personne aura un ou plusieurs exercices à refaire chez elle, pour ancrer le travail et s’autonomiser au quotidien.
+              En 2021 j’ai décidé de me réorienter et de passer de physiothérapeute diplômée, métier que j’ai exercé
+              pendant sept ans, à praticienne PneumaCorps. Cela fait depuis 2014 que je suis formée à cette pratique et
+              c’est maintenant que j‘ai envie de m’y consacrer entièrement. Nous n’avons pas d’autre choix que de vivre
+              avec le corps que nous avons et comme nous avons toutes et tous des trains de vie soutenus, il est
+              forcément mis intensément à contribution. Que nous ayons un métier physique, une charge mentale élevée ou
+              des préoccupations de la vie quotidienne, le corps reflète à l’extérieur qui nous sommes à l’intérieur.
+              Pour tout vous dire, je suis à chaque fois épatée par l’impact qu’on les exercices sur mon propre
+              bien-être psychique et physique. De constater que chaque jour, il est possible de s’offrir des instants
+              de pause à l’intérieur de soi et de simplicité, me procure un immense plaisir. Ainsi les évènements du
+              quotidien prennent une autre tournure lorsque je sens que je peux me ressourcer intérieurement.
           </TextWhite>
       </div>
     </div>
