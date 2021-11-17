@@ -12,7 +12,7 @@ function InformationsPratiques() {
   return (
       <div className={classes.whiteBox}>
               <div className={classes.blocks}>
-                      <HeaderTitlePurpleFirstLine>
+                      <HeaderTitlePurpleFirstLine id={'informations'}>
                           Informations
                       </HeaderTitlePurpleFirstLine>
                   <HeaderTitlePurpleSecondLine>

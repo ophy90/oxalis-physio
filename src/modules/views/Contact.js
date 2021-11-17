@@ -6,7 +6,7 @@ function Contact() {
   return (
       <div className={classes.purpleLightBox}>
           <div className={classes.blocks}>
-              <HeaderTitlePurple>
+              <HeaderTitlePurple id={'contact'}>
                   Contact
               </HeaderTitlePurple>
               <TextPurple>

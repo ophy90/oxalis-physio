@@ -4,33 +4,45 @@ import Typography from "@mui/material/Typography";
 export const HeaderTitlePurple = styled(Typography)({
     color: '#914e72',
     padding: '70px',
-    fontSize: '70px',
+    fontSize: '75px',
     fontFamily: 'dahlia-bold',
     alignText: 'center',
+    "@media (max-width: 800px)": {
+        fontSize: '50px',
+    }
 });
 
 export const HeaderTitlePurpleFirstLine = styled(Typography)({
     color: '#914e72',
     paddingTop: '70px',
-    fontSize: '70px',
+    fontSize: '75px',
     fontFamily: 'dahlia-bold',
     alignText: 'center',
+    "@media (max-width: 800px)": {
+        fontSize: '50px',
+    }
 });
 
 export const HeaderTitlePurpleSecondLine = styled(Typography)({
     color: '#914e72',
     paddingBottom: '70px',
-    fontSize: '70px',
+    fontSize: '75px',
     fontFamily: 'dahlia-bold',
     alignText: 'center',
+    "@media (max-width: 800px)": {
+        fontSize: '50px',
+    }
 });
 
 export const HeaderTitleWhite = styled(Typography)({
     color: '#ffffff',
     padding: '25px',
-    fontSize: '50px',
+    fontSize: '75px',
     fontFamily: 'dahlia-bold',
     alignText: 'center',
+    "@media (max-width: 800px)": {
+        fontSize: '50px',
+    }
 });
 
 export const QuoteWhite = styled(Typography)({
@@ -65,6 +77,7 @@ export const TextPurple = styled(Typography)({
     fontSize: '16px',
     fontFamily: 'apercu-light',
 });
+
 
 export const useStyles = makeStyles({
     purpleLightBox: {
@@ -104,5 +117,11 @@ export const useStyles = makeStyles({
     },
     formatCopyRight: {
         padding: '50px',
+    },
+    textNavbar: {
+        color: '#914e72',
+        fontSize: '25px',
+        fontFamily: 'dahlia-bold',
+        textDecoration: 'underline'
     }
 });

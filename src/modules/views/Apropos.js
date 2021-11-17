@@ -8,7 +8,7 @@ export default function APropos() {
   return (
     <div className={classes.purpleDarkBox}>
         <div className={classes.blocks}>
-            <HeaderTitleWhite>
+            <HeaderTitleWhite id={'aPropos'}>
                 A propos
             </HeaderTitleWhite>
             <img src={OXALIS_photo_fabia} alt={"portrait"} height={'300px'} width={'390px'}/>

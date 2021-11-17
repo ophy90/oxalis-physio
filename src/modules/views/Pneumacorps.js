@@ -6,7 +6,7 @@ function Pneumacorps() {
     return (
             <div className={classes.purpleLightBox}>
                 <div className={classes.blocks}>
-                    <HeaderTitlePurple>
+                    <HeaderTitlePurple id={'pneumacorps'}>
                         PneumaCorps
                     </HeaderTitlePurple>
                     <TextPurple>

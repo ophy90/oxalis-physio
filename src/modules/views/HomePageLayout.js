@@ -20,8 +20,8 @@ export function useWindowSize() {
     function handleResize() {
       // Set window width/height to state
       setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: Math.min(window.outerWidth, window.innerWidth),
+        height: Math.min(window.outerHeight, window.innerHeight),
       });
     }
     // Add event listener
