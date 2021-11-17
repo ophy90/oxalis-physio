@@ -12,6 +12,14 @@ export const HeaderTitlePurple = styled(Typography)({
     }
 });
 
+export const QuotePurple = styled(Typography)({
+    color: '#914e72',
+    paddingBottom: '25px',
+    fontSize: '20px',
+    fontFamily: 'dahlia-bold',
+    fontWeight: 'bold',
+});
+
 export const HeaderTitlePurpleFirstLine = styled(Typography)({
     color: '#914e72',
     paddingTop: '70px',

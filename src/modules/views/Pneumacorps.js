@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {HeaderTitlePurple, SubtitlePurple, TextPurple, useStyles} from "../components/Styles";
+import {HeaderTitlePurple, QuotePurple, SubtitlePurple, TextPurple, useStyles} from "../components/Styles";
 
 function Pneumacorps() {
     const classes = useStyles();
@@ -9,19 +9,22 @@ function Pneumacorps() {
                     <HeaderTitlePurple id={'pneumacorps'}>
                         PneumaCorps
                     </HeaderTitlePurple>
-                    <TextPurple>
+                    <QuotePurple>
                         « Un outil pour libérer la respiration et retrouver un équilibre moins forcé au quotidien »
-                        <br/>
+                    </QuotePurple>
+                    <TextPurple>
                         Avez-vous déjà eu ce sentiment que vous aviez besoin de prendre des grandes respirations de
                         temps en temps ? Des personnes vous ont-elles fait remarquer que vous respiriez de façon
                         superficielle ? Ou peut-être avez-vous simplement constaté que vous étiez raide dans le haut
                         du corps, les épaules, la nuque ?
+                        <br/>
                         <br/>
                         Ces situations, à priori banales, mettent en avant que nous avons de nombreuses occasions
                         de nous crisper au quotidien et qu’en regardant de plus près, force est de constater que
                         le corps, et spécifiquement la respiration, sont directement impactés. Chacun·e manifeste
                         les tensions différemment et y est sensible à sa façon. C’est souvent lorsque le trop-plein
                         déborde que nous sommes forcés de changer quelque chose et de ralentir.
+                        <br/>
                         <br/>
                         En effectuant une séance PneumaCorps, c’est l’occasion de prévenir des conséquences liées au
                         stress chronique. Cela passe par la prise de conscience de certaines habitudes. La personne
