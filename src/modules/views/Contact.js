@@ -15,7 +15,7 @@ function Contact() {
                   </TextPurple>
                   <br/>
                   <TextPurple>
-                      +41 78 207 70 85 / info@oxalis-respiration.chs
+                      +41 78 207 70 85 / info@oxalis-respiration.ch
                   </TextPurple>
               </div>
           </div>
