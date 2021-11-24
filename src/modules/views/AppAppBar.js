@@ -4,10 +4,12 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import Logo from '../../assets/OXALIS_logo_blanc.png';
+import Cross from '../../assets/OXALIS_bouton_croix_blanc.svg';
 import {useEffect, useState} from "react";
 import {makeStyles} from "@mui/styles";
-import {Drawer, IconButton} from "@mui/material";
+import {Drawer} from "@mui/material";
 import Menu from '../../assets/OXALIS_site_web_boutons_menu.svg';
+import IconButton from "@mui/material/IconButton";
 
 const rightLink = {
     fontSize: 16,
@@ -54,12 +56,18 @@ const useStyles = makeStyles(() => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-evenly',
-        alignItems: 'center'
+        alignItems: 'center',
+        position: 'relative'
     },
+    relativeSvg: {
+        position: "absolute",
+        right: '70px',
+        top: '100px',
+    }
 }));
 
 const DisplayMobile = () => {
-    const {header, menuButton, drawerContainer} = useStyles();
+    const {header, menuButton, drawerContainer, relativeSvg} = useStyles();
     const [drawerOpen, setDrawerOpen] = useState(false);
     const classes = useStyles();
     return (
@@ -82,6 +90,17 @@ const DisplayMobile = () => {
                 }}
             >
                 <div className={drawerContainer}>
+                    <div className={relativeSvg}>
+                            <Box
+                                component="img"
+                                src={Cross}
+                                height="32px"
+                                width="24px"
+                                alt="arrow down"
+                                sx={{ position: 'absolute', bottom: 32}}
+                                onClick={() => setDrawerOpen(false)}
+                            />
+                    </div>
                     <a href={'#accueil'}
                        variant="h6"
                        underline="underline"
