@@ -27,7 +27,7 @@ function InformationsPratiques() {
                          Tarifs et durée
                  </SubtitlePurple>
                  <TextPurple>
-                     Une séance coûte 100.- .
+                     Une séance coûte CHF 100.
                      <br/>
                      Payement en espèce uniquement (non remboursé par les caisses maladie).
                      <br/>
@@ -45,7 +45,7 @@ function InformationsPratiques() {
                           Lundi - vendredi
                       </TextPurple>
                      <TextPurple>
-                          Fribourg, Rue Pierre-Abey 33
+                          Fribourg, Rue Pierre-Aeby 33
                       </TextPurple>
               </div>
           <div className={classes.blocks}>

@@ -19,8 +19,8 @@ function Pneumacorps() {
                         du corps, les épaules, la nuque ?
                         <br/>
                         <br/>
-                        Ces situations, à priori banales, mettent en avant que nous avons de nombreuses occasions
-                        de nous crisper au quotidien et qu’en regardant de plus près, force est de constater que
+                        Ces situations de la vie courante, à priori banales, mettent en avant que nous avons de nombreuses occasions
+                        de nous crisper et qu’en regardant de plus près, force est de constater que
                         le corps, et spécifiquement la respiration, sont directement impactés. Chacun·e manifeste
                         les tensions différemment et y est sensible à sa façon. C’est souvent lorsque le trop-plein
                         déborde que nous sommes forcés de changer quelque chose et de ralentir.
@@ -43,9 +43,9 @@ function Pneumacorps() {
                         santé spécialisé en soins cardiorespiratoires et en assistance anesthésique (respiratory
                         therapist en anglais) . Il constatera rapidement que les techniques respiratoires et les
                         soins médicaux voient leur efficacité augmenter lorsque l’on tient compte en premier lieu
-                        de l’état de tension de base, propres à chaque personne. Progressivement, il développera
+                        de l’état de tension, propres à chaque personne. Progressivement, il développera
                         une façon d’optimiser les traitements usuels et soulager rapidement les personnes atteintes
-                        de maladies pulmonaires au gré de ses observations, sa sensibilité et ses recherches empiriques.
+                        de maladies pulmonaires de par ses observations, sa sensibilité et ses recherches empiriques.
                         Sa façon de pratiquer, axée sur le besoin de l’individu, le poussera sans cesse et actuellement
                         encore, à faire évoluer ses techniques.
                         <br/>

@@ -30,9 +30,9 @@ export default function APropos() {
               avec le corps que nous avons et comme nous avons toutes et tous des trains de vie soutenus, il est
               forcément mis intensément à contribution. Que nous ayons un métier physique, une charge mentale élevée ou
               des préoccupations de la vie quotidienne, le corps reflète à l’extérieur qui nous sommes à l’intérieur.
-              Pour tout vous dire, je suis à chaque fois épatée par l’impact qu’on les exercices sur mon propre
+              Pour tout vous dire, je suis à chaque fois épatée par l’impact qu’ont les exercices sur mon propre
               bien-être psychique et physique. De constater que chaque jour, il est possible de s’offrir des instants
-              de pause à l’intérieur de soi et de simplicité, me procure un immense plaisir. Ainsi les évènements du
+              de pause et de simplicité, me procure un immense plaisir. Ainsi les évènements du
               quotidien prennent une autre tournure lorsque je sens que je peux me ressourcer intérieurement.
           </TextWhite>
       </div>
