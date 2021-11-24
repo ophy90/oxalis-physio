@@ -57,11 +57,11 @@ const useStyles = makeStyles(() => ({
         flexDirection: 'column',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        position: 'relative'
+        position: 'relative',
     },
     relativeSvg: {
         position: "absolute",
-        right: '70px',
+        left: '70px',
         top: '100px',
     }
 }));
@@ -96,7 +96,7 @@ const DisplayMobile = () => {
                                 src={Cross}
                                 height="32px"
                                 width="24px"
-                                alt="arrow down"
+                                alt="cross white"
                                 sx={{ position: 'absolute', bottom: 32}}
                                 onClick={() => setDrawerOpen(false)}
                             />

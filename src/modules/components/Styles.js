@@ -214,5 +214,11 @@ export const useStyles = makeStyles({
         "& a:visited": {
             color: '#914e72'
         }
+    },
+    arrowLinkContactContainer: {
+        position: 'relative'
+    },
+    arrowLinkContact: {
+        position: 'absolute',
     }
 });
