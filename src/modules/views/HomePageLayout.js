@@ -87,14 +87,16 @@ function HomePageLayout(props) {
           }}
         />
         <Background sx={sxBackground} />
-        <Box
-          component="img"
-          src={ArrowDown}
-          height="32px"
-          width="24px"
-          alt="arrow down"
-          sx={{ position: 'absolute', bottom: 32 }}
-        />
+         <a href={'#pneumacorps'}>
+             <Box
+                 component="img"
+                 src={ArrowDown}
+                 height="32px"
+                 width="24px"
+                 alt="arrow down"
+                 sx={{ position: 'absolute', bottom: 32 }}
+             />
+         </a>
       </Container>
     </HomePageLayoutRoot>
   );
