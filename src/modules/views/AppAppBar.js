@@ -164,7 +164,7 @@ const DisplayMobile = () => {
                                 textDecoration: 'underline'
                             },
                         }}
-                    >{'Informations pratiques'}</a>
+                    >{'Informations'}</a>
                     <a
                         href='#contact'
                         variant="h6"
