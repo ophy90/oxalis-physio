@@ -9,7 +9,6 @@ import {useEffect, useState} from "react";
 import {makeStyles} from "@mui/styles";
 import {Drawer} from "@mui/material";
 import Menu from '../../assets/OXALIS_site_web_boutons_menu.svg';
-import IconButton from "@mui/material/IconButton";
 
 const rightLink = {
     fontSize: 16,
