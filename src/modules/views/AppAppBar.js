@@ -101,7 +101,7 @@ const DisplayMobile = () => {
                                 onClick={() => setDrawerOpen(false)}
                             />
                     </div>
-                    <a href={'#accueil'}
+                    <a href='#accueil'
                        variant="h6"
                        underline="underline"
                        color="white"
@@ -118,7 +118,7 @@ const DisplayMobile = () => {
                                },
                            }
                        }}>{'Accueil'}</a>
-                    <a href={'#pneumacorps'}
+                    <a href='#pneumacorps'
                        variant="h6"
                        underline="underline"
                        color="white"
@@ -191,7 +191,7 @@ const DisplayDesktop = () => {
     return (
         <Toolbar sx={{justifyContent: 'space-between'}}>
             <Box sx={{display: 'flex', flex: 1, justifyContent: 'space-between'}}>
-                <a href={'#pneumacorps'}
+                <a href='#pneumacorps'
                    variant="h6"
                    underline="none"
                    color="white"
@@ -232,7 +232,7 @@ const DisplayDesktop = () => {
                     }}
                 >{'INFORMATIONS PRATIQUES'}</a>
                 <a
-                    href='#contact'
+                    href={'#contact'}
                     variant="h6"
                     underline="none"
                     color="primary"

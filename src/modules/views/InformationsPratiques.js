@@ -16,7 +16,7 @@ function InformationsPratiques() {
                           Informations
                       </HeaderTitlePurpleFirstLine>
                   <HeaderTitlePurpleSecondLine>
-                      Pratiques
+                      pratiques
                   </HeaderTitlePurpleSecondLine>
                       <TextPurple>
                           Être habillé·e confortablement (training, habits souples par exemple), vous allez garder vos vêtements.
@@ -27,13 +27,13 @@ function InformationsPratiques() {
                          Tarifs et durée
                  </SubtitlePurple>
                  <TextPurple>
-                     Une séance coûte CHF 100.
+                     Une séance coûte CHF 100.-
                      <br/>
-                     Payement en espèce uniquement (non remboursé par les caisses maladie).
+                     Payement en espèces uniquement (non remboursé par les caisses maladie).
                      <br/>
                      <br/>
                      Durée approximative de 60 à 90 minutes (première séance) puis entre 45 et 60 minutes pour les
-                     séances suivantes. A noter que le nombre de séance ne peut être défini en avance, la prise en
+                     séances suivantes. À noter que le nombre de séances ne peut être défini en avance, la prise en
                      charge est en fonction de chaque personne.
                  </TextPurple>
          </div>

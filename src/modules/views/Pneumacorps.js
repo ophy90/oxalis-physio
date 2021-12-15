@@ -37,21 +37,21 @@ function Pneumacorps() {
                         Origine de la pratique
                     </SubtitlePurple>
                     <TextPurple>
-                        Benoît Tremblay, qui est à l’origine de Pneumacorps, la définit comme de la « Relaxation et
+                        Benoît Tremblay, qui est à l’origine de PneumaCorps, la définit comme de la « Relaxation et
                         Réorientation Respiratoire Intégrée » (RRRI). Cette pratique trouve ses prémices dans les
                         années huitante au Québec. Benoît Tremblay y pratique alors l’inhalothérapie, un métier de la
                         santé spécialisé en soins cardiorespiratoires et en assistance anesthésique (respiratory
                         therapist en anglais) . Il constatera rapidement que les techniques respiratoires et les
                         soins médicaux voient leur efficacité augmenter lorsque l’on tient compte en premier lieu
-                        de l’état de tension, propres à chaque personne. Progressivement, il développera
-                        une façon d’optimiser les traitements usuels et soulager rapidement les personnes atteintes
+                        de l’état de tension propres à chaque personne. Progressivement, il développera
+                        une façon d’optimiser les traitements usuels et de soulager rapidement les personnes atteintes
                         de maladies pulmonaires de par ses observations, sa sensibilité et ses recherches empiriques.
                         Sa façon de pratiquer, axée sur le besoin de l’individu, le poussera sans cesse et actuellement
-                        encore, à faire évoluer ses techniques.
+                        encore, à faire évoluer cette approche.
                         <br/>
                         <br/>
                         Il en résulte à ce jour une approche adaptée aussi bien à des personnes atteintes de problèmes
-                        respiratoires que sans trouble pulmonaire. L’objectif principal est que chacun·e retrouve et ait les outils pour retrouver une respiration libre de tension superflue. Elle n’est pas basée sur des techniques respiratoires à proprement parler mais intègre diverses techniques de relaxation ainsi que des mobilisations manuelles.
+                        respiratoires que sans troubles pulmonaires. L’objectif principal est que chacun·e retrouve et ait les outils pour retrouver une respiration libre de tension superflue. Elle n’est pas basée sur des techniques respiratoires à proprement parler mais intègre diverses techniques de relaxation ainsi que des mobilisations manuelles.
 
                     </TextPurple>
                 </div>
@@ -71,7 +71,7 @@ function Pneumacorps() {
                  </div>
                 <div className={classes.blocks}>
                     <SubtitlePurple>
-                        A qui s’adresse cette pratique
+                        À qui s’adresse cette pratique
                     </SubtitlePurple>
                     <TextPurple>
                         La respiration étant au cœur de la Vie, cette pratique s’adresse à « tout le monde ». Elle

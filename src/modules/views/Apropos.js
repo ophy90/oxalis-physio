@@ -9,7 +9,7 @@ export default function APropos() {
     <div className={classes.purpleDarkBox}>
         <div className={classes.blocks}>
             <HeaderTitleWhite id={'aPropos'}>
-                A propos
+                À propos
             </HeaderTitleWhite>
             <img src={OXALIS_photo_fabia} alt={"portrait"} height={'300px'} width={'390px'}/>
         </div>
@@ -19,7 +19,7 @@ export default function APropos() {
                 un mélange de réconfort et de
                 plénitude, qui me pousse à faire
                 ce travail et me rappelle que la
-                vie à quelque chose de magique. »
+                vie a quelque chose de magique. »
             </QuoteWhite>
         </div>
       <div className={classes.blocks}>
