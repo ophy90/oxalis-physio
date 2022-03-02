@@ -42,10 +42,10 @@ function InformationsPratiques() {
                               Horaires & lieu
                       </SubtitlePurple>
                       <TextPurple>
-                          Lundi - vendredi
+                          Jeudi et vendredi
                       </TextPurple>
                      <TextPurple>
-                          Fribourg, Rue Pierre-Aeby 33
+                         Cabinet de santé Sphère, Boulevard de Pérolles 6, 1700 Fribourg
                       </TextPurple>
               </div>
           <div className={classes.blocks}>
