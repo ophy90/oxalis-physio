@@ -5,7 +5,7 @@ export default function AppFooter() {
     const classes = useStyles();
 
   return (
-      <div className={classes.purpleDarkBoxCentered}>
+      <div className={classes.purpleDarkBoxCentered} id={'contact'}>
           <SubtitleWhite>
           Contact
           </SubtitleWhite>

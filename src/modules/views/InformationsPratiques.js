@@ -44,6 +44,9 @@ function InformationsPratiques() {
                       <TextPurple>
                           Jeudi et vendredi
                       </TextPurple>
+                      <TextPurple>
+                          Les rdv se prennent par téléphone ou par e-mail
+                      </TextPurple>
                      <TextPurple>
                          Cabinet de santé Sphère, Boulevard de Pérolles 6, 1700 Fribourg
                       </TextPurple>
