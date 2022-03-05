@@ -8,7 +8,7 @@ export const HeaderTitleWhiteHomePage = styled(Typography)({
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '50px',
+        fontSize: '40px',
         padding: '60px',
     }
 });
@@ -20,19 +20,19 @@ export const HeaderTitlePurple = styled(Typography)({
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '30px',
+        fontSize: '50px',
         padding: '30px'
     }
 });
 
 export const HeaderTitleWhite = styled(Typography)({
     color: '#ffffff',
-    padding: '25px',
+    padding: '50px',
     fontSize: '75px',
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '30px',
+        fontSize: '40px',
         padding: '30px',
     }
 });
@@ -57,7 +57,7 @@ export const HeaderTitlePurpleFirstLine = styled(Typography)({
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '30px',
+        fontSize: '40px',
         paddingTop: '30px',
     }
 });
@@ -69,7 +69,7 @@ export const HeaderTitlePurpleSecondLine = styled(Typography)({
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '30px',
+        fontSize: '40px',
         paddingBottom: '30px',
     }
 });
@@ -81,7 +81,7 @@ export const QuoteWhite = styled(Typography)({
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '25px',
+        fontSize: '20px',
     }
 });
 
@@ -119,26 +119,18 @@ export const TextWhite = styled(Typography)({
 export const TextPurple = styled(Typography)({
     color: '#914e72',
     fontSize: '16px',
+    alignItems: 'center',
     fontFamily: 'apercu-light',
     "@media (max-width: 800px)": {
         fontSize: '14px',
-    }
+    },
+    padding: '5px'
 });
-
-export const ShortTextPurple = styled(Typography)({
-    color: '#914e72',
-    fontSize: '16px',
-    textAlign: 'left',
-    fontFamily: 'apercu-light',
-    "@media (max-width: 800px)": {
-        fontSize: '14px',
-    }
-});
-
 
 export const useStyles = makeStyles({
     purpleLightBox: {
         display: 'flex',
+        padding: '75px',
         flexDirection: 'column',
         alignItems: 'center',
         backgroundColor: '#F4EDF0',
@@ -149,6 +141,7 @@ export const useStyles = makeStyles({
     },
     purpleDarkBox: {
         display: 'flex',
+        padding: '75px',
         flexDirection: 'column',
         alignItems: 'center',
         backgroundColor: '#BD94AA',
@@ -160,6 +153,7 @@ export const useStyles = makeStyles({
     whiteBox: {
         backgroundColor: '#ffffff',
         width: '100%',
+        padding: '75px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -170,6 +164,7 @@ export const useStyles = makeStyles({
     purpleDarkBoxCentered: {
         backgroundColor: '#BD94AA',
         width: '100%',
+        padding: '75px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
