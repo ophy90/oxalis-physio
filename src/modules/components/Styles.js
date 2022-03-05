@@ -20,7 +20,7 @@ export const HeaderTitlePurple = styled(Typography)({
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '50px',
+        fontSize: '40px',
         padding: '30px'
     }
 });
@@ -120,6 +120,18 @@ export const TextPurple = styled(Typography)({
     color: '#914e72',
     fontSize: '16px',
     alignItems: 'center',
+    fontFamily: 'apercu-light',
+    "@media (max-width: 800px)": {
+        fontSize: '14px',
+    },
+    padding: '5px'
+});
+
+export const TextPurpleSmallerParagraphs = styled(Typography)({
+    color: '#914e72',
+    fontSize: '16px',
+    alignItems: 'center',
+    textAlign: 'center',
     fontFamily: 'apercu-light',
     "@media (max-width: 800px)": {
         fontSize: '14px',
