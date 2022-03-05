@@ -1,6 +1,5 @@
 import {makeStyles, styled} from "@mui/styles";
 import Typography from "@mui/material/Typography";
-import * as url from "url";
 
 export const HeaderTitleWhiteHomePage = styled(Typography)({
     color: '#ffffff',
@@ -23,6 +22,18 @@ export const HeaderTitlePurple = styled(Typography)({
     "@media (max-width: 800px)": {
         fontSize: '30px',
         padding: '30px'
+    }
+});
+
+export const HeaderTitleWhite = styled(Typography)({
+    color: '#ffffff',
+    padding: '25px',
+    fontSize: '75px',
+    fontFamily: 'dahlia-bold',
+    textAlign: 'center',
+    "@media (max-width: 800px)": {
+        fontSize: '30px',
+        padding: '30px',
     }
 });
 
@@ -63,17 +74,6 @@ export const HeaderTitlePurpleSecondLine = styled(Typography)({
     }
 });
 
-export const HeaderTitleWhite = styled(Typography)({
-    color: '#ffffff',
-    padding: '25px',
-    fontSize: '75px',
-    fontFamily: 'dahlia-bold',
-    textAlign: 'center',
-    "@media (max-width: 800px)": {
-        fontSize: '30px',
-        padding: '30px',
-    }
-});
 
 export const QuoteWhite = styled(Typography)({
     color: '#ffffff',

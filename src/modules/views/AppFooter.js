@@ -1,14 +1,14 @@
 import * as React from 'react';
-import {SubtitleWhite, TextWhite, useStyles} from "../components/Styles";
+import {HeaderTitleWhite, TextWhite, useStyles} from "../components/Styles";
 
 export default function AppFooter() {
     const classes = useStyles();
 
   return (
       <div className={classes.purpleDarkBoxCentered} id={'contact'}>
-          <SubtitleWhite>
+          <HeaderTitleWhite>
           Contact
-          </SubtitleWhite>
+          </HeaderTitleWhite>
           <TextWhite>
           Fabia Rüegg
           </TextWhite>
