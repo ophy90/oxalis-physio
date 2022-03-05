@@ -19,7 +19,8 @@ function InformationsPratiques() {
                       pratiques
                   </HeaderTitlePurpleSecondLine>
                       <TextPurple>
-                          Être habillé·e confortablement (training, habits souples par exemple), vous allez garder vos vêtements.
+                          <b>Être habillé·e confortablement</b> (training, habits souples par exemple), vous allez
+                          garder vos vêtements.
                       </TextPurple>
               </div>
          <div className={classes.blocks}>
@@ -42,13 +43,13 @@ function InformationsPratiques() {
                               Horaires & lieu
                       </SubtitlePurple>
                       <TextPurple>
-                          Jeudi et vendredi
+                          <b>Jeudi</b> et <b>vendredi</b>
                       </TextPurple>
                       <TextPurple>
-                          Les rdv se prennent par téléphone ou par e-mail
+                          La prise de RDV se fait par <b>téléphone</b> ou par <b>e-mail</b> uniquement.
                       </TextPurple>
                      <TextPurple>
-                         Cabinet de santé Sphère, Boulevard de Pérolles 6, 1700 Fribourg
+                         Cabinet de santé <b>Sphère</b>, Boulevard de Pérolles 6, 1700 Fribourg
                       </TextPurple>
               </div>
           <div className={classes.blocks}>
@@ -73,7 +74,7 @@ function InformationsPratiques() {
                           Informations Covid
                   </SubtitlePurple>
                   <TextPurple>
-                          Les mesures usuelles sont en vigueur.
+                          Selon recommandations du Conseil Fédéral
                   </TextPurple>
           </div>
       </div>
