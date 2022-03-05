@@ -62,20 +62,20 @@ function InformationsPratiques() {
                   </SubtitlePurple>
                   <TextPurple className={classes.sources}>
                       Site du cabinet de Santé Sphère: <span> </span>
-                      <a href={'https://www.cabinet-sphere.ch/'} target={"_blank"}>www.cabinet-sphere.ch/</a>
+                      <a href={'https://www.cabinet-sphere.ch/'} style={{color: '#BD94AA'}} target={"_blank"}>www.cabinet-sphere.ch</a>
                   </TextPurple>
                   <TextPurple>
                       Site de Benoît Tremblay: <span> </span>
-                      <a href={'https://www.pneumacorps.com/'} target={"_blank"}>www.pneumacorps.com/</a>
+                      <a href={'https://www.pneumacorps.com/'} style={{color: '#BD94AA'}} target={"_blank"}>www.pneumacorps.com</a>
                   </TextPurple>
                   <TextPurple>
                       Site de Union PneumaCorps France: <span> </span>
-                      <a href={'https://pneumacorps2021.wixsite.com/my-site-1'} target={"_blank"}>
+                      <a href={'https://pneumacorps2021.wixsite.com/my-site-1'} style={{color: '#BD94AA'}} target={"_blank"}>
                           www.pneumacorps2021.wixsite.com/my-site-1</a>
                   </TextPurple>
                   <TextPurple>
                       Site de loincloth's: <span> </span>
-                      <a href={'https://www.inhalotherapie.com'} target={"_blank"}>www.inhalotherapie.com</a>
+                      <a href={'https://www.inhalotherapie.com'} style={{color: '#BD94AA'}} target={"_blank"}>www.inhalotherapie.com</a>
                   </TextPurple>
                   <SubtitlePurple>
                           Informations Covid

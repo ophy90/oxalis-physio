@@ -46,7 +46,7 @@ function Pneumacorps() {
                         constatera rapidement que les techniques respiratoires et les soins médicaux voient
                         leur efficacité augmenter lorsque l’on tient compte en premier lieu de l’état de
                         tension propres à chaque personne. Progressivement, il développera une façon
-                        <b>d’optimiser les traitements</b> usuels et de soulager rapidement les personnes atteintes
+                        <b> d’optimiser les traitements</b> usuels et de soulager rapidement les personnes atteintes
                         de maladies pulmonaires de par ses observations, sa sensibilité et ses recherches
                         empiriques. Sa façon de pratiquer, axée sur le besoin de l’individu, le poussera sans
                         cesse et actuellement encore, à faire évoluer cette approche.
@@ -54,9 +54,9 @@ function Pneumacorps() {
                         <br/>
                         Il en résulte à ce jour une <b>approche adaptée</b> aussi bien à des personnes atteintes de
                         problèmes respiratoires que sans troubles pulmonaires. L’objectif principal est que
-                        chacun·e retrouve et ait les outils pour retrouver une <b>respiration libre de tension</b>
+                        chacun·e retrouve et ait les outils pour retrouver une <b>respiration libre de tension </b>
                         superflue. Elle n’est pas basée sur des techniques respiratoires à proprement parler
-                        mais <b>intègre diverses techniques</b> de relaxation ainsi que des  <b>mobilisations</b>
+                        mais <b>intègre diverses techniques</b> de relaxation ainsi que des <b>mobilisations </b>
                         manuelles.
 
                     </TextPurple>
