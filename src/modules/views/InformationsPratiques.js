@@ -34,7 +34,7 @@ function InformationsPratiques() {
                      Payement en espèces uniquement (non remboursé par les caisses maladie).
                  </TextPurple>
                 <TextPurpleSmallerParagraphs>
-                     Durée approximative de 60 à 90 minutes (première séance) puis entre
+                     <b>Durée approximative</b> de 60 à 90 minutes (première séance) puis entre
                      45 et 60 minutes pour les séances suivantes.
                  </TextPurpleSmallerParagraphs>
                 <TextPurpleSmallerParagraphs>
