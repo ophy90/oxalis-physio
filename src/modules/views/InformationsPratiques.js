@@ -53,18 +53,16 @@ function InformationsPratiques() {
                           La prise de RDV se fait par <b>téléphone</b> ou par <b>e-mail</b> uniquement.
                       </TextPurpleSmallerParagraphs>
                      <TextPurpleSmallerParagraphs>
-                         Cabinet de santé <b>Sphère</b>, Boulevard de Pérolles 6, 1700 Fribourg
+                         <b>Jusqu'au 31 août 2022: </b>Cabinet de santé <b>Sphère</b>, Boulevard de Pérolles 6, 1700 Fribourg
                       </TextPurpleSmallerParagraphs>
+                  <TextPurpleSmallerParagraphs>
+                      <b>Dès 1er septembre 2022: </b>Cabinet <b>Racines & Coquelicots</b>, 3ème étage, Route de Villars 37, 1700 Fribourg (entrée côté route de Bertigny)
+                  </TextPurpleSmallerParagraphs>
               </div>
           <div className={classes.blocks}>
                   <SubtitlePurple>
                           Liens externes et sources
                   </SubtitlePurple>
-                  <TextPurpleSmallerParagraphs className={classes.sources}>
-                      Site du cabinet de Santé Sphère:
-                      <br/>
-                      <a href={'https://www.cabinet-sphere.ch/'} style={{color: '#BD94AA'}} target={"_blank"}>www.cabinet-sphere.ch</a>
-                  </TextPurpleSmallerParagraphs>
                   <TextPurpleSmallerParagraphs>
                       Site de Benoît Tremblay:
                       <br/>
