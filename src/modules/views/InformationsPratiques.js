@@ -52,12 +52,9 @@ function InformationsPratiques() {
                       <TextPurpleSmallerParagraphs>
                           La prise de RDV se fait par <b>téléphone</b> ou par <b>e-mail</b> uniquement.
                       </TextPurpleSmallerParagraphs>
-                     <TextPurpleSmallerParagraphs>
-                         <b>Jusqu'au 31 août 2022: </b>Cabinet de santé <b>Sphère</b>, Boulevard de Pérolles 6, 1700 Fribourg
+                      <TextPurpleSmallerParagraphs>
+                          Cabinet <b>Racines & Coquelicots</b>, 3ème étage, Route de Villars 37, 1700 Fribourg (entrée côté route de Bertigny)
                       </TextPurpleSmallerParagraphs>
-                  <TextPurpleSmallerParagraphs>
-                      <b>Dès 1er septembre 2022: </b>Cabinet <b>Racines & Coquelicots</b>, 3ème étage, Route de Villars 37, 1700 Fribourg (entrée côté route de Bertigny)
-                  </TextPurpleSmallerParagraphs>
               </div>
           <div className={classes.blocks}>
                   <SubtitlePurple>
