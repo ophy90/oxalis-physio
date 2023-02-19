@@ -63,7 +63,6 @@ const useStyles = makeStyles(() => ({
 const DisplayMobile = () => {
     const {header, menuButton, drawerContainer, relativeSvg} = useStyles();
     const [drawerOpen, setDrawerOpen] = useState(false);
-    const classes = useStyles();
     return (
         <Toolbar className={header} sx={{display: 'flex', flexDirection: 'row'}}>
             <Box sx={{display: 'flex', flexGrow: 0, justifyContent: 'center', height: '100%', alignItems: 'center'}} onClick={() => setDrawerOpen(true)}>
