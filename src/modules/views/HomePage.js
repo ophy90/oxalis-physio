@@ -17,7 +17,6 @@ export default function HomePage() {
       }}
     >
       {/* Increase the network loading priority of the background image. */}
-      {/* Todo: change the size of background image */}
       <img
         style={{ display: 'none' }}
         src={backgroundImage}
