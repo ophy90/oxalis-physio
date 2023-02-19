@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
-import {HeaderTitleWhite, QuoteWhite, SubtitleWhite, TextWhite, useStyles} from "../components/Styles";
+import {HeaderTitleWhite, QuoteWhite, TextWhite, useStyles} from "../components/Styles";
 import OXALIS_photo_fabia from '../../assets/images/OXALIS_photo_fabia.jpg'
 
 export default function APropos() {
