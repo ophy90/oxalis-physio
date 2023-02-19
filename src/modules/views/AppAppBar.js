@@ -66,10 +66,10 @@ const DisplayMobile = () => {
     return (
         <Toolbar className={header} sx={{display: 'flex', flexDirection: 'row'}}>
             <Box sx={{display: 'flex', flexGrow: 0, justifyContent: 'center', height: '100%', alignItems: 'center'}} onClick={() => setDrawerOpen(true)}>
-                <img className={menuButton} src={Menu} style={{height: 10}}/>
+                <img className={menuButton} alt={'bouton de menu'} src={Menu} style={{height: 10}}/>
             </Box>
             <Box sx={{display: 'flex', flexGrow: 1, justifyContent: 'center'}}>
-                <img src={Logo} style={{height: 30}}/>
+                <img src={Logo} alt={'logo'} style={{height: 30}}/>
             </Box>
             <Drawer
 
@@ -209,7 +209,7 @@ const DisplayDesktop = () => {
                 >{'À PROPOS'}</a>
             </Box>
             <Box sx={{display: 'flex', flex: 1.5, justifyContent: 'center'}}>
-                <img src={Logo} style={{height: 30}}/>
+                <img src={Logo} alt={'logo'} style={{height: 30}}/>
             </Box>
             <Box sx={{display: 'flex', flex: 1, justifyContent: 'space-between'}}>
                 <a
