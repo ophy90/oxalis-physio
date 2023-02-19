@@ -20,7 +20,7 @@ export default function HomePage() {
       <img
         style={{ display: 'none' }}
         src={backgroundImage}
-        alt="increase priority"
+        alt={"increase priority"}
       />
         <HeaderTitleWhiteHomePage>
           posture et
