@@ -1,7 +1,7 @@
 import * as React from 'react';
 import HomePageLayout from './HomePageLayout';
 import BackgroundImage from '../../assets/OXALIS_site_web_bg.jpg';
-import {HeaderTitleWhiteHomePage, useStyles} from "../components/Styles";
+import {HeaderTitleWhiteHomePage} from "../components/Styles";
 
 const backgroundImage = BackgroundImage;
 
