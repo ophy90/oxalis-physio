@@ -10,11 +10,6 @@ import {makeStyles} from "@mui/styles";
 import {Drawer} from "@mui/material";
 import Menu from '../../assets/OXALIS_site_web_boutons_menu.svg';
 
-const rightLink = {
-    fontSize: 16,
-    color: 'common.white',
-    ml: 3,
-};
 
 function ElevationScroll(props) {
     const {children, window} = props;
