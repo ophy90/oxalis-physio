@@ -19,8 +19,9 @@ function InformationsPratiques() {
                       pratiques
                   </HeaderTitlePurpleSecondLine>
                       <TextPurpleSmallerParagraphs>
-                          <b>Être habillé·e confortablement</b> (training, habits souples par exemple), vous allez
-                          garder vos vêtements.
+                          Vous allez garder vos vêtements durant la séance.
+                          Il est toutefois recommandé d’être <b>habillé·e confortablement </b>
+                          (training ou habits souples par exemple).
                       </TextPurpleSmallerParagraphs>
               </div>
          <div className={classes.blocks}>
@@ -28,53 +29,58 @@ function InformationsPratiques() {
                          Tarifs et durée
                  </SubtitlePurple>
                  <TextPurple>
-                     Une séance coûte CHF 100.-
+                     Durée et coût : une séance dure entre 60 et 75 minutes, tarif fixe à 100.-
                  </TextPurple>
                  <TextPurple>
-                     Payement en espèces uniquement (non remboursé par les caisses maladie).
+                     Payement en espèce à la fin de la séance
                  </TextPurple>
-                <TextPurpleSmallerParagraphs>
-                     <b>Durée approximative</b> de 60 à 90 minutes (première séance) puis entre
-                     45 et 60 minutes pour les séances suivantes.
-                 </TextPurpleSmallerParagraphs>
-                <TextPurpleSmallerParagraphs>
-                     À noter que le nombre de séances ne peut être défini en avance,
-                     la prise en charge est en fonction de chaque personne.
-                 </TextPurpleSmallerParagraphs>
+                 <TextPurple>
+                     PneumaCorps n’est pas pris en charge par la LaMal ni par les assurances complémentaires
+                 </TextPurple>
+             <TextPurpleSmallerParagraphs>
+                     À noter que le nombre de séance ne peut être défini à l’avance. La fréquence et le nombre de
+                     rendez-vous sont adaptés aux besoins du/de la client·e et seront discutés lors de la
+                     première rencontre.
+             </TextPurpleSmallerParagraphs>
          </div>
               <div className={classes.blocks}>
                       <SubtitlePurple>
                               Horaires & lieu
                       </SubtitlePurple>
                       <TextPurpleSmallerParagraphs>
-                          <b>Jeudi</b> et <b>vendredi</b>
+                          <b>Mercredi </b> après-midi
+                          <br/>
+                          <b>Jeudi </b> après-midi
+                          <br/>
+                          <b>Vendredi </b> toute la journée
                       </TextPurpleSmallerParagraphs>
                       <TextPurpleSmallerParagraphs>
-                          La prise de RDV se fait par <b>téléphone</b> ou par <b>e-mail</b> uniquement.
+                          La prise de RDV se fait par <b>téléphone</b> ou par <b>e-mail</b>
                       </TextPurpleSmallerParagraphs>
                       <TextPurpleSmallerParagraphs>
-                          Cabinet <b>Racines & Coquelicots</b>, 3ème étage, Route de Villars 37, 1700 Fribourg (entrée côté route de Bertigny)
+                          <b>Lieu: </b> Cabinet <b>Racines & Coquelicots</b>, 3ème étage, Route de Villars 37,
+                          1700 Fribourg (entrée côté route de Bertigny)
                       </TextPurpleSmallerParagraphs>
               </div>
           <div className={classes.blocks}>
                   <SubtitlePurple>
-                          Liens externes et sources
+                          Liens externes
                   </SubtitlePurple>
                   <TextPurpleSmallerParagraphs>
                       Site de Benoît Tremblay:
                       <br/>
-                      <a href={'https://www.pneumacorps.com/'} style={{color: '#BD94AA'}} target={"_blank"}>www.pneumacorps.com</a>
+                      <a href={'https://www.pneumacorps.com/'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">www.pneumacorps.com </a>
                   </TextPurpleSmallerParagraphs>
                   <TextPurpleSmallerParagraphs>
                       Site de Union PneumaCorps France:
                       <br/>
-                      <a href={'https://pneumacorps2021.wixsite.com/my-site-1'} style={{color: '#BD94AA'}} target={"_blank"}>
+                      <a href={'https://pneumacorps2021.wixsite.com/my-site-1'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">
                           www.pneumacorps2021.wixsite.com/my-site-1</a>
                   </TextPurpleSmallerParagraphs>
                   <TextPurpleSmallerParagraphs>
-                      Site de l'inhalotherapie:
+                      Cabinet Racines&Coquelicots:
                       <br/>
-                      <a href={'https://www.inhalotherapie.com'} style={{color: '#BD94AA'}} target={"_blank"}>www.inhalotherapie.com</a>
+                      <a href={'https://www.racinesetcoquelicots.ch/'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">www.racinesetcoquelicots.ch</a>
                   </TextPurpleSmallerParagraphs>
           </div>
               <div className={classes.blocks}>
@@ -82,7 +88,7 @@ function InformationsPratiques() {
                           Informations Covid
                   </SubtitlePurple>
                   <TextPurpleSmallerParagraphs>
-                          Selon recommandations du Conseil Fédéral
+                      Selon les mesures en vigueur
                   </TextPurpleSmallerParagraphs>
               </div>
 
