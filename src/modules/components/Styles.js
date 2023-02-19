@@ -227,5 +227,8 @@ export const useStyles = makeStyles({
     },
     arrowLinkContact: {
         position: 'absolute',
+    },
+    contactIcons: {
+       color: 'white',
     }
 });
