@@ -72,7 +72,6 @@ const DisplayMobile = () => {
                 <img src={Logo} alt={'logo'} style={{height: 30}}/>
             </Box>
             <Drawer
-
                 {...{
                     anchor: "left",
                     open: drawerOpen,
