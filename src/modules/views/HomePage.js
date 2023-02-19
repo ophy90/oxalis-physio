@@ -6,7 +6,6 @@ import {HeaderTitleWhiteHomePage} from "../components/Styles";
 const backgroundImage = BackgroundImage;
 
 export default function HomePage() {
-  const classes = useStyles();
   return (
     <HomePageLayout
         id={'accueil'}
