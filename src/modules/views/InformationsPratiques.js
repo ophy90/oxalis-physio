@@ -35,7 +35,7 @@ function InformationsPratiques() {
                      Payement en espèce à la fin de la séance
                  </TextPurple>
                  <TextPurple>
-                     PneumaCorps n’est pas pris en charge par la LaMal ni par les assurances complémentaires
+                     PneumaCorps n’est pas pris en charge par la LaMal ou par les assurances complémentaires
                  </TextPurple>
              <TextPurpleSmallerParagraphs>
                      À noter que le nombre de séance ne peut être défini à l’avance. La fréquence et le nombre de
@@ -74,8 +74,8 @@ function InformationsPratiques() {
                   <TextPurpleSmallerParagraphs>
                       Site de Union PneumaCorps France:
                       <br/>
-                      <a href={'https://pneumacorps2021.wixsite.com/my-site-1'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">
-                          www.pneumacorps2021.wixsite.com/my-site-1</a>
+                      <a href={'www.union-pneumacorps.org '} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">
+                          www.union-pneumacorps.org </a>
                   </TextPurpleSmallerParagraphs>
                   <TextPurpleSmallerParagraphs>
                       Cabinet Racines&Coquelicots:
