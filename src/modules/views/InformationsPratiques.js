@@ -28,9 +28,9 @@ function InformationsPratiques() {
                  <SubtitlePurple>
                          Tarifs et durée
                  </SubtitlePurple>
-                 <TextPurple>
+                 <TextPurpleSmallerParagraphs>
                      Durée et coût : une séance dure entre 60 et 75 minutes, tarif fixe à 100.-
-                 </TextPurple>
+                 </TextPurpleSmallerParagraphs>
                  <TextPurple>
                      Payement en espèce à la fin de la séance
                  </TextPurple>
