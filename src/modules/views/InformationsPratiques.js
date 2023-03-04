@@ -35,7 +35,7 @@ function InformationsPratiques() {
                      Payement en espèce à la fin de la séance
                  </TextPurple>
                  <TextPurpleSmallerParagraphs>
-                     PneumaCorps n’est pas pris en charge par la LaMal ou par les assurances complémentaires
+                     PneumaCorps n’est pas pris en charge par la LaMal ou par les assurances complémentaires.
                  </TextPurpleSmallerParagraphs>
              <TextPurpleSmallerParagraphs>
                      À noter que le nombre de séance ne peut être défini à l’avance. La fréquence et le nombre de
