@@ -11,7 +11,7 @@ export default function HomePage() {
         id={'accueil'}
       sxBackground={{
         backgroundImage: `url(${BackgroundImage})`,
-        backgroundColor: '#7fc7d9', // Average color of the background image.//
+        backgroundColor: '#914e72', // Average color of the background image.//
           backgroundPosition: 'center',
           width: '100%'
       }}
