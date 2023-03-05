@@ -74,8 +74,8 @@ function InformationsPratiques() {
                   <TextPurpleSmallerParagraphs>
                       Site de Union PneumaCorps France:
                       <br/>
-                      <a href={'www.union-pneumacorps.org '} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">
-                          www.union-pneumacorps.org </a>
+                      <a href={'https://pneumacorps2021.wixsite.com/my-site-1'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">
+                          www.pneumacorps2021.wixsite.com/my-site-1</a>
                   </TextPurpleSmallerParagraphs>
                   <TextPurpleSmallerParagraphs>
                       Cabinet Racines&Coquelicots:
