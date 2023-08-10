@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function AppFooter() {
     const classes = useStyles();
+    let year = new Date().getFullYear();
 
   return (
       <div className={classes.purpleDarkBoxCentered} id={'contact'}>
@@ -29,7 +30,7 @@ export default function AppFooter() {
               </a>
           </div>
           <TextWhite className={classes.formatCopyRight}>
-          © OXALIS 2021. TOUS DROITS RÉSERVÉS.
+          © OXALIS {year} TOUS DROITS RÉSERVÉS.
           </TextWhite>
       </div>
   );
