@@ -8,10 +8,10 @@ import {
 } from "../components/Styles";
 
 function InformationsPratiques() {
-    const classes = useStyles();
+    //const classes = useStyles();
   return (
-      <div className={classes.whiteBox}>
-              <div className={classes.blocks}>
+      <div className={useStyles.whiteBox}>
+              <div className={useStyles.blocks}>
                       <HeaderTitlePurpleFirstLine id={'informations'}>
                           Informations
                       </HeaderTitlePurpleFirstLine>
@@ -24,7 +24,7 @@ function InformationsPratiques() {
                           (training ou habits souples par exemple).
                       </TextPurpleSmallerParagraphs>
               </div>
-         <div className={classes.blocks}>
+         <div className={useStyles.blocks}>
                  <SubtitlePurple>
                          Tarifs et durée
                  </SubtitlePurple>
@@ -43,7 +43,7 @@ function InformationsPratiques() {
                      première rencontre.
              </TextPurpleSmallerParagraphs>
          </div>
-              <div className={classes.blocks}>
+              <div className={useStyles.blocks}>
                       <SubtitlePurple>
                               Horaires & lieu
                       </SubtitlePurple>
@@ -62,7 +62,7 @@ function InformationsPratiques() {
                           1700 Fribourg (entrée côté route de Bertigny)
                       </TextPurpleSmallerParagraphs>
               </div>
-          <div className={classes.blocks}>
+          <div className={useStyles.blocks}>
                   <SubtitlePurple>
                           Liens externes
                   </SubtitlePurple>
@@ -83,7 +83,7 @@ function InformationsPratiques() {
                       <a href={'https://www.racinesetcoquelicots.ch/'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">www.racinesetcoquelicots.ch</a>
                   </TextPurpleSmallerParagraphs>
           </div>
-              <div className={classes.blocks}>
+              <div className={useStyles.blocks}>
                   <SubtitlePurple>
                           Informations Covid
                   </SubtitlePurple>

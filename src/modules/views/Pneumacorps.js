@@ -2,10 +2,10 @@ import * as React from 'react';
 import {HeaderTitlePurple, QuotePurple, SubtitlePurple, TextPurple, useStyles} from "../components/Styles";
 
 function Pneumacorps() {
-    const classes = useStyles();
+    //const classes = useStyles();
     return (
-            <div className={classes.purpleLightBox}>
-                <div className={classes.blocks}>
+            <div className={useStyles.purpleLightBox}>
+                <div className={useStyles.blocks}>
                     <HeaderTitlePurple id={'pneumacorps'}>
                         PneumaCorps
                     </HeaderTitlePurple>
@@ -33,7 +33,7 @@ function Pneumacorps() {
                         séance.
                     </TextPurple>
                 </div>
-                <div className={classes.blocks}>
+                <div className={useStyles.blocks}>
                     <SubtitlePurple>
                         Origine de la pratique
                     </SubtitlePurple>
@@ -61,7 +61,7 @@ function Pneumacorps() {
 
                     </TextPurple>
                 </div>
-                 <div className={classes.blocks}>
+                 <div className={useStyles.blocks}>
                      <SubtitlePurple>
                          Déroulé d’une séance
                      </SubtitlePurple>
@@ -75,7 +75,7 @@ function Pneumacorps() {
                          le travail et <b>s’autonomiser</b> au quotidien.
                      </TextPurple>
                  </div>
-                <div className={classes.blocks}>
+                <div className={useStyles.blocks}>
                     <SubtitlePurple>
                         À qui s’adresse cette pratique
                     </SubtitlePurple>

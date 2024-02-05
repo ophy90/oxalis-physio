@@ -1,17 +1,21 @@
-import {makeStyles, styled} from "@mui/styles";
+import {styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
-export const HeaderTitleWhiteHomePage = styled(Typography)({
-    color: '#ffffff',
+export const StylerHeaderTitleWhiteHomePage = styled(Typography)({
+    color:  'ffffff',
     padding: '25px',
-    fontSize: '75px',
-    fontFamily: 'dahlia-bold',
+    fontSize: '120px !important',
+    fontFamily: 'dahlia-bold !important',
     textAlign: 'center',
     "@media (max-width: 800px)": {
-        fontSize: '40px',
+        fontSize: '40px !important',
         padding: '60px',
     }
 });
+
+export const HeaderTitleWhiteHomePage = ({ children, style }) => {
+    return <StylerHeaderTitleWhiteHomePage style={style}>{children}</StylerHeaderTitleWhiteHomePage>;
+};
 
 export const HeaderTitlePurple = styled(Typography)({
     color: '#914e72',
@@ -139,7 +143,7 @@ export const TextPurpleSmallerParagraphs = styled(Typography)({
     padding: '5px'
 });
 
-export const useStyles = makeStyles({
+export const useStyles = styled(Typography)({
     purpleLightBox: {
         display: 'flex',
         padding: '75px',
@@ -229,6 +233,6 @@ export const useStyles = makeStyles({
         position: 'absolute',
     },
     contactIcons: {
-       color: 'white',
+       color: 'white'
     }
 });

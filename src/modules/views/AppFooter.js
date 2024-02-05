@@ -4,11 +4,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function AppFooter() {
-    const classes = useStyles();
     let year = new Date().getFullYear();
 
   return (
-      <div className={classes.purpleDarkBoxCentered} id={'contact'}>
+      <div className={useStyles.purpleDarkBoxCentered} id={'contact'}>
           <HeaderTitleWhite>
           Contact
           </HeaderTitleWhite>
@@ -23,13 +22,13 @@ export default function AppFooter() {
           </TextWhite>
           <div>
               <a href="https://www.instagram.com/oxalis.respiration/" target="_blank" rel="noopener noreferrer">
-                  <InstagramIcon className={classes.contactIcons}/>
+                  <InstagramIcon className={useStyles.contactIcons}/>
               </a>
               <a href="https://www.facebook.com/profile.php?id=100078833613396" target="_blank" rel="noopener noreferrer">
-                  <FacebookIcon className={classes.contactIcons}/>
+                  <FacebookIcon className={useStyles.contactIcons}/>
               </a>
           </div>
-          <TextWhite className={classes.formatCopyRight}>
+          <TextWhite className={useStyles.formatCopyRight}>
           © OXALIS {year} TOUS DROITS RÉSERVÉS.
           </TextWhite>
       </div>

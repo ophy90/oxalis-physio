@@ -3,16 +3,15 @@ import {HeaderTitleWhite, QuoteWhite, TextWhite, useStyles} from "../components/
 import OXALIS_photo_fabia from '../../assets/images/OXALIS_photo_fabia.jpg'
 
 export default function APropos() {
-  const classes = useStyles();
   return (
-    <div className={classes.purpleDarkBox}>
-        <div className={classes.blocks}>
+    <div className={useStyles.purpleDarkBox}>
+        <div className={useStyles.blocks}>
             <HeaderTitleWhite id={'aPropos'}>
                 À propos
             </HeaderTitleWhite>
             <img src={OXALIS_photo_fabia} alt={"portrait"} height={'300px'} width={'390px'}/>
         </div>
-        <div className={classes.blocks}>
+        <div className={useStyles.blocks}>
             <QuoteWhite>
                 « Je crois que c’est ce sentiment, un
                 mélange de réconfort et de
@@ -21,8 +20,8 @@ export default function APropos() {
                 quelque chose de magique. »
             </QuoteWhite>
         </div>
-      <div className={classes.blocks}>
-          <TextWhite className={classes.textAlignment}>
+      <div className={useStyles.blocks}>
+          <TextWhite className={useStyles.textAlignment}>
               En 2021 j’ai décidé de me réorienter et de passer de <b>physiothérapeute</b> diplômée,
               métier que j’ai exercé pendant sept ans, à <b>praticienne PneumaCorps</b>. Cela fait depuis
               2014 que je suis formée à cette pratique à laquelle je me consacre actuellement.
