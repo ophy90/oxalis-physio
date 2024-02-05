@@ -143,96 +143,104 @@ export const TextPurpleSmallerParagraphs = styled(Typography)({
     padding: '5px'
 });
 
-export const useStyles = styled(Typography)({
-    purpleLightBox: {
-        display: 'flex',
-        padding: '75px',
-        flexDirection: 'column',
-        alignItems: 'center',
-        backgroundColor: '#F4EDF0',
-        width: '100%',
-        "@media (max-width: 800px)": {
-            padding: '20px',
-        }
+export const PurpleLightBox = styled('div')({
+    display: 'flex',
+    padding: '75px',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: '#f4edf0',
+    width: '100%',
+    '@media (max-width: 800px)': {
+        padding: '20px',
     },
-    purpleDarkBox: {
-        display: 'flex',
-        padding: '75px',
-        flexDirection: 'column',
-        alignItems: 'center',
-        backgroundColor: '#BD94AA',
-        width: '100%',
-        "@media (max-width: 800px)": {
-            padding: '20px',
-        }
+});
+
+export const PurpleDarkBox = styled('div')({
+    display: 'flex',
+    padding: '75px',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: '#bd94aa',
+    width: '100%',
+    '@media (max-width: 800px)': {
+        padding: '20px',
     },
-    whiteBox: {
-        backgroundColor: '#ffffff',
-        width: '100%',
-        padding: '75px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        "@media (max-width: 800px)": {
-            padding: '20px',
-        }
+});
+
+export const WhiteBox = styled('div')({
+    backgroundColor: '#ffffff',
+    width: '100%',
+    padding: '75px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    '@media (max-width: 800px)': {
+        padding: '20px',
     },
-    purpleDarkBoxCentered: {
-        backgroundColor: '#BD94AA',
-        width: '100%',
-        padding: '75px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        "@media (max-width: 800px)": {
-            padding: '20px',
-        }
+});
+
+export const PurpleDarkBoxCentered = styled('div')({
+    backgroundColor: '#bd94aa',
+    width: '100%',
+    padding: '75px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    '@media (max-width: 800px)': {
+        padding: '20px',
     },
-    blocks: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        width: '50%',
-        paddingBottom: '40px',
-        "@media (max-width: 800px)": {
-            paddingBottom: '20px',
-            width: '80%',
-            margin: 'none',
-        }
+});
+
+export const Blocks = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '50%',
+    paddingBottom: '40px',
+    '@media (max-width: 800px)': {
+        paddingBottom: '20px',
+        width: '80%',
+        margin: 'none',
     },
-    formatCopyRight: {
-        padding: '50px',
-        "@media (max-width: 800px)": {
-            padding: '30px',
-        }
+});
+
+export const FormatCopyRight = styled('div')({
+    padding: '50px',
+    '@media (max-width: 800px)': {
+        padding: '30px',
     },
-    textNavbar: {
+});
+
+export const TextNavbar = styled('div')({
+    color: '#914e72',
+    fontSize: '25px',
+    fontFamily: 'dahlia-bold',
+    textDecoration: 'underline',
+});
+
+export const Sources = styled('div')({
+    '& a': {
         color: '#914e72',
-        fontSize: '25px',
-        fontFamily: 'dahlia-bold',
-        textDecoration: 'underline'
     },
-    sources: {
-        '& a':{
-            color: '#914e72'
-        },
-        "& a:link": {
-            color: '#914e72'
-        },
-        "& a:hover": {
-            color: '#914e72'
-        },
-        "& a:visited": {
-            color: '#914e72'
-        }
+    '& a:link': {
+        color: '#914e72',
     },
-    arrowLinkContactContainer: {
-        position: 'relative'
+    '& a:hover': {
+        color: '#914e72',
     },
-    arrowLinkContact: {
-        position: 'absolute',
+    '& a:visited': {
+        color: '#914e72',
     },
-    contactIcons: {
-       color: 'white'
-    }
+});
+
+export const ArrowLinkContactContainer = styled('div')({
+    position: 'relative',
+});
+
+export const ArrowLinkContact = styled('div')({
+    position: 'absolute',
+});
+
+export const ContactIcons = styled('div')({
+    color: 'white',
 });

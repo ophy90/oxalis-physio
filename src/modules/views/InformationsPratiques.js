@@ -3,15 +3,13 @@ import {
     HeaderTitlePurpleFirstLine,
     HeaderTitlePurpleSecondLine,
     SubtitlePurple,
-    TextPurple, TextPurpleSmallerParagraphs,
-    useStyles
+    TextPurple, TextPurpleSmallerParagraphs, WhiteBox, Blocks
 } from "../components/Styles";
 
 function InformationsPratiques() {
-    //const classes = useStyles();
   return (
-      <div className={useStyles.whiteBox}>
-              <div className={useStyles.blocks}>
+      <WhiteBox>
+              <Blocks>
                       <HeaderTitlePurpleFirstLine id={'informations'}>
                           Informations
                       </HeaderTitlePurpleFirstLine>
@@ -23,8 +21,8 @@ function InformationsPratiques() {
                           Il est toutefois recommandé d’être <b>habillé·e confortablement </b>
                           (training ou habits souples par exemple).
                       </TextPurpleSmallerParagraphs>
-              </div>
-         <div className={useStyles.blocks}>
+              </Blocks>
+         <Blocks>
                  <SubtitlePurple>
                          Tarifs et durée
                  </SubtitlePurple>
@@ -42,8 +40,8 @@ function InformationsPratiques() {
                      rendez-vous sont adaptés aux besoins du/de la client·e et seront discutés lors de la
                      première rencontre.
              </TextPurpleSmallerParagraphs>
-         </div>
-              <div className={useStyles.blocks}>
+         </Blocks>
+              <Blocks>
                       <SubtitlePurple>
                               Horaires & lieu
                       </SubtitlePurple>
@@ -61,8 +59,8 @@ function InformationsPratiques() {
                           <b>Lieu: </b> Cabinet <b>Racines & Coquelicots</b>, 3ème étage, Route de Villars 37,
                           1700 Fribourg (entrée côté route de Bertigny)
                       </TextPurpleSmallerParagraphs>
-              </div>
-          <div className={useStyles.blocks}>
+              </Blocks>
+          <Blocks>
                   <SubtitlePurple>
                           Liens externes
                   </SubtitlePurple>
@@ -82,17 +80,17 @@ function InformationsPratiques() {
                       <br/>
                       <a href={'https://www.racinesetcoquelicots.ch/'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">www.racinesetcoquelicots.ch</a>
                   </TextPurpleSmallerParagraphs>
-          </div>
-              <div className={useStyles.blocks}>
+          </Blocks>
+              <Blocks>
                   <SubtitlePurple>
                           Informations Covid
                   </SubtitlePurple>
                   <TextPurpleSmallerParagraphs>
                       Selon les mesures en vigueur
                   </TextPurpleSmallerParagraphs>
-              </div>
+              </Blocks>
 
-      </div>
+      </WhiteBox>
   );
 }
 

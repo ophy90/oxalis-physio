@@ -1,11 +1,11 @@
 import * as React from 'react';
-import {HeaderTitlePurple, QuotePurple, SubtitlePurple, TextPurple, useStyles} from "../components/Styles";
+import {HeaderTitlePurple, QuotePurple, SubtitlePurple, TextPurple, PurpleLightBox, Blocks} from "../components/Styles";
 
 function Pneumacorps() {
     //const classes = useStyles();
     return (
-            <div className={useStyles.purpleLightBox}>
-                <div className={useStyles.blocks}>
+            <PurpleLightBox >
+                <Blocks>
                     <HeaderTitlePurple id={'pneumacorps'}>
                         PneumaCorps
                     </HeaderTitlePurple>
@@ -32,8 +32,8 @@ function Pneumacorps() {
                         mental et la vie quotidienne</b> à partir des observations et exercices faits durant la
                         séance.
                     </TextPurple>
-                </div>
-                <div className={useStyles.blocks}>
+                </Blocks>
+                <Blocks >
                     <SubtitlePurple>
                         Origine de la pratique
                     </SubtitlePurple>
@@ -58,10 +58,9 @@ function Pneumacorps() {
                         superflue. Elle n’est pas basée sur des techniques respiratoires à proprement parler
                         mais <b>intègre diverses techniques</b> de relaxation ainsi que des <b>mobilisations </b>
                         manuelles.
-
                     </TextPurple>
-                </div>
-                 <div className={useStyles.blocks}>
+                </Blocks>
+                 <Blocks>
                      <SubtitlePurple>
                          Déroulé d’une séance
                      </SubtitlePurple>
@@ -74,8 +73,8 @@ function Pneumacorps() {
                          étirements doux. En fin de séance, un exercice à faire soi- même peut être suggéré pour ancrer
                          le travail et <b>s’autonomiser</b> au quotidien.
                      </TextPurple>
-                 </div>
-                <div className={useStyles.blocks}>
+                 </Blocks>
+                <Blocks>
                     <SubtitlePurple>
                         À qui s’adresse cette pratique
                     </SubtitlePurple>
@@ -93,8 +92,8 @@ function Pneumacorps() {
                         spécifiques pour les personnes avec une maladie respiratoire ou simplement du yoga,
                         de l’ostéopathie, la physiothérapie, le chant, etc).
                     </TextPurple>
-                </div>
-            </div>
+                </Blocks>
+            </PurpleLightBox>
     )
 }
 

@@ -1,17 +1,17 @@
 import * as React from 'react';
-import {HeaderTitleWhite, QuoteWhite, TextWhite, useStyles} from "../components/Styles";
+import {HeaderTitleWhite, QuoteWhite, TextWhite, PurpleDarkBox, Blocks} from "../components/Styles";
 import OXALIS_photo_fabia from '../../assets/images/OXALIS_photo_fabia.jpg'
 
 export default function APropos() {
   return (
-    <div className={useStyles.purpleDarkBox}>
-        <div className={useStyles.blocks}>
+    <PurpleDarkBox>
+        <Blocks>
             <HeaderTitleWhite id={'aPropos'}>
                 À propos
             </HeaderTitleWhite>
             <img src={OXALIS_photo_fabia} alt={"portrait"} height={'300px'} width={'390px'}/>
-        </div>
-        <div className={useStyles.blocks}>
+        </Blocks>
+        <Blocks>
             <QuoteWhite>
                 « Je crois que c’est ce sentiment, un
                 mélange de réconfort et de
@@ -19,9 +19,9 @@ export default function APropos() {
                 travail et me rappelle que la vie a
                 quelque chose de magique. »
             </QuoteWhite>
-        </div>
-      <div className={useStyles.blocks}>
-          <TextWhite className={useStyles.textAlignment}>
+        </Blocks>
+      <Blocks>
+          <TextWhite>
               En 2021 j’ai décidé de me réorienter et de passer de <b>physiothérapeute</b> diplômée,
               métier que j’ai exercé pendant sept ans, à <b>praticienne PneumaCorps</b>. Cela fait depuis
               2014 que je suis formée à cette pratique à laquelle je me consacre actuellement.
@@ -39,7 +39,7 @@ export default function APropos() {
               Je suis dans tous les cas enthousiaste à l’idée que ce travail puisse être partagé avec
               le plus grand nombre, en espérant qu’il soit aussi <b>ressourçant</b> que possible.
           </TextWhite>
-      </div>
-    </div>
+      </Blocks>
+    </PurpleDarkBox>
   );
 }

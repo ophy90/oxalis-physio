@@ -1,13 +1,12 @@
 import * as React from 'react';
-import {HeaderTitleWhite, TextWhite, useStyles} from "../components/Styles";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import {HeaderTitleWhite, TextWhite, PurpleDarkBoxCentered, ContactIcons, FormatCopyRight} from "../components/Styles";
+
 
 export default function AppFooter() {
     let year = new Date().getFullYear();
 
   return (
-      <div className={useStyles.purpleDarkBoxCentered} id={'contact'}>
+      <PurpleDarkBoxCentered id={'contact'}>
           <HeaderTitleWhite>
           Contact
           </HeaderTitleWhite>
@@ -22,15 +21,15 @@ export default function AppFooter() {
           </TextWhite>
           <div>
               <a href="https://www.instagram.com/oxalis.respiration/" target="_blank" rel="noopener noreferrer">
-                  <InstagramIcon className={useStyles.contactIcons}/>
+                  <ContactIcons/>
               </a>
               <a href="https://www.facebook.com/profile.php?id=100078833613396" target="_blank" rel="noopener noreferrer">
-                  <FacebookIcon className={useStyles.contactIcons}/>
+                  <ContactIcons/>
               </a>
           </div>
-          <TextWhite className={useStyles.formatCopyRight}>
+          <FormatCopyRight>
           © OXALIS {year} TOUS DROITS RÉSERVÉS.
-          </TextWhite>
-      </div>
+          </FormatCopyRight>
+      </PurpleDarkBoxCentered>
   );
 }
