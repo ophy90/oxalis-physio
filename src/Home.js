@@ -1,8 +1,8 @@
 import * as React from 'react';
-import APropos from './modules/views/Apropos';
+import Therapeute from './modules/views/Apropos';
 import AppFooter from './modules/views/AppFooter';
 import HomePage from './modules/views/HomePage';
-import Pneumacorps from './modules/views/Pneumacorps';
+import Physiotherapie from './modules/views/Pneumacorps';
 import InformationsPratiques from './modules/views/InformationsPratiques';
 import AppAppBar from './modules/views/AppAppBar';
 import withRoot from './modules/withRoot';
@@ -14,8 +14,8 @@ function Index() {
     <>
       <AppAppBar/>
       <HomePage />
-      <Pneumacorps />
-      <APropos />
+      <Physiotherapie/>
+      <Therapeute/>
       <InformationsPratiques />
       <AppFooter />
     </>

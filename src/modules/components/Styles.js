@@ -20,7 +20,7 @@ export const HeaderTitleWhiteHomePage = ({ children, style }) => {
 export const HeaderTitlePurple = styled(Typography)({
     color: '#914e72',
     padding: '50px',
-    fontSize: '75px',
+    fontSize: '80px',
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
@@ -32,7 +32,7 @@ export const HeaderTitlePurple = styled(Typography)({
 export const HeaderTitleWhite = styled(Typography)({
     color: '#ffffff',
     padding: '50px',
-    fontSize: '75px',
+    fontSize: '80px',
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
@@ -91,8 +91,9 @@ export const QuoteWhite = styled(Typography)({
 
 export const SubtitlePurple = styled(Typography)({
     color: '#914e72',
-    padding: '25px',
-    fontSize: '27px',
+    paddingTop: '25px',
+    paddingBottom: '25px',
+    fontSize: '35px',
     fontFamily: 'dahlia-bold',
     "@media (max-width: 800px)": {
         fontSize: '20px',
@@ -113,7 +114,7 @@ export const SubtitleWhite = styled(Typography)({
 
 export const TextWhite = styled(Typography)({
     color: '#ffffff',
-    fontSize: '16px',
+    fontSize: '20px',
     fontFamily: 'apercu-light',
     "@media (max-width: 800px)": {
         fontSize: '14px',
@@ -122,8 +123,7 @@ export const TextWhite = styled(Typography)({
 
 export const TextPurple = styled(Typography)({
     color: '#914e72',
-    fontSize: '16px',
-    alignItems: 'center',
+    fontSize: '20px',
     fontFamily: 'apercu-light',
     "@media (max-width: 800px)": {
         fontSize: '14px',
@@ -133,9 +133,7 @@ export const TextPurple = styled(Typography)({
 
 export const TextPurpleSmallerParagraphs = styled(Typography)({
     color: '#914e72',
-    fontSize: '16px',
-    alignItems: 'center',
-    textAlign: 'center',
+    fontSize: '20px',
     fontFamily: 'apercu-light',
     "@media (max-width: 800px)": {
         fontSize: '14px',
@@ -194,8 +192,7 @@ export const PurpleDarkBoxCentered = styled('div')({
 export const Blocks = styled('div')({
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
-    width: '50%',
+    width: '65%',
     paddingBottom: '40px',
     '@media (max-width: 800px)': {
         paddingBottom: '20px',
@@ -206,6 +203,7 @@ export const Blocks = styled('div')({
 
 export const FormatCopyRight = styled('div')({
     padding: '50px',
+    color: 'white',
     '@media (max-width: 800px)': {
         padding: '30px',
     },
@@ -233,14 +231,12 @@ export const Sources = styled('div')({
     },
 });
 
-export const ArrowLinkContactContainer = styled('div')({
-    position: 'relative',
+const StylerFooterStyle = styled('div')({
+    display: 'inline-flex',
+    width: '800px',
+    justifyContent: 'space-evenly'
 });
 
-export const ArrowLinkContact = styled('div')({
-    position: 'absolute',
-});
-
-export const ContactIcons = styled('div')({
-    color: 'white',
-});
+export const StylerFooter = ({ children, style }) => {
+    return <StylerFooterStyle style={style}>{children}</StylerFooterStyle>;
+};

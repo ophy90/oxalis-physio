@@ -23,9 +23,9 @@ export default function HomePage() {
         alt={"increase priority"}
       />
         <HeaderTitleWhiteHomePage>
-          posture et
+          physiothérapie
           <br/>
-          respiration libre
+          à domicile
         </HeaderTitleWhiteHomePage>
     </HomePageLayout>
   );

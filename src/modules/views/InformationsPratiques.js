@@ -11,85 +11,44 @@ function InformationsPratiques() {
       <WhiteBox>
               <Blocks>
                       <HeaderTitlePurpleFirstLine id={'informations'}>
-                          Informations
+                          informations
                       </HeaderTitlePurpleFirstLine>
                   <HeaderTitlePurpleSecondLine>
-                      pratiques
+                      générales
                   </HeaderTitlePurpleSecondLine>
-                      <TextPurpleSmallerParagraphs>
-                          Vous allez garder vos vêtements durant la séance.
-                          Il est toutefois recommandé d’être <b>habillé·e confortablement </b>
-                          (training ou habits souples par exemple).
-                      </TextPurpleSmallerParagraphs>
               </Blocks>
-         <Blocks>
-                 <SubtitlePurple>
-                         Tarifs et durée
-                 </SubtitlePurple>
-                 <TextPurpleSmallerParagraphs>
-                     Durée et coût : une séance dure entre 60 et 75 minutes, tarif fixe à 100.-
-                 </TextPurpleSmallerParagraphs>
-                 <TextPurple>
-                     Payement en espèce à la fin de la séance
-                 </TextPurple>
-                 <TextPurpleSmallerParagraphs>
-                     PneumaCorps n’est pas pris en charge par la LaMal ou par les assurances complémentaires.
-                 </TextPurpleSmallerParagraphs>
-             <TextPurpleSmallerParagraphs>
-                     À noter que le nombre de séance ne peut être défini à l’avance. La fréquence et le nombre de
-                     rendez-vous sont adaptés aux besoins du/de la client·e et seront discutés lors de la
-                     première rencontre.
-             </TextPurpleSmallerParagraphs>
-         </Blocks>
+             <Blocks>
+                     <SubtitlePurple>
+                         Notre système de santé Suisse et son système tarifaire
+                     </SubtitlePurple>
+                     <TextPurpleSmallerParagraphs>
+                         Conditions de prise en charge des frais de physiothérapie par les assurances.
+                         <br/>
+                         En savoir plus
+                     </TextPurpleSmallerParagraphs>
+             </Blocks>
               <Blocks>
                       <SubtitlePurple>
-                              Horaires & lieu
+                          Tarifs et durée d’une séance
                       </SubtitlePurple>
                       <TextPurpleSmallerParagraphs>
-                          <b>Mercredi </b> après-midi
+                          Une séance de physiothérapie dure généralement 30 minutes.
                           <br/>
-                          <b>Jeudi </b> après-midi
+                          En savoir plus
                           <br/>
-                          <b>Vendredi </b> toute la journée
-                      </TextPurpleSmallerParagraphs>
-                      <TextPurpleSmallerParagraphs>
-                          La prise de RDV se fait par <b>téléphone</b> ou par <b>e-mail</b>
-                      </TextPurpleSmallerParagraphs>
-                      <TextPurpleSmallerParagraphs>
-                          <b>Lieu: </b> Cabinet <b>Racines & Coquelicots</b>, 3ème étage, Route de Villars 37,
-                          1700 Fribourg (entrée côté route de Bertigny)
                       </TextPurpleSmallerParagraphs>
               </Blocks>
           <Blocks>
-                  <SubtitlePurple>
-                          Liens externes
-                  </SubtitlePurple>
-                  <TextPurpleSmallerParagraphs>
-                      Site de Benoît Tremblay:
-                      <br/>
-                      <a href={'https://www.pneumacorps.com/'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">www.pneumacorps.com </a>
-                  </TextPurpleSmallerParagraphs>
-                  <TextPurpleSmallerParagraphs>
-                      Site de Union PneumaCorps France:
-                      <br/>
-                      <a href={'https://pneumacorps2021.wixsite.com/my-site-1'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">
-                          www.pneumacorps2021.wixsite.com/my-site-1</a>
-                  </TextPurpleSmallerParagraphs>
-                  <TextPurpleSmallerParagraphs>
-                      Cabinet Racines&Coquelicots:
-                      <br/>
-                      <a href={'https://www.racinesetcoquelicots.ch/'} style={{color: '#BD94AA'}} target={"_blank"} rel="noreferrer">www.racinesetcoquelicots.ch</a>
-                  </TextPurpleSmallerParagraphs>
+              <SubtitlePurple>
+                  Horaire et région
+              </SubtitlePurple>
+              <TextPurpleSmallerParagraphs>
+                  Je me déplace en ville de Fribourg et environs (Marly, Givisiez, Villars-sur-glâne).
+                  <br/>
+                  Jours de consultation : lundi et mercredi
+                  <br/>
+              </TextPurpleSmallerParagraphs>
           </Blocks>
-              <Blocks>
-                  <SubtitlePurple>
-                          Informations Covid
-                  </SubtitlePurple>
-                  <TextPurpleSmallerParagraphs>
-                      Selon les mesures en vigueur
-                  </TextPurpleSmallerParagraphs>
-              </Blocks>
-
       </WhiteBox>
   );
 }

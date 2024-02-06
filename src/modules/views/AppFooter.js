@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {HeaderTitleWhite, TextWhite, PurpleDarkBoxCentered, ContactIcons, FormatCopyRight} from "../components/Styles";
+import {HeaderTitleWhite, TextWhite, PurpleDarkBoxCentered, FormatCopyRight, StylerFooter} from "../components/Styles";
 
 
 export default function AppFooter() {
@@ -8,25 +8,24 @@ export default function AppFooter() {
   return (
       <PurpleDarkBoxCentered id={'contact'}>
           <HeaderTitleWhite>
-          Contact
+          contact
           </HeaderTitleWhite>
-          <TextWhite>
-          Fabia Rüegg
-          </TextWhite>
-          <TextWhite>
-          +41 78 207 70 85
-          </TextWhite>
-          <TextWhite>
-          info@oxalis-respiration.ch
-          </TextWhite>
-          <div>
-              <a href="https://www.instagram.com/oxalis.respiration/" target="_blank" rel="noopener noreferrer">
-                  <ContactIcons/>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100078833613396" target="_blank" rel="noopener noreferrer">
-                  <ContactIcons/>
-              </a>
-          </div>
+          <StylerFooter>
+              <TextWhite>
+                  Fabia Rüegg
+                  <br/>
+                  Physiotherapie à domicile
+                  <br/>
+                  Région de Fribourg
+              </TextWhite>
+              <TextWhite >
+                  +41 78 207 70 85
+                  <br/>
+                  info@physio-oxalis.ch
+                  <br/>
+                  Lundi et mercredi
+              </TextWhite>
+          </StylerFooter>
           <FormatCopyRight>
           © OXALIS {year} TOUS DROITS RÉSERVÉS.
           </FormatCopyRight>
