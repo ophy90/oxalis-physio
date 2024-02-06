@@ -20,12 +20,15 @@ function ElevationScroll(props) {
         disableHysteresis: true,
         threshold: 0,
         target: window ? window() : undefined,
+
     });
 
 
     return React.cloneElement(children, {
         elevation: trigger ? 4 : 0,
-        style: trigger ? {backgroundColor: 'rgba(60, 60, 60, 0.4)'} : {backgroundColor: 'transparent'},
+        style: {
+            backgroundColor: trigger ? 'rgba(255, 255, 255, 0.4)' : 'transparent',
+        },
     });
 }
 
@@ -109,7 +112,7 @@ const DisplayMobile = () => {
                                    textDecoration: 'underline'
                                },
                            }
-                       }}>{'Accueil'}</a>
+                       }}>{'physiothérapie'}</a>
                     <a href='#pneumacorps'
                        variant="h6"
                        underline="underline"
@@ -124,7 +127,7 @@ const DisplayMobile = () => {
                            '&:hover': {
                                textDecoration: 'underline'
                            },
-                       }}>{'Pneumacorps'}</a>
+                       }}>{'la thérapeute'}</a>
                     <a
                         href='#aPropos'
                         variant="h6"
@@ -140,7 +143,7 @@ const DisplayMobile = () => {
                                 textDecoration: 'underline'
                             },
                         }}
-                    >{'À propos'}</a>
+                    >{'Informations générales'}</a>
                     <a
                         href='#informations'
                         variant="h6"
@@ -193,7 +196,7 @@ const DisplayDesktop = () => {
                        textShadow: '0 0 1px white',
                        textDecoration: 'none',
                        color: 'white'
-                   }}>{'PNEUMACORPS'}</a>
+                   }}>{'PHYSIOTHERAPIE'}</a>
                 <a
                     href='#aPropos'
                     variant="h6"
@@ -205,7 +208,7 @@ const DisplayDesktop = () => {
                         textDecoration: 'none',
                         color: 'white'
                     }}
-                >{'À PROPOS'}</a>
+                >{'LA THERAPEUTE'}</a>
             </Box>
             <Box sx={{display: 'flex', flex: 1.5, justifyContent: 'center'}}>
                 <img src={Logo} alt={'logo'} style={{height: 30}}/>
@@ -222,7 +225,7 @@ const DisplayDesktop = () => {
                         textDecoration: 'none',
                         color: 'white'
                     }}
-                >{'INFORMATIONS PRATIQUES'}</a>
+                >{'INFORMATIONS GENERALES'}</a>
                 <a
                     href={'#contact'}
                     variant="h6"
@@ -265,7 +268,6 @@ function AppAppBar() {
                     {mobileView ? <DisplayMobile/> : <DisplayDesktop/>}
                 </AppBar>
             </ElevationScroll>
-            {/* <Toolbar /> */}
         </div>
     );
 }
