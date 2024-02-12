@@ -26,9 +26,7 @@ function ElevationScroll(props) {
 
     return React.cloneElement(children, {
         elevation: trigger ? 4 : 0,
-        style: {
-            backgroundColor: trigger ? 'rgba(255, 255, 255, 0.4)' : 'transparent',
-        },
+        style: trigger ? {backgroundColor: 'rgba(60, 60, 60, 0.4)'} : {backgroundColor: 'transparent'},
     });
 }
 
