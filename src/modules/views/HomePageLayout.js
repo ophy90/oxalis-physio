@@ -63,7 +63,9 @@ function HomePageLayout(props) {
   const {height} = useWindowSize();
 
   return (
-    <HomePageLayoutRoot style={{height}}>
+    <HomePageLayoutRoot
+        id={'accueil'}
+        style={{height}}>
       <Container
         sx={{
           mt: 3,

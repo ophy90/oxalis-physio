@@ -8,7 +8,6 @@ const backgroundImage = BackgroundImage;
 export default function HomePage() {
   return (
     <HomePageLayout
-        id={'accueil'}
         sxBackground={{
           backgroundImage: `url(${BackgroundImage})`,
           backgroundColor: '#914e72', // Average color of the background image.//
