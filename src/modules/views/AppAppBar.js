@@ -53,7 +53,7 @@ const DisplayMobile = () => {
                         style: {width: '100%', backgroundColor: '#BD94AA'}
                     }}
                 >
-                    <DrawerContainer>
+                    <DrawerContainer sx={{ textAlign: 'center'}}>
                         <RelativeSvg>
                                 <Box
                                     component="img"
