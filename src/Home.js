@@ -10,16 +10,14 @@ import './assets/stylesheet.css';
 
 function Index() {
   return (
-    //<React.Fragment>
     <>
       <AppAppBar/>
-      <HomePage />
+      <HomePage id={'accueil'} />
       <Physiotherapie/>
       <Therapeute/>
       <InformationsPratiques />
       <AppFooter />
     </>
-    //</React.Fragment>
   );
 }
 
