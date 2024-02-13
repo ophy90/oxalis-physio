@@ -234,7 +234,12 @@ export const Sources = styled('div')({
 const StylerFooterStyle = styled('div')({
     display: 'inline-flex',
     width: '800px',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
+    '@media (max-width: 800px)': {
+        paddingBottom: '20px',
+        width: '80%',
+        margin: 'none',
+    },
 });
 
 export const StylerFooter = ({ children, style }) => {
