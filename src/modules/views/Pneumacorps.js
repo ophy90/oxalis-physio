@@ -6,7 +6,7 @@ function Physiotherapie() {
             <PurpleLightBox >
                 <Blocks>
                     <HeaderTitlePurple id={'pneumacorps'}>
-                        Physiothérapie
+                        physiothérapie
                     </HeaderTitlePurple>
                     <TextPurple>
                         Je m’appelle Fabia Rüegg, je suis physiothérapeute et me déplace à votre domicile dans la région de

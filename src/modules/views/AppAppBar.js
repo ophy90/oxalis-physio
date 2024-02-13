@@ -6,9 +6,9 @@ import Toolbar from '../components/Toolbar';
 import Logo from '../../assets/OXALIS_logo_blanc.png';
 import Cross from '../../assets/OXALIS_bouton_croix_blanc.svg';
 import {useEffect, useState} from "react";
-import {makeStyles} from "@mui/styles";
 import {Drawer} from "@mui/material";
 import Menu from '../../assets/OXALIS_site_web_boutons_menu.svg';
+import {DrawerContainer, HeaderToolbox, MenuButton, RelativeSvg} from "../components/StylesSmallScreenMenu";
 
 
 function ElevationScroll(props) {
@@ -20,7 +20,6 @@ function ElevationScroll(props) {
         disableHysteresis: true,
         threshold: 0,
         target: window ? window() : undefined,
-
     });
 
 
@@ -30,153 +29,125 @@ function ElevationScroll(props) {
     });
 }
 
-const useStyles = makeStyles(() => ({
-    header: {
-        "@media (max-width: 800px)": {
-            paddingLeft: 0,
-        }
-    },
-    menuButton: {
-        fontFamily: "Open Sans, sans-serif",
-        color: 'white',
-        fontWeight: 700,
-        size: "18px",
-        marginLeft: "38px",
-        cursor: 'pointer'
-    },
-    drawerContainer: {
-        padding: "20px 30px",
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        position: 'relative',
-    },
-    relativeSvg: {
-        position: "absolute",
-        left: '70px',
-        top: '100px',
-    }
-}));
-
 const DisplayMobile = () => {
-    const {header, menuButton, drawerContainer, relativeSvg} = useStyles();
+
     const [drawerOpen, setDrawerOpen] = useState(false);
     return (
-        <Toolbar className={header} sx={{display: 'flex', flexDirection: 'row'}}>
-            <Box sx={{display: 'flex', flexGrow: 0, justifyContent: 'center', height: '100%', alignItems: 'center'}} onClick={() => setDrawerOpen(true)}>
-                <img className={menuButton} alt={'bouton de menu'} src={Menu} style={{height: 10}}/>
-            </Box>
-            <Box sx={{display: 'flex', flexGrow: 1, justifyContent: 'center'}}>
-                <img src={Logo} alt={'logo'} style={{height: 30}}/>
-            </Box>
-            <Drawer
-                {...{
-                    anchor: "left",
-                    open: drawerOpen,
-                    onClose: () => setDrawerOpen(false),
-                }}
-                PaperProps={{
-                    style: {width: '100%', backgroundColor: '#BD94AA'}
-                }}
-            >
-                <div className={drawerContainer}>
-                    <div className={relativeSvg}>
-                            <Box
-                                component="img"
-                                src={Cross}
-                                height="32px"
-                                width="24px"
-                                alt="cross white"
-                                sx={{ position: 'absolute', bottom: 32}}
-                                onClick={() => setDrawerOpen(false)}
-                            />
-                    </div>
-                    <a href='#accueil'
-                       variant="h6"
-                       underline="underline"
-                       color="white"
-                       height='12px'
-                       onClick={() => setDrawerOpen(false)}
-                       style={{
-                           fontSize: '40px',
-                           fontFamily: 'dahlia-bold',
-                           textDecoration: 'none',
-                           color: '#ffffff',
-                           hover: {
-                               "&:hover": {
+        <HeaderToolbox>
+            <Toolbar sx={{display: 'flex', flexDirection: 'row'}}>
+                <Box sx={{display: 'flex', flexGrow: 0, justifyContent: 'center', height: '100%', alignItems: 'center'}} onClick={() => setDrawerOpen(true)}>
+                    <MenuButton>
+                        <img alt={'bouton de menu'} src={Menu} style={{height: 10}}/>
+                    </MenuButton>
+                </Box>
+                <Box sx={{display: 'flex', flexGrow: 1, justifyContent: 'center'}}>
+                    <img src={Logo} alt={'logo'} style={{height: 30}}/>
+                </Box>
+                <Drawer
+                    {...{
+                        anchor: "left",
+                        open: drawerOpen,
+                        onClose: () => setDrawerOpen(false),
+                    }}
+                    PaperProps={{
+                        style: {width: '100%', backgroundColor: '#BD94AA'}
+                    }}
+                >
+                    <DrawerContainer>
+                        <RelativeSvg>
+                                <Box
+                                    component="img"
+                                    src={Cross}
+                                    height="32px"
+                                    width="24px"
+                                    alt="cross white"
+                                    sx={{ position: 'absolute', bottom: 32}}
+                                    onClick={() => setDrawerOpen(false)}
+                                />
+                        </RelativeSvg>
+                        <a href='#accueil'
+                           variant="h6"
+                           underline="underline"
+                           color="white"
+                           height='12px'
+                           onClick={() => setDrawerOpen(false)}
+                           style={{
+                               fontSize: '40px',
+                               fontFamily: 'dahlia-bold',
+                               textDecoration: 'none',
+                               color: '#ffffff',
+                               hover: {
+                                   "&:hover": {
+                                       textDecoration: 'underline'
+                                   },
+                               }
+                           }}>{'accueil'}</a>
+                        <a href='#pneumacorps'
+                           variant="h6"
+                           underline="underline"
+                           color="white"
+                           height='12px'
+                           onClick={() => setDrawerOpen(false)}
+                           style={{
+                               fontSize: '40px',
+                               fontFamily: 'dahlia-bold',
+                               textDecoration: 'none',
+                               color: '#ffffff',
+                               '&:hover': {
                                    textDecoration: 'underline'
                                },
-                           }
-                       }}>{'physiothérapie'}</a>
-                    <a href='#pneumacorps'
-                       variant="h6"
-                       underline="underline"
-                       color="white"
-                       height='12px'
-                       onClick={() => setDrawerOpen(false)}
-                       style={{
-                           fontSize: '40px',
-                           fontFamily: 'dahlia-bold',
-                           textDecoration: 'none',
-                           color: '#ffffff',
-                           '&:hover': {
-                               textDecoration: 'underline'
-                           },
-                       }}>{'la thérapeute'}</a>
-                    <a
-                        href='#aPropos'
-                        variant="h6"
-                        underline="none"
-                        color="primary"
-                        onClick={() => setDrawerOpen(false)}
-                        style={{
-                            fontSize: '40px',
-                            fontFamily: 'dahlia-bold',
-                            textDecoration: 'none',
-                            color: '#ffffff',
-                            '&:hover': {
-                                textDecoration: 'underline'
-                            },
-                        }}
-                    >{'Informations générales'}</a>
-                    <a
-                        href='#informations'
-                        variant="h6"
-                        underline="none"
-                        color="primary"
-                        onClick={() => setDrawerOpen(false)}
-                        style={{
-                            fontSize: '40px',
-                            fontFamily: 'dahlia-bold',
-                            textDecoration: 'none',
-                            color: '#ffffff',
-                            '&:hover': {
-                                textDecoration: 'underline'
-                            },
-                        }}
-                    >{'Informations'}</a>
-                    <a
-                        href='#contact'
-                        variant="h6"
-                        underline="none"
-                        color="primary"
-                        onClick={() => setDrawerOpen(false)}
-                        style={{
-                            fontSize: '40px',
-                            fontFamily: 'dahlia-bold',
-                            textDecoration: 'none',
-                            color: '#ffffff',
-                            '&:hover': {
-                                textDecoration: 'underline'
-                            },
-                        }}
-                    >{'Contact'}</a>
-                </div>
-            </Drawer>
-        </Toolbar>
+                           }}>{'physiothérapie'}</a>
+                        <a
+                            href='#aPropos'
+                            variant="h6"
+                            underline="none"
+                            color="primary"
+                            onClick={() => setDrawerOpen(false)}
+                            style={{
+                                fontSize: '40px',
+                                fontFamily: 'dahlia-bold',
+                                textDecoration: 'none',
+                                color: '#ffffff',
+                                '&:hover': {
+                                    textDecoration: 'underline'
+                                },
+                            }}
+                        >{'la thérapeute'}</a>
+                        <a
+                            href='#informations'
+                            variant="h6"
+                            underline="none"
+                            color="primary"
+                            onClick={() => setDrawerOpen(false)}
+                            style={{
+                                fontSize: '40px',
+                                fontFamily: 'dahlia-bold',
+                                textDecoration: 'none',
+                                color: '#ffffff',
+                                '&:hover': {
+                                    textDecoration: 'underline'
+                                },
+                            }}
+                        >{'informations générales'}</a>
+                        <a
+                            href='#contact'
+                            variant="h6"
+                            underline="none"
+                            color="primary"
+                            onClick={() => setDrawerOpen(false)}
+                            style={{
+                                fontSize: '40px',
+                                fontFamily: 'dahlia-bold',
+                                textDecoration: 'none',
+                                color: '#ffffff',
+                                '&:hover': {
+                                    textDecoration: 'underline'
+                                },}}
+                        >{'contact'}</a>
+                    </DrawerContainer>
+                </Drawer>
+            </Toolbar>
+        </HeaderToolbox>
     );
 }
 
@@ -260,7 +231,7 @@ function AppAppBar() {
         }
     }, []);
     return (
-        <div class="topnav" id="myTopnav">
+        <div className="topnav" id="myTopnav">
             <ElevationScroll>
                 <AppBar position="fixed" color={'transparent'} style={{color: 'transparent', backgroundColor: 'none'}}>
                     {mobileView ? <DisplayMobile/> : <DisplayDesktop/>}
