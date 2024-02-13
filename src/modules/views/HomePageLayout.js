@@ -64,8 +64,8 @@ function HomePageLayout(props) {
 
   return (
     <HomePageLayoutRoot
-        id={'accueil'}
-        style={{height}}>
+        style={{height}}
+        id={'accueil'}>
       <Container
         sx={{
           mt: 3,
