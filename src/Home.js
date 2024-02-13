@@ -12,7 +12,7 @@ function Index() {
   return (
     <>
       <AppAppBar/>
-      <HomePage id={'accueil'} />
+      <HomePage/>
       <Physiotherapie/>
       <Therapeute/>
       <InformationsPratiques />
