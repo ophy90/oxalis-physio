@@ -3,8 +3,11 @@ import {
     HeaderTitlePurpleFirstLine,
     HeaderTitlePurpleSecondLine,
     SubtitlePurple,
-    TextPurple, TextPurpleSmallerParagraphs, WhiteBox, Blocks
+    TextPurpleSmallerParagraphs, WhiteBox, Blocks
 } from "../components/Styles";
+import MoreInfosOnSwissCareSystem from "../components/MoreInfosOnSwissCareSystem";
+import MoreInfosOnPriceAndTime from "../components/MoreInfosOnPriceAndTime";
+
 
 function InformationsPratiques() {
   return (
@@ -17,27 +20,8 @@ function InformationsPratiques() {
                       générales
                   </HeaderTitlePurpleSecondLine>
               </Blocks>
-             <Blocks>
-                     <SubtitlePurple>
-                         Notre système de santé Suisse et son système tarifaire
-                     </SubtitlePurple>
-                     <TextPurpleSmallerParagraphs>
-                         Conditions de prise en charge des frais de physiothérapie par les assurances.
-                         <br/>
-                         En savoir plus
-                     </TextPurpleSmallerParagraphs>
-             </Blocks>
-              <Blocks>
-                      <SubtitlePurple>
-                          Tarifs et durée d’une séance
-                      </SubtitlePurple>
-                      <TextPurpleSmallerParagraphs>
-                          Une séance de physiothérapie dure généralement 30 minutes.
-                          <br/>
-                          En savoir plus
-                          <br/>
-                      </TextPurpleSmallerParagraphs>
-              </Blocks>
+              <MoreInfosOnSwissCareSystem/>
+          <MoreInfosOnPriceAndTime/>
           <Blocks>
               <SubtitlePurple>
                   Horaire et région

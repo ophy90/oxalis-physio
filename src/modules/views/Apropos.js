@@ -1,8 +1,10 @@
 import * as React from 'react';
-import {HeaderTitleWhite, QuoteWhite, TextWhite, PurpleDarkBox, Blocks} from "../components/Styles";
+import {HeaderTitleWhite, TextWhite, PurpleDarkBox, Blocks} from "../components/Styles";
 import OXALIS_photo_fabia from '../../assets/images/OXALIS_photo_fabia.jpg'
+import MoreInfosOnTherapist from "../components/MoreInfosOnTherapist";
 
 export default function Therapeute() {
+
   return (
     <PurpleDarkBox>
         <Blocks>
@@ -28,20 +30,7 @@ export default function Therapeute() {
               Je peux, au besoin, faire un suivi en allemand, italien et anglais.
           </TextWhite>
         </Blocks>
-        <Blocks>
-          <TextWhite>
-              En savoir plus
-          </TextWhite>
-        </Blocks>
-        <Blocks>
-            <TextWhite>
-                J’ai travaillé deux ans à l’hôpital (Daler), cinq ans en cabinet (à Givisiez). Création d’Oxalis en 2022
-                (séances PneumaCorps, travail avec le souffle et la posture) et Oxalis physiothérapie en 2024.
-                Formations continues (viscéral, thérapie manuelle, k-taping) et certification PneumaCorps depuis
-                2013. Expérience avec les personnes âgées, la réadaptation, traitement à domicile, patientèle en cabinet
-                et suivis PneumaCorps.
-            </TextWhite>
-        </Blocks>
+        <MoreInfosOnTherapist/>
     </PurpleDarkBox>
   );
 }
