@@ -20,9 +20,13 @@ function MoreInfosOnPriceAndTime() {
                         Une séance de physiothérapie dure généralement 30 minutes.
                     </TextPurpleSmallerParagraphs>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
-                    <TextPurple style={{textDecoration: "underline"}}>
-                        En savoir plus
-                    </TextPurple>
+                    <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
+                        {!isOpen &&
+                        <TextPurple style={{textDecoration: "underline"}} >
+                                    En savoir plus
+                        </TextPurple>
+                        }
+                    </button>
                     <MoreInfosPurpleIcons onIsOpenChange={handleIsOpenChange} isOpen={isOpen}/>
                 </div>
                 <br/>

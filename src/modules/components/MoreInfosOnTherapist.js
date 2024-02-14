@@ -14,9 +14,13 @@ function MoreInfosOnTherapist() {
         <>
             <Blocks>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
-                    <TextWhite style={{textDecoration: "underline"}}>
-                        En savoir plus
-                    </TextWhite>
+                    <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer", margin: "none"}}>
+                        {!isOpen &&
+                        <TextWhite style={{textDecoration: "underline"}} >
+                            En savoir plus
+                        </TextWhite>
+                        }
+                    </button>
                     <MoreInfosWhiteIcons onIsOpenChange={handleIsOpenChange} isOpen={isOpen}/>
                 </div>
                 <br/>
