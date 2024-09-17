@@ -29,7 +29,7 @@ function InformationsPratiques() {
               <TextPurpleSmallerParagraphs>
                   Je me déplace en ville de Fribourg et environs (Marly, Givisiez, Villars-sur-glâne).
                   <br/>
-                  Jours de consultation : lundi et mercredi
+                  Jours de consultation : du lundi au jeudi
                   <br/>
               </TextPurpleSmallerParagraphs>
           </Blocks>

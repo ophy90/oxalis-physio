@@ -34,13 +34,21 @@ function MoreInfosOnTherapist() {
 
 function MoreInfosOnTherapistText() {
     return (
-        <TextWhite>
-            J’ai travaillé deux ans à l’hôpital (Daler), cinq ans en cabinet (à Givisiez). Création d’Oxalis en 2022
-            (séances PneumaCorps, travail avec le souffle et la posture) et Oxalis physiothérapie en 2024.
-            Formations continues (viscéral, thérapie manuelle, k-taping) et certification PneumaCorps depuis
-            2013. Expérience avec les personnes âgées, la réadaptation, traitement à domicile, patientèle en cabinet
-            et suivis PneumaCorps.
-        </TextWhite>
+        <>
+            <TextWhite>
+                J’ai travaillé deux ans à l’hôpital Daler, cinq ans en cabinet (à Givisiez) et j’ai effectué un
+                remplacement à temps partiel au HFR Tavel en 2024.
+            </TextWhite>
+            <TextWhite>
+                Création d’Oxalis en 2022 (séances PneumaCorps, travail avec le souffle et la posture) et Oxalis
+                physiothérapie en 2024. Formations continues (viscéral, thérapie manuelle, k-taping) et certification
+                PneumaCorps depuis 2013.
+            </TextWhite>
+            <TextWhite>
+                Expérience avec les personnes âgées, la réadaptation, traitement à domicile, patientèle en cabinet et
+                suivis PneumaCorps.
+            </TextWhite>
+        </>
     );
 }
 

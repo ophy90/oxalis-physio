@@ -16,8 +16,7 @@ export default function Therapeute() {
       <Blocks>
           <TextWhite>
               Diplômée depuis 2013 (HES-SO Loèche-les-Bains), je travaille actuellement en tant que physiothérapeute
-              à domicile. A côté de cette activité, je suis également engagée à temps partiel à l’HFR Tafers
-              dont le travail consiste en des traitements ambulatoires et hospitaliers.
+              à domicile.
           </TextWhite>
       </Blocks>
         <Blocks>

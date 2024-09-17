@@ -118,7 +118,8 @@ export const TextWhite = styled(Typography)({
     fontFamily: 'apercu-light',
     "@media (max-width: 800px)": {
         fontSize: '14px',
-    }
+    },
+    padding: '5px'
 });
 
 export const TextPurple = styled(Typography)({
