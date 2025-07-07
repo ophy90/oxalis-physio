@@ -2,6 +2,7 @@ import * as React from 'react';
 import HomePageLayout from './HomePageLayout';
 import BackgroundImage from '../../assets/OXALIS_site_web_bg.jpg';
 import {HeaderTitleWhiteHomePage} from "../components/Styles";
+import content from '../../content.json';
 
 const backgroundImage = BackgroundImage;
 
@@ -22,9 +23,9 @@ export default function HomePage() {
         alt={"increase priority"}
       />
         <HeaderTitleWhiteHomePage>
-          physiothérapie
+          {content.home.titleFirstLine}
           <br/>
-          à domicile
+          {content.home.titleSecondLine}
         </HeaderTitleWhiteHomePage>
     </HomePageLayout>
   );

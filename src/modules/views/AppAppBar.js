@@ -9,6 +9,7 @@ import {useEffect, useState} from "react";
 import {Drawer} from "@mui/material";
 import Menu from '../../assets/OXALIS_site_web_boutons_menu.svg';
 import {DrawerContainer, HeaderToolbox, MenuButton, RelativeSvg} from "../components/StylesSmallScreenMenu";
+import content from '../../content.json';
 
 
 function ElevationScroll(props) {
@@ -81,7 +82,7 @@ const DisplayMobile = () => {
                                        textDecoration: 'underline'
                                    },
                                }
-                           }}>{'accueil'}</a>
+                           }}>{content.home.homeLink}</a>
                         <a href='#pneumacorps'
                            variant="h6"
                            underline="underline"
@@ -96,7 +97,7 @@ const DisplayMobile = () => {
                                '&:hover': {
                                    textDecoration: 'underline'
                                },
-                           }}>{'physiothérapie'}</a>
+                           }}>{content.home.firstLink}</a>
                         <a
                             href='#aPropos'
                             variant="h6"
@@ -112,7 +113,7 @@ const DisplayMobile = () => {
                                     textDecoration: 'underline'
                                 },
                             }}
-                        >{'la thérapeute'}</a>
+                        >{content.home.secondLink}</a>
                         <a
                             href='#informations'
                             variant="h6"
@@ -128,7 +129,7 @@ const DisplayMobile = () => {
                                     textDecoration: 'underline'
                                 },
                             }}
-                        >{'informations générales'}</a>
+                        >{content.home.thirdLink}</a>
                         <a
                             href='#contact'
                             variant="h6"
@@ -143,7 +144,7 @@ const DisplayMobile = () => {
                                 '&:hover': {
                                     textDecoration: 'underline'
                                 },}}
-                        >{'contact'}</a>
+                        >{content.home.fourthLink}</a>
                     </DrawerContainer>
                 </Drawer>
             </Toolbar>
@@ -164,8 +165,9 @@ const DisplayDesktop = () => {
                        fontSize: '12px',
                        textShadow: '0 0 1px white',
                        textDecoration: 'none',
-                       color: 'white'
-                   }}>{'PHYSIOTHERAPIE'}</a>
+                       color: 'white',
+                       textTransform: 'uppercase'
+                   }}>{content.home.firstLink}</a>
                 <a
                     href='#aPropos'
                     variant="h6"
@@ -175,9 +177,10 @@ const DisplayDesktop = () => {
                         fontSize: '12px',
                         textShadow: '0 0 1px white',
                         textDecoration: 'none',
-                        color: 'white'
+                        color: 'white',
+                        textTransform: 'uppercase'
                     }}
-                >{'LA THERAPEUTE'}</a>
+                >{content.home.secondLink}</a>
             </Box>
             <Box sx={{display: 'flex', flex: 1.5, justifyContent: 'center'}}>
                 <img src={Logo} alt={'logo'} style={{height: 30}}/>
@@ -192,9 +195,10 @@ const DisplayDesktop = () => {
                         fontSize: '12px',
                         textShadow: '0 0 1px white',
                         textDecoration: 'none',
-                        color: 'white'
+                        color: 'white',
+                        textTransform: 'uppercase'
                     }}
-                >{'INFORMATIONS GENERALES'}</a>
+                >{content.home.thirdLink}</a>
                 <a
                     href={'#contact'}
                     variant="h6"
@@ -204,9 +208,10 @@ const DisplayDesktop = () => {
                         fontSize: '12px',
                         textShadow: '0 0 1px white',
                         textDecoration: 'none',
-                        color: 'white'
+                        color: 'white',
+                        textTransform: 'uppercase'
                     }}
-                >{'CONTACT'}</a>
+                >{content.home.fourthLink}</a>
             </Box>
         </Toolbar>);
 }
