@@ -2,6 +2,9 @@ import * as React from 'react';
 import {Blocks, TextWhite} from "./Styles";
 import MoreInfosWhiteIcons from "./MoreInfosWhiteIcons";
 import {useState} from "react";
+import content from '../../content.json';
+import MarkDownText from "./MarkDownText";
+
 
 function MoreInfosOnTherapist() {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,17 +39,16 @@ function MoreInfosOnTherapistText() {
     return (
         <>
             <TextWhite>
-                J’ai travaillé deux ans à l’hôpital Daler, cinq ans en cabinet (à Givisiez) et j’ai effectué un
-                remplacement à temps partiel au HFR Tavel en 2024.
+                <MarkDownText>{content.therapist.firstBlockMoreInfos[0].text}</MarkDownText>
             </TextWhite>
             <TextWhite>
-                Création d’Oxalis physiothérapie en 2024.
+                <MarkDownText>{content.therapist.firstBlockMoreInfos[1].text}</MarkDownText>
             </TextWhite>
             <TextWhite>
-                Formations continues : viscéral, thérapie manuelle, k-taping, prévention des chutes, certification PneumaCorps.
+                <MarkDownText>{content.therapist.firstBlockMoreInfos[2].text}</MarkDownText>
             </TextWhite>
             <TextWhite>
-                Expérience avec les personnes âgées, traitement à domicile, patientèle en cabinet
+                <MarkDownText>{content.therapist.firstBlockMoreInfos[3].text}</MarkDownText>
             </TextWhite>
         </>
     );

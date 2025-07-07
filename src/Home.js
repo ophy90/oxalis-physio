@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Therapeute from './modules/views/Apropos';
+import Therapeute from './modules/views/Therapist';
 import AppFooter from './modules/views/AppFooter';
 import HomePage from './modules/views/HomePage';
 import Physiotherapy from './modules/views/Physiotherapy';

@@ -2,31 +2,33 @@ import * as React from 'react';
 import {HeaderTitleWhite, TextWhite, PurpleDarkBox, Blocks} from "../components/Styles";
 import OXALIS_photo_fabia from '../../assets/images/OXALIS_photo_fabia.jpg'
 import MoreInfosOnTherapist from "../components/MoreInfosOnTherapist";
+import MarkDownText from "../components/MarkDownText";
+import content from '../../content.json';
 
-export default function Therapeute() {
+
+export default function Therapist() {
 
   return (
     <PurpleDarkBox>
         <Blocks>
             <HeaderTitleWhite id={'aPropos'}>
-                la thérapeute
+                <MarkDownText>{content.therapist.firstBlock[0].text}</MarkDownText>
             </HeaderTitleWhite>
             <img src={OXALIS_photo_fabia} alt={"portrait"}  width={'100%'}/>
         </Blocks>
       <Blocks>
           <TextWhite>
-              Diplômée depuis 2013 (HES-SO Loèche-les-Bains), je travaille actuellement en tant que physiothérapeute
-              à domicile.
+              <MarkDownText>{content.therapist.firstBlock[1].text}</MarkDownText>
           </TextWhite>
       </Blocks>
         <Blocks>
           <TextWhite>
-              Ma langue maternelle est le français.
+              <MarkDownText>{content.therapist.firstBlock[2].text}</MarkDownText>
           </TextWhite>
         </Blocks>
         <Blocks>
           <TextWhite>
-              Je peux, au besoin, faire un suivi en allemand, italien et anglais.
+              <MarkDownText>{content.therapist.firstBlock[3].text}</MarkDownText>
           </TextWhite>
         </Blocks>
         <MoreInfosOnTherapist/>

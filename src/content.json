@@ -24,5 +24,19 @@
       { "type": "paragraph", "text": "Cela peut arriver qu’à un moment donné de votre vie vous ne soyez pas en mesure de vous déplacer jusqu’en cabinet de physiothérapie pour des séances régulières (problèmes liés à l’âge avancé, opération, ressources insuffisantes)." },
       { "type": "paragraph", "text": "Que cet empêchement soit sur une période limitée dans le temps (début de prise en charge à domicile et suite dans un cabinet) ou sur le long terme, je me déplace jusqu’à votre lieu de vie." }
     ]
+  },
+  "therapist": {
+    "firstBlock": [
+      { "type": "title", "text": "la thérapeute" },
+      { "type": "paragraph", "text": "Diplômée depuis 2013 (HES-SO Loèche-les-Bains), je travaille actuellement en tant que physiothérapeute à domicile." },
+      { "type": "paragraph", "text": "Ma langue maternelle est le français." },
+      { "type": "paragraph", "text": "Je peux, au besoin, faire un suivi en allemand, italien et anglais." }
+    ],
+    "firstBlockMoreInfos": [
+      { "type": "paragraph", "text": "J’ai travaillé deux ans à l’hôpital Daler, cinq ans en cabinet (à Givisiez) et j’ai effectué un remplacement à temps partiel au HFR Tavel en 2024." },
+      { "type": "paragraph", "text": "Création d’Oxalis physiothérapie en 2024." },
+      { "type": "paragraph", "text": "Formations continues : viscéral, thérapie manuelle, k-taping, prévention des chutes, certification PneumaCorps." },
+      { "type": "paragraph", "text": "Expérience avec les personnes âgées, traitement à domicile, patientèle en cabinet." }
+    ]
   }
 }
