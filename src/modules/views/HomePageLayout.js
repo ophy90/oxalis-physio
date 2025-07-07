@@ -89,7 +89,7 @@ function HomePageLayout(props) {
           }}
         />
         <Background sx={sxBackground} />
-         <a href={'#pneumacorps'}>
+         <a href={'#physiotherapy'}>
              <Box
                  component="img"
                  src={ArrowDown}
