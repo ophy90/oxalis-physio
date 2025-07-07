@@ -7,29 +7,31 @@ import {
 } from "../components/Styles";
 import MoreInfosOnSwissCareSystem from "../components/MoreInfosOnSwissCareSystem";
 import MoreInfosOnPriceAndTime from "../components/MoreInfosOnPriceAndTime";
+import content from '../../content.json';
+import MarkdownText from '../components/MarkDownText';
 
 
-function InformationsPratiques() {
+function InformationsGeneral() {
   return (
       <WhiteBox>
               <Blocks>
                       <HeaderTitlePurpleFirstLine id={'informations'}>
-                          informations
+                          <MarkdownText>{content.generalInformations.firstBlock[0].text}</MarkdownText>
                       </HeaderTitlePurpleFirstLine>
                   <HeaderTitlePurpleSecondLine>
-                      générales
+                      <MarkdownText>{content.generalInformations.firstBlock[1].text}</MarkdownText>
                   </HeaderTitlePurpleSecondLine>
               </Blocks>
               <MoreInfosOnSwissCareSystem/>
           <MoreInfosOnPriceAndTime/>
           <Blocks>
               <SubtitlePurple>
-                  Horaire et région
+                  <MarkdownText>{content.generalInformations.thirdBlock[0].text}</MarkdownText>
               </SubtitlePurple>
               <TextPurpleSmallerParagraphs>
-                  Je me déplace en ville de Fribourg et environs (Givisiez, Villars-sur-Glâne, Corminboeuf, Granges-Paccot, Bourguillon, Marly).
+                  <MarkdownText>{content.generalInformations.thirdBlock[1].text}</MarkdownText>
                   <br/>
-                  Jours de consultation : du lundi au jeudi
+                  <MarkdownText>{content.generalInformations.thirdBlock[2].text}</MarkdownText>
                   <br/>
               </TextPurpleSmallerParagraphs>
           </Blocks>
@@ -37,4 +39,4 @@ function InformationsPratiques() {
   );
 }
 
-export default InformationsPratiques;
+export default InformationsGeneral;

@@ -2,6 +2,8 @@ import * as React from 'react';
 import {Blocks, SubtitlePurple, TextPurple, TextPurpleSmallerParagraphs} from "./Styles";
 import MoreInfosPurpleIcons from "./MoreInfosPurpleIcons";
 import {useState} from "react";
+import content from '../../content.json';
+import MarkdownText from '../components/MarkDownText';
 
 function MoreInfosOnPriceAndTime() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +16,10 @@ function MoreInfosOnPriceAndTime() {
         <>
             <Blocks>
                     <SubtitlePurple>
-                        Tarifs et durée d’une séance
+                         <MarkdownText>{content.generalInformations.secondBlock[0].text}</MarkdownText>
                     </SubtitlePurple>
                     <TextPurpleSmallerParagraphs>
-                        Une séance de physiothérapie dure généralement 30 minutes.
+                        <MarkdownText>{content.generalInformations.secondBlock[1].text}</MarkdownText>
                     </TextPurpleSmallerParagraphs>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
@@ -42,22 +44,22 @@ function MoreInfosOnPriceAndTimeText() {
     return (
         <>
             <TextPurple>
-                Les prestations de physiothérapie dans le domaine de la LaMal ont une structure tarifaire à la séance et non au temps.
+                <MarkdownText>{content.generalInformations.secondBlockMoreInfos[0].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                Séance de physiothérapie générale : 48 CHF
+                <MarkdownText>{content.generalInformations.secondBlockMoreInfos[1].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                Séance de physiothérapie complexe : 77 CHF
+                <MarkdownText>{content.generalInformations.secondBlockMoreInfos[2].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                Supplément premier traitement : 24 CHF (première séance uniquement)
+                <MarkdownText>{content.generalInformations.secondBlockMoreInfos[3].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                Supplément pour le déplacement : 34 CHF (par séance)
+                <MarkdownText>{content.generalInformations.secondBlockMoreInfos[4].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                A compter du 1er juillet, introduction du nouveau tarif concernant les prestations de la LAA, AI, AM (ne concerne pas la LaMal).
+                <MarkdownText>{content.generalInformations.secondBlockMoreInfos[5].text}</MarkdownText>
             </TextPurple>
         </>
     );

@@ -38,5 +38,36 @@
       { "type": "paragraph", "text": "Formations continues : viscéral, thérapie manuelle, k-taping, prévention des chutes, certification PneumaCorps." },
       { "type": "paragraph", "text": "Expérience avec les personnes âgées, traitement à domicile, patientèle en cabinet." }
     ]
+  },
+  "generalInformations": {
+    "firstBlock": [
+      { "type": "titleFirstLine", "text": "informations" },
+      { "type": "titleSecondLine", "text": "générales" },
+      { "type": "subtitle", "text": "Notre système de santé Suisse et son système tarifaire"},
+      { "type": "paragraph", "text": "Conditions de prise en charge des frais de physiothérapie par les assurances." }
+    ],
+    "firstBlockMoreInfos": [
+      { "type": "paragraph", "text": "La physiothérapie est une branche de la santé qui, sur prescription médicale, est prise en charge par l’assurance-maladie, ainsi que par l’assurance-accident, l’assurance-invalidité et militaire. Pour cette raison, les tarifs sont définis par les autorités cantonales et sont les mêmes dans tout le canton de Fribourg." },
+      { "type": "paragraph", "text": "Pour pouvoir bénéficier de séances à la maison, ceci doit avoir été spécifié par le·la médecin sur la prescription." },
+      { "type": "paragraph", "text": "Sachez qu’au-delà de 36 séances (par cas), votre médecin devra justifier par écrit la nécessité de la prise en charge auprès du·de la médecin-conseil de votre assurance. Il est toujours intéressant de rappeler que le remboursement des frais dépend votre franchise. Lorsque vous avez dépassé la franchise, vous payez la quote-part des frais totaux." },
+      { "type": "paragraph", "text": "La première séance de physiothérapie doit avoir lieu dans les 5 semaines suivant la date de la prescription médicale. Délai au-delà duquel celle-ci perd sa validité." }
+    ],
+    "secondBlock": [
+      { "type": "subtitle", "text": "Tarifs et durée d’une séance"},
+      { "type": "paragraph", "text": "Une séance de physiothérapie dure généralement 30 minutes." }
+    ],
+    "secondBlockMoreInfos": [
+      { "type": "paragraph", "text": "Les prestations de physiothérapie dans le domaine de la LaMal ont une structure tarifaire à la séance et non au temps."},
+      { "type": "paragraph", "text": "Séance de physiothérapie générale : 48 CHF" },
+      { "type": "paragraph", "text": "Séance de physiothérapie complexe : 77 CHF" },
+      { "type": "paragraph", "text": "Supplément premier traitement : 24 CHF (première séance uniquement)" },
+      { "type": "paragraph", "text": "Supplément pour le déplacement : 34 CHF (par séance)" },
+      { "type": "paragraph", "text": "A compter du 1er juillet 2025, introduction du nouveau tarif concernant les prestations de la LAA, AI, AM (ne concerne pas la LaMal)." }
+    ],
+    "thirdBlock": [
+      { "type": "subtitle", "text": "Horaire et région"},
+      { "type": "paragraph", "text": "Je me déplace en ville de Fribourg et environs (Givisiez, Villars-sur-Glâne, Corminboeuf, Granges-Paccot, Bourguillon, Marly)." },
+      { "type": "paragraph", "text": "Jours de consultation : du lundi au jeudi"}
+    ]
   }
 }

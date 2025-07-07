@@ -2,6 +2,8 @@ import * as React from 'react';
 import {Blocks, SubtitlePurple, TextPurple, TextPurpleSmallerParagraphs} from "./Styles";
 import MoreInfosPurpleIcons from "./MoreInfosPurpleIcons";
 import {useState} from "react";
+import content from '../../content.json';
+import MarkdownText from '../components/MarkDownText';
 
 function MoreInfosOnSwissCareSystem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +16,10 @@ function MoreInfosOnSwissCareSystem() {
         <>
             <Blocks>
                 <SubtitlePurple>
-                    Notre système de santé Suisse et son système tarifaire
+                    <MarkdownText>{content.generalInformations.firstBlock[2].text}</MarkdownText>
                 </SubtitlePurple>
                 <TextPurpleSmallerParagraphs>
-                    Conditions de prise en charge des frais de physiothérapie par les assurances.
+                    <MarkdownText>{content.generalInformations.firstBlock[3].text}</MarkdownText>
                 </TextPurpleSmallerParagraphs>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
@@ -42,24 +44,16 @@ function MoreInfosOnSwissCareSystemText() {
     return (
         <>
             <TextPurple>
-                La physiothérapie est une branche de la santé qui, sur prescription médicale, est prise en charge par
-                l’assurance-maladie, ainsi que par l’assurance-accident, l’assurance-invalidité et militaire.
-                Pour cette raison, les tarifs sont définis par les autorités cantonales et sont les mêmes dans tout le
-                canton de Fribourg.
+                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[0].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                Pour pouvoir bénéficier de séances à la maison, ceci doit avoir été spécifié par le·la médecin sur la
-                prescription.
+                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[1].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                Sachez qu’au-delà de 36 séances (par cas), votre médecin devra justifier par écrit la nécessité de la
-                prise en charge auprès du·de la médecin-conseil de votre assurance.
-                Il est toujours intéressant de rappeler que le remboursement des frais dépend votre franchise.
-                Lorsque vous avez dépassé la franchise, vous payez la quote-part des frais totaux.
+                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[2].text}</MarkdownText>
             </TextPurple>
             <TextPurple>
-                La première séance de physiothérapie doit avoir lieu dans les 5 semaines suivant la date de la prescription médicale.
-                Délai au-delà duquel celle-ci perd sa validité.
+                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[3].text}</MarkdownText>
             </TextPurple>
         </>
     );
