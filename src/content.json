@@ -69,5 +69,17 @@
       { "type": "paragraph", "text": "Je me déplace en ville de Fribourg et environs (Givisiez, Villars-sur-Glâne, Corminboeuf, Granges-Paccot, Bourguillon, Marly)." },
       { "type": "paragraph", "text": "Jours de consultation : du lundi au jeudi"}
     ]
+  },
+  "contact": {
+    "block": [
+      { "type": "title", "text": "contact"},
+      { "type": "paragraph", "text": "Fabia Rüegg"},
+      { "type": "paragraph", "text": "Physiotherapie à domicile"},
+      { "type": "paragraph", "text": "Région de Fribourg"},
+      { "type": "paragraph", "text": "+41 78 207 70 85"},
+      { "type": "paragraph", "text": "info@physio-oxalis.ch"},
+      { "type": "paragraph", "text": "Lundi au jeudi"},
+      { "type": "paragraph", "text": "© OXALIS 2025 TOUS DROITS RÉSERVÉS."}
+    ]
   }
 }
