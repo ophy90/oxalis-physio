@@ -40,13 +40,13 @@ function MoreInfosOnTherapistText() {
                 remplacement à temps partiel au HFR Tavel en 2024.
             </TextWhite>
             <TextWhite>
-                Création d’Oxalis en 2022 (séances PneumaCorps, travail avec le souffle et la posture) et Oxalis
-                physiothérapie en 2024. Formations continues (viscéral, thérapie manuelle, k-taping) et certification
-                PneumaCorps depuis 2013.
+                Création d’Oxalis physiothérapie en 2024.
             </TextWhite>
             <TextWhite>
-                Expérience avec les personnes âgées, la réadaptation, traitement à domicile, patientèle en cabinet et
-                suivis PneumaCorps.
+                Formations continues : viscéral, thérapie manuelle, k-taping, prévention des chutes, certification PneumaCorps.
+            </TextWhite>
+            <TextWhite>
+                Expérience avec les personnes âgées, traitement à domicile, patientèle en cabinet
             </TextWhite>
         </>
     );

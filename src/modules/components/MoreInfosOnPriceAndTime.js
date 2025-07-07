@@ -42,7 +42,7 @@ function MoreInfosOnPriceAndTimeText() {
     return (
         <>
             <TextPurple>
-                La physiothérapie se facture à la séance et non à la durée de celle-ci.
+                Les prestations de physiothérapie dans le domaine de la LaMal ont une structure tarifaire à la séance et non au temps.
             </TextPurple>
             <TextPurple>
                 Séance de physiothérapie générale : 48 CHF
@@ -57,7 +57,7 @@ function MoreInfosOnPriceAndTimeText() {
                 Supplément pour le déplacement : 34 CHF (par séance)
             </TextPurple>
             <TextPurple>
-                Séance de physiothérapie sans ordonnance : 110 CHF (1 heure)
+                A compter du 1er juillet, introduction du nouveau tarif concernant les prestations de la LAA, AI, AM (ne concerne pas la LaMal).
             </TextPurple>
         </>
     );

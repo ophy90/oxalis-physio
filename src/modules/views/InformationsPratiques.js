@@ -27,7 +27,7 @@ function InformationsPratiques() {
                   Horaire et région
               </SubtitlePurple>
               <TextPurpleSmallerParagraphs>
-                  Je me déplace en ville de Fribourg et environs (Marly, Givisiez, Villars-sur-glâne).
+                  Je me déplace en ville de Fribourg et environs (Givisiez, Villars-sur-Glâne, Corminboeuf, Granges-Paccot, Bourguillon, Marly).
                   <br/>
                   Jours de consultation : du lundi au jeudi
                   <br/>

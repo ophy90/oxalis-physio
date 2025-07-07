@@ -23,7 +23,7 @@ export default function AppFooter() {
                   <br/>
                   info@physio-oxalis.ch
                   <br/>
-                  Lundi et mercredi
+                  Lundi au jeudi
               </TextWhite>
           </StylerFooter>
           <FormatCopyRight>

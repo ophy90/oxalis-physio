@@ -57,6 +57,10 @@ function MoreInfosOnSwissCareSystemText() {
                 Il est toujours intéressant de rappeler que le remboursement des frais dépend votre franchise.
                 Lorsque vous avez dépassé la franchise, vous payez la quote-part des frais totaux.
             </TextPurple>
+            <TextPurple>
+                La première séance de physiothérapie doit avoir lieu dans les 5 semaines suivant la date de la prescription médicale.
+                Délai au-delà duquel celle-ci perd sa validité.
+            </TextPurple>
         </>
     );
 }
