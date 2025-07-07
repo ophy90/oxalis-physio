@@ -7,5 +7,22 @@
     "fourthLink": "contact",
     "titleFirstLine": "physiothérapie",
     "titleSecondLine": "à domicile"
+  },
+  "physiotherapy": {
+    "firstBlock": [
+      { "type": "title", "text": "physiothérapie" },
+      { "type": "paragraph", "text": "Je m’appelle Fabia Rüegg, je suis physiothérapeute et me déplace à votre domicile dans la région de Fribourg. Mes domaines de compétences :" },
+      { "type": "paragraph", "text": "**Orthopédie – traumatologie – rhumatologie – gériatrie**" }
+    ],
+    "secondBlock": [
+      { "type": "subtitle", "text": "Vous êtes acteurs et actrices de votre santé" },
+      { "type": "paragraph", "text": "Le·la physiothérapeute est un·e spécialiste du mouvement. Il·elle a les outils pour vous aider à acquérir la meilleure capacité physique possible après un accident, une maladie, une limitation ou une baisse d’état général." },
+      { "type": "paragraph", "text": "Le suivi en physiothérapie a pour objectif de vous accompagner à retrouver de l’aisance avec votre **corps** et dans vos **gestes**. Il permet également de faciliter les **activités** du quotidien. Parfois, le maintien de l’état de santé physique tel qu’il est, constitue déjà un objectif." }
+    ],
+    "thirdBlock": [
+      { "type": "subtitle", "text": "Pourquoi de la physiothérapie à domicile ?" },
+      { "type": "paragraph", "text": "Cela peut arriver qu’à un moment donné de votre vie vous ne soyez pas en mesure de vous déplacer jusqu’en cabinet de physiothérapie pour des séances régulières (problèmes liés à l’âge avancé, opération, ressources insuffisantes)." },
+      { "type": "paragraph", "text": "Que cet empêchement soit sur une période limitée dans le temps (début de prise en charge à domicile et suite dans un cabinet) ou sur le long terme, je me déplace jusqu’à votre lieu de vie." }
+    ]
   }
 }

@@ -83,7 +83,7 @@ const DisplayMobile = () => {
                                    },
                                }
                            }}>{content.home.homeLink}</a>
-                        <a href='#pneumacorps'
+                        <a href='#physiotherapy'
                            variant="h6"
                            underline="underline"
                            color="white"
@@ -156,7 +156,7 @@ const DisplayDesktop = () => {
     return (
         <Toolbar sx={{justifyContent: 'space-between'}}>
             <Box sx={{display: 'flex', flex: 1, justifyContent: 'space-between'}}>
-                <a href='#pneumacorps'
+                <a href='#physiotherapy'
                    variant="h6"
                    underline="none"
                    color="white"

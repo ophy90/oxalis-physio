@@ -2,7 +2,7 @@ import * as React from 'react';
 import Therapeute from './modules/views/Apropos';
 import AppFooter from './modules/views/AppFooter';
 import HomePage from './modules/views/HomePage';
-import Physiotherapie from './modules/views/Pneumacorps';
+import Physiotherapy from './modules/views/Physiotherapy';
 import InformationsPratiques from './modules/views/InformationsPratiques';
 import AppAppBar from './modules/views/AppAppBar';
 import withRoot from './modules/withRoot';
@@ -13,7 +13,7 @@ function Index() {
     <>
       <AppAppBar/>
       <HomePage/>
-      <Physiotherapie/>
+      <Physiotherapy/>
       <Therapeute/>
       <InformationsPratiques />
       <AppFooter />
