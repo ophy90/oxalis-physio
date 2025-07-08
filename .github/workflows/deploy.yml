@@ -3,7 +3,7 @@ name: Production deployement
 on:
   push:
     branches:
-      - automation
+      - main
   workflow_call:
 
 jobs:
