@@ -8,13 +8,17 @@ const ftpDeploy = new FtpDeploy();
 
 const path = require("path");
 
+const remotePath = process.env.BRANCH === 'main'
+    ? process.env.FTP_REMOTE_PATH_PROD
+    : process.env.FTP_REMOTE_PATH_TEST;
+
 const config = {
     user:process.env.FTP_USER,
     password: process.env.FTP_PASSWORD,
     host: process.env.FTP_HOST,
     port: 21,
     localRoot: path.join(__dirname, "build"),
-    remoteRoot: process.env.FTP_REMOTE_PATH,
+    remoteRoot: remotePath,
     include: ["*", "**/*"],
     deleteRemote: true, // replace the previous files
     forcePasv: true,
