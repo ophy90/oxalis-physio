@@ -1,0 +1,37 @@
+name: Production deployement
+
+on:
+  push:
+    branches:
+      - automation
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout repository"
+        uses: actions/checkout@v2
+
+      - name: "Setup Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: "Install dependencies"
+        run: yarn install
+
+      - name: "Build project"
+        run: yarn build
+
+      - name: "Setup .env file"
+        run: |
+            echo "FTP_HOST=${{ secrets.FTP_HOST }}" >> .env
+            echo "FTP_USER=${{ secrets.FTP_USER }}" >> .env
+            echo "FTP_PASSWORD=${{ secrets.FTP_PASSWORD }}" >> .env
+            if [[ $GITHUB_REF == 'refs/heads/main' ]]; then
+            echo "FTP_REMOTE_DIR=${{ secrets.FTP_REMOTE_PATH }}" >> .env
+            else
+
+      - name: Deploy via ftp-deploy
+        run: node deploy.js
