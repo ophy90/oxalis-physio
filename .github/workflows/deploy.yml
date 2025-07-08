@@ -29,7 +29,7 @@ jobs:
             echo "FTP_HOST=${{ secrets.FTP_HOST }}" >> .env
             echo "FTP_USER=${{ secrets.FTP_USER }}" >> .env
             echo "FTP_PASSWORD=${{ secrets.FTP_PASSWORD }}" >> .env
-            echo "FTP_REMOTE_DIR=${{ secrets.FTP_REMOTE_PATH }}" >> .env
+            echo "FTP_REMOTE_PATH=${{ secrets.FTP_REMOTE_PATH }}" >> .env
 
       - name: Deploy via ftp-deploy
         run: node deploy.js
