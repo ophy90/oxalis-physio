@@ -4,8 +4,6 @@ import content from '../../content.json';
 import MarkdownText from '../components/MarkDownText';
 
 export default function AppFooter() {
-    let year = new Date().getFullYear();
-
   return (
       <PurpleDarkBoxCentered id={'contact'}>
           <HeaderTitleWhite>
