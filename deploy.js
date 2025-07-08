@@ -3,6 +3,7 @@ require("dotenv").config();
 console.log('Host:', process.env.FTP_HOST);
 console.log('User:', process.env.FTP_USER);
 console.log('Password:', process.env.FTP_PASSWORD ? 'OK' : 'Manquant');
+
 const FtpDeploy = require("ftp-deploy");
 const ftpDeploy = new FtpDeploy();
 
