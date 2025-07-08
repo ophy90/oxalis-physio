@@ -40,8 +40,8 @@ const HomePageLayoutRoot = styled('section')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   [theme.breakpoints.up('sm')]: {
-    height: '80vh',
-    minHeight: 375,
+    height: '100vh',
+    minHeight:'100vh',
     maxHeight: 1300,
   },
 }));
