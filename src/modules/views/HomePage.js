@@ -2,7 +2,7 @@ import * as React from 'react';
 import HomePageLayout from './HomePageLayout';
 import BackgroundImage from '../../assets/OXALIS_site_web_bg.jpg';
 import content from '../../content.json';
-import { Typography } from '@mui/material';
+import Typography from "@mui/material/Typography";
 
 const backgroundImage = BackgroundImage;
 
@@ -20,9 +20,9 @@ export default function HomePage() {
       <img
         style={{ display: 'none' }}
         src={backgroundImage}
-        alt={"increase priority"}
+        alt={"Oxalis image"}
       />
-        <Typography variant="h1">
+        <Typography variant ='h1'>
           {content.home.titleFirstLine}
           <br/>
           {content.home.titleSecondLine}

@@ -1,21 +1,6 @@
 import {styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
-export const StylerHeaderTitleWhiteHomePage = styled(Typography)(({ theme }) => ({
-    color:  'ffffff',
-    padding: '25px',
-    fontSize: '120px !important',
-    fontFamily: 'dahlia-bold !important',
-    textAlign: 'center',
-    "@media (max-width: 800px)": {
-        fontSize: '40px !important',
-        padding: '60px',
-    }
-}));
-
-export const HeaderTitleWhiteHomePage = ({ children, style }) => {
-    return <StylerHeaderTitleWhiteHomePage style={style}>{children}</StylerHeaderTitleWhiteHomePage>;
-};
 
 export const HeaderTitlePurple = styled(Typography)({
     color: '#914e72',

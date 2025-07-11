@@ -1,18 +1,18 @@
 import { createTheme } from '@mui/material/styles';
 import DahliaBold from '../assets/fonts/Dahlia-bold.woff2';
 
+
 const primary = {
-  main: '#fff',
-  light: '#e9dce3',
+  light: '#fff',
+  main: '#e9dce3',
   dark: '#914e72'
 };
 
-const rawtheme = createTheme({
+const oxalisTheme = createTheme({
+ ...primary,
   palette: {
-    mode: 'light',
     text: {
-      primary: '#000',
-      secondary: '#555',
+      primary: primary,
     },
   },
   breakpoints: {
@@ -37,30 +37,24 @@ const rawtheme = createTheme({
         }
       `,
     },
-  },
+  }
 });
 
-const fontHometitle = {
-  ...rawtheme,
-  fontsize: '120px',
-  padding: '25px',
-  textalign: 'center',
-  [rawtheme.breakpoints.down("lg")]: {
-    fontsize: "80px",
-    padding: '40px',
-  },
-  [rawtheme.breakpoints.down("md")]: {
-    fontsize: "40px",
-    padding: '60px',
-  }
+oxalisTheme.typography.h1 = {
+    fontFamily: 'Dahlia-bold',
+    fontSize: '120px',
+    padding: '25px',
+    color: oxalisTheme.palette.text.primary.light,
+    textAlign: 'center',
+    [oxalisTheme.breakpoints.down("lg")]: {
+        fontSize: "80px",
+        padding: '40px',
+    },
+    [oxalisTheme.breakpoints.down("md")]: {
+        fontSize: "40px",
+        padding: '60px',
+    }
 };
 
-const oxalisTheme = {
-  typography: {
-    h1: {
-      ...fontHometitle
-    }
-  }
-}
 
 export default oxalisTheme;
