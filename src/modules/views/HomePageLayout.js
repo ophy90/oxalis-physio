@@ -35,7 +35,7 @@ export function useWindowSize() {
 }
 
 const HomePageLayoutRoot = styled('section')(({ theme }) => ({
-  color: theme.palette.common.white,
+  //color: theme.palette.common.white,
   position: 'relative',
   display: 'flex',
   alignItems: 'center',

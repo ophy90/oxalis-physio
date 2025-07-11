@@ -1,100 +1,66 @@
 import { createTheme } from '@mui/material/styles';
-import { grey } from '@mui/material/colors';
+import DahliaBold from '../assets/fonts/Dahlia-bold.woff2';
 
-const rawTheme = createTheme({
+const primary = {
+  main: '#fff',
+  light: '#e9dce3',
+  dark: '#914e72'
+};
+
+const rawtheme = createTheme({
   palette: {
-    primary: {
-      light: '#fff',
-      main: '#e9dce3',
-      dark: '#914e72',
+    mode: 'light',
+    text: {
+      primary: '#000',
+      secondary: '#555',
     },
   },
-  typography: {
-    fontFamily: "'apercu-light', sans-serif",
-    fontSize: 14,
-    fontWeightLight: 300, // Work Sans
-    fontWeightRegular: 400, // Work Sans
-    fontWeightMedium: 700, // Roboto Condensed
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+  components: {
+    muicssbaseline: {
+      styleoverrides: `
+        @font-face {
+          font-family: 'dahlia';
+          font-style: bold;
+          font-display: swap;
+          font-weight: 400;
+          src: local('Dahlia'), local('Dahlia-bold'), url(${DahliaBold}) format('woff2');
+          unicoderange: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff;
+        }
+      `,
+    },
   },
 });
 
-const fontHeader = {
-  color: rawTheme.palette.text.primary,
-  fontWeight: rawTheme.typography.fontWeightMedium,
-  fontFamily: "'apercu-light', sans-serif",
-  textTransform: 'uppercase',
-};
-
-const fontTitle = {
-  color: rawTheme.palette.text.primary,
-  fontWeight: rawTheme.typography.fontWeightMedium,
-  fontFamily: "'dahlia-bold', sans-serif",
-};
-
-const theme = {
-  ...rawTheme,
-  palette: {
-    ...rawTheme.palette,
-    background: {
-      ...rawTheme.palette.background,
-      default: rawTheme.palette.common.white,
-      placeholder: grey[200],
-    },
+const fontHometitle = {
+  ...rawtheme,
+  fontsize: '120px',
+  padding: '25px',
+  textalign: 'center',
+  [rawtheme.breakpoints.down("lg")]: {
+    fontsize: "80px",
+    padding: '40px',
   },
+  [rawtheme.breakpoints.down("md")]: {
+    fontsize: "40px",
+    padding: '60px',
+  }
+};
+
+const oxalisTheme = {
   typography: {
-    ...rawTheme.typography,
-    fontHeader,
-    h1White: {
-      ...rawTheme.typography.h1White,
-      ...fontTitle,
-      letterSpacing: 0,
-      fontSize: 80,
-    },
-    h1Pink: {
-      ...rawTheme.typography.h1Pink,
-      ...fontTitle,
-      letterSpacing: 0,
-      fontSize: 80,
-    },
-    h2: {
-      ...rawTheme.typography.h2,
-      ...fontTitle,
-      fontSize: 24,
-    },
-    h3: {
-      ...rawTheme.typography.h3,
-      ...fontHeader,
-      fontSize: 42,
-    },
-    h4: {
-      ...rawTheme.typography.h4,
-      ...fontHeader,
-      fontSize: 36,
-    },
-    h5: {
-      ...rawTheme.typography.h5,
-      fontSize: 20,
-      fontWeight: rawTheme.typography.fontWeightLight,
-    },
-    h6: {
-      ...rawTheme.typography.h6,
-      ...fontHeader,
-      fontSize: 18,
-    },
-    subtitle1: {
-      ...rawTheme.typography.subtitle1,
-      fontSize: 18,
-    },
-    body1: {
-      ...rawTheme.typography.body2,
-      fontWeight: rawTheme.typography.fontWeightRegular,
-      fontSize: 16,
-    },
-    body2: {
-      ...rawTheme.typography.body1,
-      fontSize: 14,
-    },
-  },
-};
+    h1: {
+      ...fontHometitle
+    }
+  }
+}
 
-export default theme;
+export default oxalisTheme;

@@ -1,7 +1,7 @@
 import {styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
-export const StylerHeaderTitleWhiteHomePage = styled(Typography)({
+export const StylerHeaderTitleWhiteHomePage = styled(Typography)(({ theme }) => ({
     color:  'ffffff',
     padding: '25px',
     fontSize: '120px !important',
@@ -11,7 +11,7 @@ export const StylerHeaderTitleWhiteHomePage = styled(Typography)({
         fontSize: '40px !important',
         padding: '60px',
     }
-});
+}));
 
 export const HeaderTitleWhiteHomePage = ({ children, style }) => {
     return <StylerHeaderTitleWhiteHomePage style={style}>{children}</StylerHeaderTitleWhiteHomePage>;
@@ -41,23 +41,10 @@ export const HeaderTitleWhite = styled(Typography)({
     }
 });
 
-export const QuotePurple = styled(Typography)({
-    color: '#914e72',
-    paddingBottom: '25px',
-    fontSize: '20px',
-    fontFamily: 'dahlia-bold',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    "@media (max-width: 800px)": {
-        fontSize: '20px',
-        paddingBottom: '20px'
-    }
-});
-
 export const HeaderTitlePurpleFirstLine = styled(Typography)({
     color: '#914e72',
     paddingTop: '50px',
-    fontSize: '75px',
+    fontSize: '80px',
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
@@ -69,7 +56,7 @@ export const HeaderTitlePurpleFirstLine = styled(Typography)({
 export const HeaderTitlePurpleSecondLine = styled(Typography)({
     color: '#914e72',
     paddingBottom: '50px',
-    fontSize: '75px',
+    fontSize: '80px',
     fontFamily: 'dahlia-bold',
     textAlign: 'center',
     "@media (max-width: 800px)": {
@@ -78,33 +65,11 @@ export const HeaderTitlePurpleSecondLine = styled(Typography)({
     }
 });
 
-
-export const QuoteWhite = styled(Typography)({
-    color: '#ffffff',
-    fontSize: '40px',
-    fontFamily: 'dahlia-bold',
-    textAlign: 'center',
-    "@media (max-width: 800px)": {
-        fontSize: '20px',
-    }
-});
-
 export const SubtitlePurple = styled(Typography)({
     color: '#914e72',
     paddingTop: '25px',
     paddingBottom: '25px',
     fontSize: '35px',
-    fontFamily: 'dahlia-bold',
-    "@media (max-width: 800px)": {
-        fontSize: '20px',
-        padding: '20px',
-    }
-});
-
-export const SubtitleWhite = styled(Typography)({
-    color: '#ffffff',
-    padding: '25px',
-    fontSize: '27px',
     fontFamily: 'dahlia-bold',
     "@media (max-width: 800px)": {
         fontSize: '20px',
@@ -167,12 +132,12 @@ export const PurpleDarkBox = styled('div')({
 });
 
 export const WhiteBox = styled('div')({
-    backgroundColor: '#ffffff',
-    width: '100%',
-    padding: '75px',
     display: 'flex',
+    padding: '75px',
     flexDirection: 'column',
     alignItems: 'center',
+    backgroundColor: '#ffffff',
+    width: '100%',
     '@media (max-width: 800px)': {
         padding: '20px',
     },
@@ -208,13 +173,6 @@ export const FormatCopyRight = styled('div')({
     '@media (max-width: 800px)': {
         padding: '30px',
     },
-});
-
-export const TextNavbar = styled('div')({
-    color: '#914e72',
-    fontSize: '25px',
-    fontFamily: 'dahlia-bold',
-    textDecoration: 'underline',
 });
 
 export const Sources = styled('div')({
