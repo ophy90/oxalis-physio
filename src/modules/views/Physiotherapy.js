@@ -1,15 +1,18 @@
 import * as React from 'react';
-import {HeaderTitlePurple, SubtitlePurple, TextPurple, PurpleLightBox, Blocks} from "../components/Styles";
+import {SubtitlePurple, TextPurple, PurpleLightBox, Blocks} from "../components/Styles";
 import content from '../../content.json';
 import MarkdownText from '../components/MarkDownText';
+import Typography from "@mui/material/Typography";
+import {useTheme} from "@mui/material";
 
 function Physiotherapy() {
+    const theme = useTheme();
     return (
             <PurpleLightBox >
                 <Blocks>
-                    <HeaderTitlePurple id={'physiotherapy'}>
+                    <Typography variant={'h2'} id={'physiotherapy'} style={{color:theme.palette.text.primary.dark}}>
                         <MarkdownText>{content.physiotherapy.firstBlock[0].text}</MarkdownText>
-                    </HeaderTitlePurple>
+                    </Typography>
                     <TextPurple>
                         <MarkdownText>{content.physiotherapy.firstBlock[1].text}</MarkdownText>
                     </TextPurple>

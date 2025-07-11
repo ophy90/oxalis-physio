@@ -1,7 +1,5 @@
 import * as React from 'react';
 import {
-    HeaderTitlePurpleFirstLine,
-    HeaderTitlePurpleSecondLine,
     SubtitlePurple,
     TextPurpleSmallerParagraphs, WhiteBox, Blocks
 } from "../components/Styles";
@@ -9,18 +7,21 @@ import MoreInfosOnSwissCareSystem from "../components/MoreInfosOnSwissCareSystem
 import MoreInfosOnPriceAndTime from "../components/MoreInfosOnPriceAndTime";
 import content from '../../content.json';
 import MarkdownText from '../components/MarkDownText';
+import Typography from "@mui/material/Typography";
+import {useTheme} from "@mui/material";
 
 
 function InformationsGeneral() {
+    const theme = useTheme();
   return (
       <WhiteBox>
               <Blocks>
-                      <HeaderTitlePurpleFirstLine id={'informations'}>
+                      <Typography variant={'h2'} id={'informations'} style={{paddingBottom: '0px', color:theme.palette.text.primary.dark}}>
                           <MarkdownText>{content.generalInformations.firstBlock[0].text}</MarkdownText>
-                      </HeaderTitlePurpleFirstLine>
-                  <HeaderTitlePurpleSecondLine>
+                      </Typography>
+                  <Typography variant={'h2'} style={{paddingTop: '0px', color:theme.palette.text.primary.dark}}>
                       <MarkdownText>{content.generalInformations.firstBlock[1].text}</MarkdownText>
-                  </HeaderTitlePurpleSecondLine>
+                  </Typography>
               </Blocks>
               <MoreInfosOnSwissCareSystem/>
           <MoreInfosOnPriceAndTime/>

@@ -1,14 +1,17 @@
 import * as React from 'react';
-import {HeaderTitleWhite, TextWhite, PurpleDarkBoxCentered, FormatCopyRight, StylerFooter} from "../components/Styles";
+import {TextWhite, PurpleDarkBoxCentered, FormatCopyRight, StylerFooter} from "../components/Styles";
 import content from '../../content.json';
 import MarkdownText from '../components/MarkDownText';
+import Typography from "@mui/material/Typography";
+import {useTheme} from "@mui/material";
 
 export default function AppFooter() {
-  return (
+    const theme = useTheme();
+    return (
       <PurpleDarkBoxCentered id={'contact'}>
-          <HeaderTitleWhite>
+          <Typography variant={'h2'} style={{color:theme.palette.text.primary.light}}>
               <MarkdownText>{content.contact.block[0].text}</MarkdownText>
-          </HeaderTitleWhite>
+          </Typography>
           <StylerFooter>
               <TextWhite>
                   <MarkdownText>{content.contact.block[1].text}</MarkdownText>

@@ -56,5 +56,20 @@ oxalisTheme.typography.h1 = {
     }
 };
 
+oxalisTheme.typography.h2 = {
+    padding: '50px',
+    fontSize: '75px',
+    fontFamily: 'dahlia-bold',
+    textAlign: 'center',
+    [oxalisTheme.breakpoints.down("lg")]: {
+        fontSize: "60px",
+        padding: '40px',
+    },
+    [oxalisTheme.breakpoints.down("md")]: {
+        fontSize: "40px",
+        padding: '30px',
+    }
+};
+
 
 export default oxalisTheme;

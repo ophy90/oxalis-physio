@@ -1,55 +1,6 @@
 import {styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
-
-export const HeaderTitlePurple = styled(Typography)({
-    color: '#914e72',
-    padding: '50px',
-    fontSize: '80px',
-    fontFamily: 'dahlia-bold',
-    textAlign: 'center',
-    "@media (max-width: 800px)": {
-        fontSize: '40px',
-        padding: '30px'
-    }
-});
-
-export const HeaderTitleWhite = styled(Typography)({
-    color: '#ffffff',
-    padding: '50px',
-    fontSize: '80px',
-    fontFamily: 'dahlia-bold',
-    textAlign: 'center',
-    "@media (max-width: 800px)": {
-        fontSize: '40px',
-        padding: '30px',
-    }
-});
-
-export const HeaderTitlePurpleFirstLine = styled(Typography)({
-    color: '#914e72',
-    paddingTop: '50px',
-    fontSize: '80px',
-    fontFamily: 'dahlia-bold',
-    textAlign: 'center',
-    "@media (max-width: 800px)": {
-        fontSize: '40px',
-        paddingTop: '30px',
-    }
-});
-
-export const HeaderTitlePurpleSecondLine = styled(Typography)({
-    color: '#914e72',
-    paddingBottom: '50px',
-    fontSize: '80px',
-    fontFamily: 'dahlia-bold',
-    textAlign: 'center',
-    "@media (max-width: 800px)": {
-        fontSize: '40px',
-        paddingBottom: '30px',
-    }
-});
-
 export const SubtitlePurple = styled(Typography)({
     color: '#914e72',
     paddingTop: '25px',
