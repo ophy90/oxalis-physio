@@ -1,9 +1,11 @@
 import * as React from 'react';
-import {Blocks, SubtitlePurple, TextPurple, TextPurpleSmallerParagraphs} from "./Styles";
+import {Blocks} from "./Styles";
 import MoreInfosPurpleIcons from "./MoreInfosPurpleIcons";
 import {useState} from "react";
 import content from '../../content.json';
 import MarkdownText from '../components/MarkDownText';
+import Typography from "@mui/material/Typography";
+import {useTheme} from "@mui/material";
 
 function MoreInfosOnPriceAndTime() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,21 +14,23 @@ function MoreInfosOnPriceAndTime() {
         setIsOpen(isOpenFromIcon);
     };
 
+    const theme = useTheme();
+
     return (
         <>
             <Blocks>
-                    <SubtitlePurple>
+                    <Typography variant={'h3'} style={{ color:theme.palette.text.primary.dark}}>
                          <MarkdownText>{content.generalInformations.secondBlock[0].text}</MarkdownText>
-                    </SubtitlePurple>
-                    <TextPurpleSmallerParagraphs>
+                    </Typography>
+                    <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}} >
                         <MarkdownText>{content.generalInformations.secondBlock[1].text}</MarkdownText>
-                    </TextPurpleSmallerParagraphs>
+                    </Typography>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
                         {!isOpen &&
-                        <TextPurple style={{textDecoration: "underline"}} >
+                        <Typography variant={'body1'} style={{textDecoration: "underline", color: theme.palette.text.primary.dark}} >
                                     En savoir plus
-                        </TextPurple>
+                        </Typography>
                         }
                     </button>
                     <MoreInfosPurpleIcons onIsOpenChange={handleIsOpenChange} isOpen={isOpen}/>
@@ -41,26 +45,27 @@ function MoreInfosOnPriceAndTime() {
 }
 
 function MoreInfosOnPriceAndTimeText() {
+    const theme = useTheme();
     return (
         <>
-            <TextPurple>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.secondBlockMoreInfos[0].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.secondBlockMoreInfos[1].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.secondBlockMoreInfos[2].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.secondBlockMoreInfos[3].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.secondBlockMoreInfos[4].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.secondBlockMoreInfos[5].text}</MarkdownText>
-            </TextPurple>
+            </Typography>
         </>
     );
 }

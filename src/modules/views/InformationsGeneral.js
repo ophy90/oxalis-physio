@@ -1,8 +1,5 @@
 import * as React from 'react';
-import {
-    SubtitlePurple,
-    TextPurpleSmallerParagraphs, WhiteBox, Blocks
-} from "../components/Styles";
+import { WhiteBox, Blocks } from "../components/Styles";
 import MoreInfosOnSwissCareSystem from "../components/MoreInfosOnSwissCareSystem";
 import MoreInfosOnPriceAndTime from "../components/MoreInfosOnPriceAndTime";
 import content from '../../content.json';
@@ -26,15 +23,15 @@ function InformationsGeneral() {
               <MoreInfosOnSwissCareSystem/>
           <MoreInfosOnPriceAndTime/>
           <Blocks>
-              <SubtitlePurple>
+              <Typography variant={'h3'} id={'physiotherapy'} style={{color:theme.palette.text.primary.dark}}>
                   <MarkdownText>{content.generalInformations.thirdBlock[0].text}</MarkdownText>
-              </SubtitlePurple>
-              <TextPurpleSmallerParagraphs>
+              </Typography>
+              <Typography variant={'body1'} style={{color:theme.palette.text.primary.dark, paddingBottom: '5px'}}>
                   <MarkdownText>{content.generalInformations.thirdBlock[1].text}</MarkdownText>
-                  <br/>
-                  <MarkdownText>{content.generalInformations.thirdBlock[2].text}</MarkdownText>
-                  <br/>
-              </TextPurpleSmallerParagraphs>
+              </Typography>
+              <Typography variant={'body1'} style={{color:theme.palette.text.primary.dark, paddingBottom: '5px'}}>
+              <MarkdownText>{content.generalInformations.thirdBlock[2].text}</MarkdownText>
+              </Typography>
           </Blocks>
       </WhiteBox>
   );

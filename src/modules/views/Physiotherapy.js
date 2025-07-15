@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {SubtitlePurple, TextPurple, PurpleLightBox, Blocks} from "../components/Styles";
+import {TextPurple, PurpleLightBox, Blocks} from "../components/Styles";
 import content from '../../content.json';
 import MarkdownText from '../components/MarkDownText';
 import Typography from "@mui/material/Typography";
@@ -13,17 +13,17 @@ function Physiotherapy() {
                     <Typography variant={'h2'} id={'physiotherapy'} style={{color:theme.palette.text.primary.dark}}>
                         <MarkdownText>{content.physiotherapy.firstBlock[0].text}</MarkdownText>
                     </Typography>
-                    <TextPurple>
+                    <Typography variant={'body1'} style={{color:theme.palette.text.primary.dark}}>
                         <MarkdownText>{content.physiotherapy.firstBlock[1].text}</MarkdownText>
-                    </TextPurple>
-                    <TextPurple>
+                    </Typography>
+                    <Typography variant={'body1'} style={{color:theme.palette.text.primary.dark}}>
                         <MarkdownText>{content.physiotherapy.firstBlock[2].text}</MarkdownText>
-                    </TextPurple>
+                    </Typography>
                 </Blocks>
                 <Blocks >
-                    <SubtitlePurple>
+                    <Typography variant={'h3'} id={'physiotherapy'} style={{color:theme.palette.text.primary.dark}}>
                         <MarkdownText>{content.physiotherapy.secondBlock[0].text}</MarkdownText>
-                    </SubtitlePurple>
+                    </Typography>
                     <TextPurple>
                         <MarkdownText>{content.physiotherapy.secondBlock[1].text}</MarkdownText>
                     </TextPurple>
@@ -32,9 +32,9 @@ function Physiotherapy() {
                     </TextPurple>
                 </Blocks>
                 <Blocks>
-                    <SubtitlePurple>
+                    <Typography variant={'h3'} id={'physiotherapy'} style={{color:theme.palette.text.primary.dark}}>
                         <MarkdownText>{content.physiotherapy.thirdBlock[0].text}</MarkdownText>
-                    </SubtitlePurple>
+                    </Typography>
                     <TextPurple>
                         <MarkdownText>{content.physiotherapy.thirdBlock[1].text}</MarkdownText>
                     </TextPurple>

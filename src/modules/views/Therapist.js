@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {TextWhite, PurpleDarkBox, Blocks} from "../components/Styles";
+import {PurpleDarkBox, Blocks} from "../components/Styles";
 import OXALIS_photo_fabia from '../../assets/images/OXALIS_photo_fabia.jpg'
 import MoreInfosOnTherapist from "../components/MoreInfosOnTherapist";
 import MarkDownText from "../components/MarkDownText";
@@ -19,19 +19,19 @@ export default function Therapist() {
             <img src={OXALIS_photo_fabia} alt={"portrait"}  width={'100%'}/>
         </Blocks>
       <Blocks>
-          <TextWhite>
+          <Typography variant={'body1'} style={{color:theme.palette.text.primary.light}}>
               <MarkDownText>{content.therapist.firstBlock[1].text}</MarkDownText>
-          </TextWhite>
+          </Typography>
       </Blocks>
         <Blocks>
-          <TextWhite>
+            <Typography variant={'body1'} style={{color:theme.palette.text.primary.light}}>
               <MarkDownText>{content.therapist.firstBlock[2].text}</MarkDownText>
-          </TextWhite>
+          </Typography>
         </Blocks>
         <Blocks>
-          <TextWhite>
+            <Typography variant={'body1'} style={{color:theme.palette.text.primary.light}}>
               <MarkDownText>{content.therapist.firstBlock[3].text}</MarkDownText>
-          </TextWhite>
+          </Typography>
         </Blocks>
         <MoreInfosOnTherapist/>
     </PurpleDarkBox>

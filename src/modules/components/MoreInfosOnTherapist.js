@@ -4,6 +4,8 @@ import MoreInfosWhiteIcons from "./MoreInfosWhiteIcons";
 import {useState} from "react";
 import content from '../../content.json';
 import MarkDownText from "./MarkDownText";
+import {useTheme} from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 
 function MoreInfosOnTherapist() {
@@ -13,15 +15,17 @@ function MoreInfosOnTherapist() {
         setIsOpen(isOpenFromIcon);
     };
 
+    const theme = useTheme();
+
     return (
         <>
             <Blocks>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer", margin: "none"}}>
                         {!isOpen &&
-                        <TextWhite style={{textDecoration: "underline"}} >
+                        <Typography variant={'body1'} style={{textDecoration: "underline", color: theme.palette.text.primary.light}} >
                             En savoir plus
-                        </TextWhite>
+                        </Typography>
                         }
                     </button>
                     <MoreInfosWhiteIcons onIsOpenChange={handleIsOpenChange} isOpen={isOpen}/>
@@ -36,20 +40,21 @@ function MoreInfosOnTherapist() {
 }
 
 function MoreInfosOnTherapistText() {
+    const theme = useTheme();
     return (
         <>
-            <TextWhite>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.light}}>
                 <MarkDownText>{content.therapist.firstBlockMoreInfos[0].text}</MarkDownText>
-            </TextWhite>
-            <TextWhite>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.light}}>
                 <MarkDownText>{content.therapist.firstBlockMoreInfos[1].text}</MarkDownText>
-            </TextWhite>
-            <TextWhite>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.light}}>
                 <MarkDownText>{content.therapist.firstBlockMoreInfos[2].text}</MarkDownText>
-            </TextWhite>
-            <TextWhite>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.light}}>
                 <MarkDownText>{content.therapist.firstBlockMoreInfos[3].text}</MarkDownText>
-            </TextWhite>
+            </Typography>
         </>
     );
 }

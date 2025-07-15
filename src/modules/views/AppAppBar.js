@@ -6,10 +6,12 @@ import Toolbar from '../components/Toolbar';
 import Logo from '../../assets/OXALIS_logo_blanc.png';
 import Cross from '../../assets/OXALIS_bouton_croix_blanc.svg';
 import {useEffect, useState} from "react";
-import {Drawer} from "@mui/material";
+import {Drawer, useTheme} from "@mui/material";
 import Menu from '../../assets/OXALIS_site_web_boutons_menu.svg';
 import {DrawerContainer, HeaderToolbox, MenuButton, RelativeSvg} from "../components/StylesSmallScreenMenu";
 import content from '../../content.json';
+import Typography from "@mui/material/Typography";
+import oxalisTheme from "../theme";
 
 
 function ElevationScroll(props) {
@@ -153,65 +155,60 @@ const DisplayMobile = () => {
 }
 
 const DisplayDesktop = () => {
+    const theme = useTheme();
     return (
         <Toolbar sx={{justifyContent: 'space-between'}}>
             <Box sx={{display: 'flex', flex: 1, justifyContent: 'space-between'}}>
-                <a href='#physiotherapy'
-                   variant="h6"
-                   underline="none"
-                   color="white"
-                   height='12px'
-                   style={{
-                       fontSize: '12px',
-                       textShadow: '0 0 1px white',
-                       textDecoration: 'none',
-                       color: 'white',
-                       textTransform: 'uppercase'
-                   }}>{content.home.firstLink}</a>
+                <Typography variant="body2">
+                    <a href='#physiotherapy'
+                       style = {{
+                           color: oxalisTheme.palette.text.primary.light,
+                           textDecoration: 'none'
+                        }}
+                    >{content.home.firstLink}</a>
+                </Typography>
+                <Typography variant="body2">
                 <a
                     href='#aPropos'
-                    variant="h6"
-                    underline="none"
-                    color="primary"
-                    style={{
-                        fontSize: '12px',
-                        textShadow: '0 0 1px white',
-                        textDecoration: 'none',
-                        color: 'white',
-                        textTransform: 'uppercase'
+                    style = {{
+                        color: oxalisTheme.palette.text.primary.light,
+                        textDecoration: 'none'
                     }}
-                >{content.home.secondLink}</a>
+                >
+                    {content.home.secondLink}
+                </a>
+                </Typography>
             </Box>
             <Box sx={{display: 'flex', flex: 1.5, justifyContent: 'center'}}>
-                <img src={Logo} alt={'logo'} style={{height: 30}}/>
+                <a
+                    href='#accueil'
+                    style = {{
+                        color: oxalisTheme.palette.text.primary.light,
+                        textDecoration: 'none'
+                    }}
+                >
+                    <img src={Logo} alt={'logo'} style={{height: 30}}/>
+                </a>
             </Box>
             <Box sx={{display: 'flex', flex: 1, justifyContent: 'space-between'}}>
-                <a
-                    href='#informations'
-                    variant="h6"
-                    underline="none"
-                    color="primary"
-                    style={{
-                        fontSize: '12px',
-                        textShadow: '0 0 1px white',
-                        textDecoration: 'none',
-                        color: 'white',
-                        textTransform: 'uppercase'
-                    }}
-                >{content.home.thirdLink}</a>
-                <a
-                    href={'#contact'}
-                    variant="h6"
-                    underline="none"
-                    color="primary"
-                    style={{
-                        fontSize: '12px',
-                        textShadow: '0 0 1px white',
-                        textDecoration: 'none',
-                        color: 'white',
-                        textTransform: 'uppercase'
-                    }}
-                >{content.home.fourthLink}</a>
+                <Typography variant={'body2'}>
+                    <a
+                        href='#informations'
+                        style = {{
+                            color: oxalisTheme.palette.text.primary.light,
+                            textDecoration: 'none'
+                        }}
+                    >{content.home.thirdLink}</a>
+                </Typography>
+                <Typography variant={'body2'}>
+                    <a
+                        href={'#contact'}
+                        style = {{
+                            color: oxalisTheme.palette.text.primary.light,
+                            textDecoration: 'none'
+                        }}
+                    >{content.home.fourthLink}</a>
+                </Typography>
             </Box>
         </Toolbar>);
 }

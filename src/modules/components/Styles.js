@@ -1,18 +1,6 @@
 import {styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
-export const SubtitlePurple = styled(Typography)({
-    color: '#914e72',
-    paddingTop: '25px',
-    paddingBottom: '25px',
-    fontSize: '35px',
-    fontFamily: 'dahlia-bold',
-    "@media (max-width: 800px)": {
-        fontSize: '20px',
-        padding: '20px',
-    }
-});
-
 export const TextWhite = styled(Typography)({
     color: '#ffffff',
     fontSize: '20px',
@@ -24,16 +12,6 @@ export const TextWhite = styled(Typography)({
 });
 
 export const TextPurple = styled(Typography)({
-    color: '#914e72',
-    fontSize: '20px',
-    fontFamily: 'apercu-light',
-    "@media (max-width: 800px)": {
-        fontSize: '14px',
-    },
-    padding: '5px'
-});
-
-export const TextPurpleSmallerParagraphs = styled(Typography)({
     color: '#914e72',
     fontSize: '20px',
     fontFamily: 'apercu-light',
@@ -108,21 +86,6 @@ export const FormatCopyRight = styled('div')({
     color: 'white',
     '@media (max-width: 800px)': {
         padding: '30px',
-    },
-});
-
-export const Sources = styled('div')({
-    '& a': {
-        color: '#914e72',
-    },
-    '& a:link': {
-        color: '#914e72',
-    },
-    '& a:hover': {
-        color: '#914e72',
-    },
-    '& a:visited': {
-        color: '#914e72',
     },
 });
 

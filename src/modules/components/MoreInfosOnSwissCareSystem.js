@@ -1,9 +1,11 @@
 import * as React from 'react';
-import {Blocks, SubtitlePurple, TextPurple, TextPurpleSmallerParagraphs} from "./Styles";
+import {Blocks} from "./Styles";
 import MoreInfosPurpleIcons from "./MoreInfosPurpleIcons";
 import {useState} from "react";
 import content from '../../content.json';
 import MarkdownText from '../components/MarkDownText';
+import {useTheme} from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 function MoreInfosOnSwissCareSystem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,21 +14,23 @@ function MoreInfosOnSwissCareSystem() {
         setIsOpen(isOpenFromIcon);
     };
 
+    const theme = useTheme();
+
     return (
         <>
             <Blocks>
-                <SubtitlePurple>
+                <Typography variant={'h3'} style={{ color:theme.palette.text.primary.dark}}>
                     <MarkdownText>{content.generalInformations.firstBlock[2].text}</MarkdownText>
-                </SubtitlePurple>
-                <TextPurpleSmallerParagraphs>
+                </Typography>
+                <Typography variant={'body1'} style={{ color:theme.palette.text.primary.dark}}>
                     <MarkdownText>{content.generalInformations.firstBlock[3].text}</MarkdownText>
-                </TextPurpleSmallerParagraphs>
+                </Typography>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
                         {!isOpen &&
-                        <TextPurple style={{textDecoration: "underline"}} >
+                        <Typography variant={'body1'} style={{textDecoration: "underline", color: theme.palette.text.primary.dark}} >
                             En savoir plus
-                        </TextPurple>
+                        </Typography>
                         }
                     </button>
                     <MoreInfosPurpleIcons onIsOpenChange={handleIsOpenChange} isOpen={isOpen}/>
@@ -41,20 +45,21 @@ function MoreInfosOnSwissCareSystem() {
 }
 
 function MoreInfosOnSwissCareSystemText() {
+    const theme = useTheme();
     return (
         <>
-            <TextPurple>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.firstBlockMoreInfos[0].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.firstBlockMoreInfos[1].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.firstBlockMoreInfos[2].text}</MarkdownText>
-            </TextPurple>
-            <TextPurple>
+            </Typography>
+            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
                 <MarkdownText>{content.generalInformations.firstBlockMoreInfos[3].text}</MarkdownText>
-            </TextPurple>
+            </Typography>
         </>
     );
 }
