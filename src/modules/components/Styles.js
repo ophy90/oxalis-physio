@@ -83,7 +83,6 @@ export const Blocks = styled('div')({
 
 export const FormatCopyRight = styled('div')({
     padding: '50px',
-    color: 'white',
     '@media (max-width: 800px)': {
         padding: '30px',
     },

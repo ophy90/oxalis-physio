@@ -3,9 +3,8 @@ import {Blocks} from "./Styles";
 import MoreInfosPurpleIcons from "./MoreInfosPurpleIcons";
 import {useState} from "react";
 import content from '../../content.json';
-import MarkdownText from '../components/MarkDownText';
+import StyledMarkdownText from './StyledMarkdownText';
 import {useTheme} from "@mui/material";
-import Typography from "@mui/material/Typography";
 
 function MoreInfosOnSwissCareSystem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,18 +18,14 @@ function MoreInfosOnSwissCareSystem() {
     return (
         <>
             <Blocks>
-                <Typography variant={'h3'} style={{ color:theme.palette.text.primary.dark}}>
-                    <MarkdownText>{content.generalInformations.firstBlock[2].text}</MarkdownText>
-                </Typography>
-                <Typography variant={'body1'} style={{ color:theme.palette.text.primary.dark}}>
-                    <MarkdownText>{content.generalInformations.firstBlock[3].text}</MarkdownText>
-                </Typography>
+                <StyledMarkdownText variant={'h3'} style={{ color:theme.palette.text.primary.dark}}>{content.generalInformations.firstBlock[2].text}</StyledMarkdownText>
+                <StyledMarkdownText variant={'body1'} style={{ color:theme.palette.text.primary.dark}}>{content.generalInformations.firstBlock[3].text}</StyledMarkdownText>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
                         {!isOpen &&
-                        <Typography variant={'body1'} style={{textDecoration: "underline", color: theme.palette.text.primary.dark}} >
+                        <StyledMarkdownText variant={'body1'} style={{textDecoration: "underline", color: theme.palette.text.primary.dark}} >
                             En savoir plus
-                        </Typography>
+                        </StyledMarkdownText>
                         }
                     </button>
                     <MoreInfosPurpleIcons onIsOpenChange={handleIsOpenChange} isOpen={isOpen}/>
@@ -48,18 +43,10 @@ function MoreInfosOnSwissCareSystemText() {
     const theme = useTheme();
     return (
         <>
-            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
-                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[0].text}</MarkdownText>
-            </Typography>
-            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
-                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[1].text}</MarkdownText>
-            </Typography>
-            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
-                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[2].text}</MarkdownText>
-            </Typography>
-            <Typography variant={'body1'} style={{color: theme.palette.text.primary.dark}}>
-                <MarkdownText>{content.generalInformations.firstBlockMoreInfos[3].text}</MarkdownText>
-            </Typography>
+            <StyledMarkdownText variant={'body1'} style={{color: theme.palette.text.primary.dark}}>{content.generalInformations.firstBlockMoreInfos[0].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color: theme.palette.text.primary.dark}}>{content.generalInformations.firstBlockMoreInfos[1].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color: theme.palette.text.primary.dark}}>{content.generalInformations.firstBlockMoreInfos[2].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color: theme.palette.text.primary.dark}}>{content.generalInformations.firstBlockMoreInfos[3].text}</StyledMarkdownText>
         </>
     );
 }
