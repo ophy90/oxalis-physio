@@ -15,7 +15,7 @@ function MoreInfosOnTherapist() {
     };
 
     const theme = useTheme();
-    const themeColor = theme.palette.text.primary.dark;
+    const themeColor = theme.palette.text.primary.light;
 
     return (
         <>
