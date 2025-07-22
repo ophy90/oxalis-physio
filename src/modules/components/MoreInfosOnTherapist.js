@@ -15,6 +15,7 @@ function MoreInfosOnTherapist() {
     };
 
     const theme = useTheme();
+    const themeColor = theme.palette.text.primary.dark;
 
     return (
         <>
@@ -22,7 +23,7 @@ function MoreInfosOnTherapist() {
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer", margin: "none"}}>
                         {!isOpen &&
-                        <MarkDownText variant={'body1'} style={{textDecoration: "underline", color: theme.palette.text.primary.light}} >
+                        <MarkDownText variant={'body1'} style={{textDecoration: "underline", color:themeColor}} >
                             En savoir plus
                         </MarkDownText>
                         }
@@ -40,12 +41,13 @@ function MoreInfosOnTherapist() {
 
 function MoreInfosOnTherapistText() {
     const theme = useTheme();
+    const themeColor = theme.palette.text.primary.light;
     return (
         <>
-            <MarkDownText variant={'body1'} style={{color: theme.palette.text.primary.light}}>{content.therapist.firstBlockMoreInfos[0].text}</MarkDownText>
-            <MarkDownText variant={'body1'} style={{color: theme.palette.text.primary.light}}>{content.therapist.firstBlockMoreInfos[1].text}</MarkDownText>
-            <MarkDownText variant={'body1'} style={{color: theme.palette.text.primary.light}}>{content.therapist.firstBlockMoreInfos[2].text}</MarkDownText>
-            <MarkDownText variant={'body1'} style={{color: theme.palette.text.primary.light}}>{content.therapist.firstBlockMoreInfos[3].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[0].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[1].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[2].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[3].text}</MarkDownText>
         </>
     );
 }
