@@ -14,13 +14,9 @@ function MoreInfosOnSwissCareSystem() {
     };
 
     const theme = useTheme();
-    const themeColor = theme.palette.text.primary.dark;
-
     return (
         <>
             <Blocks>
-                <StyledMarkdownText variant={'h3'} style={{ color:themeColor}}>{content.generalInformations.firstBlock[2].text}</StyledMarkdownText>
-                <StyledMarkdownText variant={'body1'} style={{ color:themeColor}}>{content.generalInformations.firstBlock[3].text}</StyledMarkdownText>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
                         {!isOpen &&
@@ -45,10 +41,10 @@ function MoreInfosOnSwissCareSystemText() {
     const themeColor = theme.palette.text.primary.dark;
     return (
         <>
-            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.firstBlockMoreInfos[0].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.firstBlockMoreInfos[1].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.firstBlockMoreInfos[2].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.firstBlockMoreInfos[3].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.secondBlock[0].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.secondBlock[1].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.secondBlock[2].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color: themeColor}}>{content.generalInformations.secondBlock[3].text}</StyledMarkdownText>
         </>
     );
 }

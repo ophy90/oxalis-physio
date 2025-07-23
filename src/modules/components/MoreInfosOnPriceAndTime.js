@@ -19,8 +19,6 @@ function MoreInfosOnPriceAndTime() {
     return (
         <>
             <Blocks>
-                <StyledMarkdownText variant={'h3'} style={{ color:themeColor}}>{content.generalInformations.secondBlock[0].text}</StyledMarkdownText>
-                <StyledMarkdownText variant={'body1'} style={{color:themeColor}} >{content.generalInformations.secondBlock[1].text}</StyledMarkdownText>
                 <div style={{display: "flex", flexDirection: "inline", justifyContent: "space-between"}}>
                     <button onClick={handleIsOpenChange} style={{backgroundColor: "transparent", border: "none", cursor: "pointer"}}>
                         {!isOpen &&
@@ -45,12 +43,12 @@ function MoreInfosOnPriceAndTimeText() {
     const themeColor = theme.palette.text.primary.dark;
     return (
         <>
-            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.secondBlockMoreInfos[0].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.secondBlockMoreInfos[1].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.secondBlockMoreInfos[2].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.secondBlockMoreInfos[3].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.secondBlockMoreInfos[4].text}</StyledMarkdownText>
-            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.secondBlockMoreInfos[5].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.fourthBlock[0].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.fourthBlock[1].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.fourthBlock[2].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.fourthBlock[3].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.fourthBlock[4].text}</StyledMarkdownText>
+            <StyledMarkdownText variant={'body1'} style={{color:themeColor}}>{content.generalInformations.fourthBlock[5].text}</StyledMarkdownText>
         </>
     );
 }

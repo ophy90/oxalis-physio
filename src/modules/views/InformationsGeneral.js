@@ -15,13 +15,19 @@ function InformationsGeneral() {
           <Blocks>
               <StyledMarkdownText variant={'h2'} id={'informations'} style={{paddingBottom: '0px', color:themeColor}}>{content.generalInformations.firstBlock[0].text}</StyledMarkdownText>
               <StyledMarkdownText variant={'h2'} style={{paddingTop: '0px', color:themeColor}}>{content.generalInformations.firstBlock[1].text}</StyledMarkdownText>
+              <StyledMarkdownText variant={'h3'} style={{ color:themeColor}}>{content.generalInformations.firstBlock[2].text}</StyledMarkdownText>
+              <StyledMarkdownText variant={'body1'} style={{ color:themeColor}}>{content.generalInformations.firstBlock[3].text}</StyledMarkdownText>
           </Blocks>
           <MoreInfosOnSwissCareSystem/>
+          <Blocks>
+              <StyledMarkdownText variant={'h3'} style={{ color:themeColor}}>{content.generalInformations.thirdBlock[0].text}</StyledMarkdownText>
+              <StyledMarkdownText variant={'body1'} style={{color:themeColor}} >{content.generalInformations.thirdBlock[1].text}</StyledMarkdownText>
+          </Blocks>
           <MoreInfosOnPriceAndTime/>
           <Blocks>
-              <StyledMarkdownText variant={'h3'} id={'physiotherapy'} style={{color:themeColor}}>{content.generalInformations.thirdBlock[0].text}</StyledMarkdownText>
-              <StyledMarkdownText variant={'body1'} style={{color:themeColor, paddingBottom: '5px'}}>{content.generalInformations.thirdBlock[1].text}</StyledMarkdownText>
-              <StyledMarkdownText variant={'body1'} style={{color:themeColor, paddingBottom: '5px'}}>{content.generalInformations.thirdBlock[2].text}</StyledMarkdownText>
+              <StyledMarkdownText variant={'h3'} id={'physiotherapy'} style={{color:themeColor}}>{content.generalInformations.fifthBlock[0].text}</StyledMarkdownText>
+              <StyledMarkdownText variant={'body1'} style={{color:themeColor, paddingBottom: '5px'}}>{content.generalInformations.fifthBlock[1].text}</StyledMarkdownText>
+              <StyledMarkdownText variant={'body1'} style={{color:themeColor, paddingBottom: '5px'}}>{content.generalInformations.fifthBlock[2].text}</StyledMarkdownText>
           </Blocks>
       </WhiteBox>
   );

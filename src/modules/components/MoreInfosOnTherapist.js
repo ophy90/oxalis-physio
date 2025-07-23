@@ -44,10 +44,10 @@ function MoreInfosOnTherapistText() {
     const themeColor = theme.palette.text.primary.light;
     return (
         <>
-            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[0].text}</MarkDownText>
-            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[1].text}</MarkDownText>
-            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[2].text}</MarkDownText>
-            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.firstBlockMoreInfos[3].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.secondBlock[0].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.secondBlock[1].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.secondBlock[2].text}</MarkDownText>
+            <MarkDownText variant={'body1'} style={{color:themeColor}}>{content.therapist.secondBlock[3].text}</MarkDownText>
         </>
     );
 }
